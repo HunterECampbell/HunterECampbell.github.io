@@ -1,0 +1,208 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+a:hover {
+	cursor: pointer;
+	background-color: #ff1a1a;
+}
+
+.TButton:hover {
+	cursor: pointer;
+	background-color: #ff1a1a;
+}
+
+.pictures {
+	height: 31.25em;
+	width: 18.75em;
+}
+
+.header {
+	background: url(http://eskipaper.com/images/moonlight-kiss-1.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
+	background-position: 0% 75%;
+	height: 14.0625em;
+}
+img.bg {
+  	min-height: 100%;
+    min-width: 64em;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  @media screen and (max-width: 1024px) {
+    img.bg {
+    	left: 50%;
+      margin-left: -32em;
+    }
+  }
+
+.header h1 {
+	margin: auto;
+	width: 42.1875em;
+	text-align: center;
+	padding-top: 2.8em;
+	color: #e60000;
+}
+
+.jumbotron {
+	background-color: black;
+	height: auto;
+	padding-bottom: 1.65em;
+}
+
+#ground {
+	color: red;
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 2em;
+	margin-top: -2em;
+}
+
+#back1 {
+	position: absolute;
+	margin-top: -4em;
+}
+
+#about-menu {
+	display: none;
+	color: white;
+}
+
+.ld {
+    cursor: pointer;
+    list-style-type: none;
+    background-color: #e60000;
+    font-size: 1.25em;
+    margin-left: -2.05em;
+    margin-right: 7.1em;
+    margin-top: 0.25em;
+	padding-left: 0.5em;
+}
+
+.ld-menu {
+    display: none;
+    list-style-type: none;
+    margin-left: -1em;
+}
+
+#love-menu {
+    display: none;
+    color: white;
+    list-style-type: none;
+}
+
+.l-numbers {
+    background-color: #e60000;
+    margin-top: 0.25em;
+    font-size: 1.25em;
+    margin-left: -2.05em;
+    margin-right: 7.1em;
+	padding-left: 0.5em;
+    cursor: pointer;
+}
+
+.numbers {
+    margin-left: -3.5em;
+    display: none;
+    list-style-type: none;
+}
+
+#future-menu {
+    display: none;
+    color: white;
+    list-style-type: none;
+    margin-left: -2.49em;
+}
+
+.future-items {
+    font-size: 1.25em;
+}
+
+.Dpics {
+	height: 39.0625em;
+	width: 18.75em;
+	display: inline-block;
+	margin-left: 6.875em;
+	margin-top: 5.625em;
+}
+
+.Tbutton {
+	display: block;
+	height: 6.25em;
+	margin-bottom: 0.5em;
+	background-color: #e60000;
+	color: white;
+	border-top-right-radius: 2.8125em;
+	border-top-left-radius: 0.9375em;
+	text-decoration: none;
+}
+
+.TText {
+	margin-left: 0.75em;
+	padding-top: 1em;
+	font-size: 1.5625em;
+}
+
+.btn {
+	display: block;
+	text-align: center;
+	margin: 5.5em auto;
+	padding: 0.9375em 3.125em 0.9375em 3.125em;
+	width: 7em;
+	background-color: #e60000;
+	text-decoration: none;
+	color: white;
+	border-radius: 0.625em;
+	font-size: 1.25em;
+}
+
+#back {
+	margin-top: -4em;
+}
+
+.footer {
+	background-color: #e60000;
+	height: 9.375em;
+}
+
+#h3F {
+	height: 3.75em;
+	padding-top: 1.875em;
+}
+
+#h4F {
+	height: 3.75em;
+}
+
+.footer h3 {
+	text-align: center;
+	font-size: 1.5625em;
+	width: 18.75em;
+	margin: auto;
+}
+
+.footer h4 {
+	font-size: 1.125em;
+	text-align: center;
+	margin: 0.1875em auto;
+	width: 4.6875em;
+}
+
+#lover {
+	margin-top: -0.9375em;
+}
+
+#name {
+	padding-left: 5em;
+}

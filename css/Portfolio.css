@@ -1,0 +1,564 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/** {
+	border: dotted blue 1px;
+}*/
+
+/*Header Section*/
+.header {
+	background-color: black;
+	color: white;
+	font-family: Times-New-Roman;
+	display: block;
+}
+
+.header ul {
+	list-style-type: none;
+}
+
+#hpHeader {
+	padding-left: 2em;
+	padding-bottom: .45em;
+}
+
+#quote {
+	float: right;
+	margin-right: 3.55em;
+	margin-top: 1.4em;
+}
+
+#quotePerson {
+	float: right;
+}
+
+/*Menu Section*/
+/*Has a pull down about me and links to my email, facebook, and resume*/
+.menu {
+	background-color: #008000;
+	color: black;
+	font-family: Times-New-Roman;
+	height: 3.5em;
+	display: block;
+}
+
+.menu img {
+	height: 2.5em;
+	width: 2.5em;
+	margin-top: .27em;
+	margin-left: .25em;
+}
+
+.about {
+	height: 2.5em;
+	margin-left: -.8em;
+}
+
+.about-menu {
+	display: none;
+	color: black;
+	width: 10em;
+	background-color: #008000;
+	z-index: 1;
+	position: absolute;
+	margin-top: .25em;
+	margin-left: -.3em;
+	padding-bottom: .5em;
+	border: solid black 1px;
+}
+
+#aboutButton {
+	height: 3em;
+	width: 3em;
+	margin-top: .28em;
+	list-style-type: none;
+}
+
+#aboutButton:hover {
+	background-color: #00cc44;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+#pl-menu, #TIE-menu, #pl, #TIE, #unknown {
+	list-style-type: none;
+}
+
+#pl {
+	margin-top: .4em;
+}
+
+.ld-menu {
+	display: none;
+	margin-left: -3em;
+}
+
+.ld {
+	margin-left: -2.5em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	padding-left: .3em;
+	margin-right: .35em;
+}
+
+.ld:hover {
+	cursor: pointer;
+	background-color: #00cc44;
+}
+
+#about1 {
+	width: 3.75em;
+}
+
+#about2 {
+	font-size: 22.25px;
+	list-style-type: none;
+}
+
+#about2 p {
+	margin-top: .4em;
+}
+
+#links {
+	float: right;
+	padding-right: 2em;
+}
+
+.links {
+	display: inline-block;
+	padding-right: 1em;
+	font-size: 1.2em;
+	margin-top: .75em;
+}
+
+/*Main Section*/
+/*Introduces the website*/
+.main {
+	color: white;
+	margin: auto;
+	text-align: center;
+	font-family: Times-New-Roman;
+	height: 20em;
+	margin-top: -1.4em;
+	background: url(https://images.unsplash.com/photo-1467454815259-9176a7e143af?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=baac38755bac5cf21e9b07e257588829) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
+	display: block;
+}
+img.bg {
+  	min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  @media screen and (max-width: 1024px) {
+    img.bg {
+    	left: 50%;
+      margin-left: -512px;
+    }
+  }
+
+.main h1 {
+	font-size: 3.5em;
+	padding-top: 1.6em;
+}
+
+.main p {
+	font-size: 1.65em;
+	margin-top: .5em;
+}
+
+/*Main Section for Websites*/
+/*Has six websites and a pulldown button for more websites*/
+.mainWeb {
+	background-color: #006622;
+	font-family: Times-New-Roman;
+	height: 35em;
+	margin-top: -1.39em;
+	display: block;
+}
+
+.sq1 {
+	position: absolute;
+	width: 20em;
+	height: 20em;
+	margin-top: -2em;
+}
+
+.sq2 {
+	position: absolute;
+	width: 20em;
+	height: 20em;
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	margin-left: 61.5em;
+	margin-top: 2em;
+}
+
+.web {
+	text-align: center;
+	color: black;
+	padding-top: 1.5em;
+}
+
+.mainWeb .row {
+	margin-top: 4em;
+	margin-right: 4em;
+	margin-left: 4.9em;
+}
+
+.mainWeb .container {
+	margin: auto;
+}
+
+.web-btn {
+  display: inline-block;
+  border: red dotted 1px;
+  padding-top: .38em;
+  height: 2.5em;
+  margin: 0 auto;
+  width: 14em;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  border: #339933 solid 3px;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: black;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.web-btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #339933;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.web-btn:hover, .web-btn:focus, .web-btn:active {
+  color: black;
+  text-decoration: none;
+}
+.web-btn:hover:before, .web-btn:focus:before, .web-btn:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.web-btn a:hover {
+	color: black;
+}
+
+#broadway {
+	font-family: Raleway;
+}
+
+#innovationCloud {
+	font-family: Roboto;
+}
+
+#move {
+	font-family: Oswald;
+}
+
+#newsroom {
+	font-family: Arial;
+}
+
+#junction {
+	font-family: Merriweather;
+}
+
+#more-btn {
+	background-color: black;
+	color: white;
+	font-size: 1.25em;
+	border: solid 2px #339933;
+	width: 7em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	text-align: center;
+	margin: 3.5em auto;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#more-btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #339933;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#more-btn:hover, #more-btn:focus, #more-btn:active {
+  color: black;
+}
+#more-btn:hover:before, #more-btn:focus:before, #more-btn:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/*More Websites Section*/
+.more-websites {
+	height: 35em;
+	background-color: #006622;
+	font-family: Times-New-Roman;
+	border-top: solid black 1px;
+	display: none;
+}
+
+.more-websites .container {
+	margin: auto;
+}
+
+.more-websites .row {
+	margin-top: 4em;
+	margin-right: 4em;
+	margin-left: 4.9em;
+}
+
+#adoptly {
+	font-family: "Montserrat";
+}
+
+#excursion {
+	font-family: "Open Sans";
+}
+
+#pocketbook {
+	font-family: "Montserrat";
+}
+
+#bolt {
+	font-family: "Oxygen";
+}
+
+#headlines {
+	font-family: "Libre Baskerville";
+}
+
+#bestbite {
+	font-family: "Arvo";
+}
+
+/*Games Section*/
+/*Buttons with quick games*/
+.game-btns {
+	height: 25em;
+	background-color: #006622;
+	font-family: Times-New-Roman;
+	border-top: solid black 1px;
+	display: block;
+}
+
+.game-btns .container {
+	margin: auto;
+}
+
+.game-btns .row {
+	margin-top: 4em;
+	margin-right: 4em;
+	margin-left: 4.9em;
+}
+
+.game-btn:hover {
+	cursor: pointer;
+}
+
+.game-btn:hover span {
+	color: black;
+}
+
+/*Supporting Section*/
+/*Focus area for my resume link*/
+.supporting {
+	color: white;
+	margin: auto;
+	text-align: center;
+	font-family: Times-New-Roman;
+	height: 15em;
+	background: url(https://images.unsplash.com/photo-1467625575448-2ef10dabab8a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=245233fd0586abd9114a5e109b582903) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
+	display: block;
+}
+img.bg {
+  	min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  @media screen and (max-width: 1024px) {
+    img.bg {
+    	left: 50%;
+      margin-left: -512px;
+    }
+  }
+
+.supporting p {
+	font-size: 2em;
+	padding-top: 1.5em;
+}
+
+.supporting div {
+	font-size: 1.5em;
+	border: red solid 3px;
+	padding-top: .3em;
+	padding-bottom: .3em;
+	width: 13em;
+	margin: auto;
+	margin-top: 1em;
+}
+
+.supporting a {
+	color: white;
+	text-decoration: none;
+	padding-top: .4em;
+	padding-bottom: .5em;
+	padding-right: 2.9em;
+	padding-left: 2.9em;
+}
+
+.supporting a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+#resumeButton {
+  display: inline-block;
+  border: #339933 solid 3px;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: black;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#resumeButton:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #339933;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#resumeButton:hover, #resumeButton:focus, #resumeButton:active {
+  color: black;
+}
+#resumeButton:hover:before, #resumeButton:focus:before, #resumeButton:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+#resumeButton a:hover {
+	color: black;
+}
+
+.resume {
+	color: black;
+}
+
+.resume:hover {
+	text-decoration: underline;
+}
+
+.resume1:hover {
+	color: #00cc44;
+}
+
+.resume2:hover {
+	color: #143914;
+}
+
+/*Footer Section*/
+/*Has links to email, facebook, and my resume*/
+.footer {
+	color: black;
+	background-color: #339933;
+	font-family: Times-New-Roman;
+	height: 11em;
+	display: block;
+}
+
+.footer ul {
+	padding-top: 1.4em;
+	list-style-type: none;
+}
+
+.footer li {
+	padding-top: .5em;
+}

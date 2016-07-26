@@ -1,0 +1,183 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: cover;
+}
+
+.header {
+	background-color: #005580;
+	height: 65px;
+}
+
+.header .container {
+	padding-top: 11px;
+	width: 100%;
+}
+
+.header .bigli {
+	font-size: 30px;
+  background-color: #ff2850;
+  width: 150px;
+  padding-left: 15px;
+  border-left: none;
+}
+
+.header .smlli {
+	background-color: #ff2850;
+	width: 282px;
+	padding-left: 15px;
+	border-left: none;
+}
+
+.header a {
+	color: white;
+}
+
+.header a:hover {
+	text-decoration: none;
+}
+
+#return-btn {
+	border-left: none;
+}
+
+#return-btn:hover {
+	background-color: #ff2850;
+	cursor: pointer;
+}
+
+.header li {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  color: white;
+  border-left: solid black 1px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.jumbotron {
+	background: url(https://s3.amazonaws.com/codecademy-content/projects/adoptly/bg.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  height: 500px;
+  background-attachment: scroll;
+}
+
+.jumbotron h1 {
+	color: #ff2850;
+  text-align: center;
+  font-size: 50px;
+}
+
+.btn:hover {
+  cursor: text;
+}
+
+.supporting {
+	height: 250px;
+	text-align: center;
+}
+
+.col-md-4 .col-xs-4 .col-sm-4 .col-lg-4 {
+	text-align: center;
+}
+
+.col-md-4 a, .col-xs-4 a, .col-sm-4 a, .col-lg-4 a {
+	border: #005580 solid 1px;
+  border-radius: 0;
+  color: #005580;
+  background-color: #262626;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.footer {
+	background-color: #e52364;
+  height: 100px;
+}
+
+.footer .container {
+	margin-top: 30px;
+	color: white;
+}
+
+.col-md-4 .col-xs-4 .col-sm-4 .col-lg-4 {
+	float: left;
+  color: white;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.supporting a {
+	color: white;
+	text-decoration: none;
+}
+
+.supporting a:hover {
+	color: #e52364;
+	text-decoration: underline;
+}
+
+.btn2 {
+	padding: 10px;
+	text-align: center;
+}
+
+.btn2:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  color: #e52364;
+}
+
+.footer a {
+	color: white;
+}
+
+.footer p {
+	margin-top: -10px;
+}
+
+.footer p:hover {
+	cursor: text;
+}
+
+.footer .row {
+	margin-top: 35px;
+}
+
+.fa {
+	margin-top: 10px;
+}
+
+img.bg {
+  	min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  @media screen and (max-width: 1024px) {
+    img.bg {
+    	left: 50%;
+      margin-left: -512px;
+    }
+  }
+
+@media (max-width: 500px) {
+  ul li {
+    width: 100%;
+  }
+}

@@ -1,0 +1,256 @@
+html, body {
+  margin: 0;
+}
+
+html {
+	display: block;
+}
+
+h1, h2, a {
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+	background-color: #1c1c1c;
+	color: white;
+	height: 6em;
+	margin-top: -1.1em;
+	margin-bottom: -6.5em;
+}
+
+.header .container {
+	padding-top: .7em;
+}
+
+#ha {
+	color: white;
+	text-decoration: none;
+}
+
+#ha:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#fa:hover {
+	cursor: pointer;
+}
+
+/* Main */
+.main {
+  height: 600px;
+	background: url(https://s3.amazonaws.com/codecademy-content/projects/move/bg.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
+	text-align: center;
+}
+img.bg {
+  	min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  @media screen and (max-width: 1024px) {
+    img.bg {
+    	left: 50%;
+      margin-left: -512px;
+   }
+}
+
+.main .container {
+	position: relative;
+	margin-top: 6.5em;
+	padding-top: 4.5em;
+}
+
+.main h1 {
+  font-size: 150px;
+  margin: 0;
+  color: white;
+}
+
+.main p {
+  font-size: 18px;
+  color: white;
+  margin: 0 0 20px 0;
+}
+
+.main a {
+  color: white;
+  background-color: #1c1c1c;
+  text-decoration: none;
+  padding: 8px 30px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+/* Supporting */
+.supporting {
+  text-align: center;
+  padding: 50px 0 80px;
+  background-color: #1c1c1c;
+}
+
+/*margin-left: 19em;*/
+.supporting .col {
+	margin: 0 auto;
+  width: 28%;
+  padding: 10px;
+}
+
+.supporting h2 {
+  color: #ffa800;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.supporting p {
+  color: #efefef;
+  margin-bottom: 20px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.supporting .btn {
+  background-color: #eee;
+  color: #1c1c1c;
+  font-size: 18px;
+  padding: 8px 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Feature */
+.feature {
+  height: 600px;
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/move/feature.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
+}
+
+.feature .container {
+	padding-top: 5em;
+}
+
+.feature .container h2 {
+	margin-top: -.5em;
+	padding-bottom: 3em;
+}
+
+.feature h1,
+.feature h2 {
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+  padding:50px 0 0;
+  text-align: center;
+}
+.feature .supporting {
+	margin-top: -5em;
+	padding-top: -1em;
+}
+
+.feature .supporting h2 {
+	color: #e6ac00;
+	margin-top: -.5em;
+}
+
+/* Footer */
+.footer {
+  height: 600px;
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/move/footer.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
+	margin-top: -.75em;
+}
+
+.footer h1,
+.footer h2 {
+  color: #fff;
+  font-size: 40px;
+  padding-top: 5em;
+  text-align: center;
+}
+
+.footer p {
+  color: #fff;
+  margin-bottom: 2em;
+  font-size: 18px;
+}
+
+.footer a {
+	text-align: center;
+  color: white;
+  background-color: #1c1c1c;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#start {
+	margin-left: 29em;
+	margin-right: 5em;
+}
+
+/* Button */
+.btn:hover {
+	background-color: #e6ac00;
+	cursor: text;
+}
+
+
+@media (min-width:600px) {
+  .main h1 {
+    font-size: 200px;
+  }
+
+  .supporting .col {
+    width: 30%;
+  }
+
+  .supporting h2 {
+    font-size: 40px;
+  }
+
+  .supporting p {
+    font-size: 14px;
+  }
+
+  .feature h2 {
+    font-size: 60px;
+  }
+}

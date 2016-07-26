@@ -1,0 +1,192 @@
+html, body {
+  font-family: "Oxygen", sans-serif; 
+  font-weight: 300; 
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 970px;
+}
+
+.jumbotron {
+	background-color: black;
+  margin: 0;
+}
+
+.header img {
+	height: 32px;
+  width: 180px;
+}
+
+.header li {
+	text-decoration: none;
+  display: inline-block;
+  margin-left: 2em;
+}
+
+.header li {
+	color: white;
+}
+
+.header li:nth-child(3) {
+  color: #0393ff;
+  border: solid #0393ff 1px;
+}
+
+.header li:nth-child(4) {
+  color: #0393ff;
+  border: solid #0393ff 1px;
+}
+
+.main h1 {
+	color: white;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.main p {
+	text-align: center;
+  margin-top: 2em;
+}
+
+.main a {
+	color: #0390ff;
+  border: solid #0393ff 1px;
+  border-radius: 0px;
+}
+
+.main .form-inline {
+  margin-top: 5em;
+  float: middle;
+}
+
+.main .form-control {
+	background-color: black;
+  border: black;
+  width: 25em;
+}
+
+.main .form-group {
+  border-bottom: white solid 1px;
+}
+
+.main .form-group:hover {
+	border-bottom: #0393ff solid 1px;
+}
+
+.main button {
+	background-color: black;
+  border-radius: 0px;
+  color: #0393ff;
+  border: solid 1px #0393ff;
+  margin-left: 1.25em;
+}
+
+.btn:hover {
+	color: white;
+  background-color: #0393ff;
+  cursor: text;
+  border-radius: 0px;
+}
+
+.return-btn:hover {
+	cursor: pointer;
+}
+
+.supporting {
+  background: url(http://iphonewalls.net/wp-content/uploads/2013/09/Black%20Diamond%20Design%20with%20Lights%20iPhone%205%20Wallpaper.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  background-attachment: scroll;
+}
+
+.supporting h3 {
+	color: #0393ff;
+  text-align: center;
+  padding-top: 2em;
+}
+
+.supporting p {
+	color: white;
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.supporting .thumbnail {
+	border: none;
+  padding: 0;
+}
+
+.feature {
+	background: url(https://s3.amazonaws.com/codecademy-content/projects/bolt-network/feature.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  background-attachment: scroll;
+}
+
+.feature {
+	height: 25em;
+}
+
+.feature .container {
+	text-align: center;
+	padding-top: 9em;
+}
+
+.feature h3 {
+	color: #0393ff;
+  text-align: center;
+}
+
+.feature p {
+	color: white;
+}
+
+.footer {
+	background-color: black;
+}
+
+.footer h2 {
+	color: white;
+}
+
+.footer p {
+	margin-top: 0px;
+  padding-top: 0px;
+  color: #0393ff;
+}
+
+.footer a {
+	color: #0393ff;
+	text-decoration: underline;
+}
+
+.footer a:hover {
+	color: white;
+}
+
+
+img.bg {
+  	min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  @media screen and (max-width: 1024px) {
+    img.bg {
+    	left: 50%;
+      margin-left: -512px;
+    }
+  }
