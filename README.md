@@ -1,2 +1,2 @@
 # hunter-campbell-portfolio.github.io
-My portfolio designed to showcase what I've learned.
+My portfolio is designed to showcase what I've learned.
