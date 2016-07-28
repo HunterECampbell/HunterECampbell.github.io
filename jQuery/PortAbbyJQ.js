@@ -71,6 +71,13 @@ var main = function() {
 	$("#about-button, #about-menu, #love-menu, #likes-menu, #dislikes-menu, #love-button, #love-menu, #l-1-10, #l-11-20, #l-21-30, #l-31-40, #l-41-50, #future-button, #future-menu").click(function(e) {
 		e.stopPropagation();
 	});
+	$(".Tbutton").click(function() {
+		$(".ld-menu").hide();
+		$(".numbers").hide();
+	});
+	$("#likes-menu, #dislikes-menu, #l-1-10, #l-11-20, #l-21-30, #l-31-40, #l-41-50").click(function() {
+		e.stopPropagation();
+	});
 
 };
 
