@@ -342,6 +342,7 @@ img.bg {
 }
 #more-btn:hover, #more-btn:focus, #more-btn:active {
   color: black;
+  cursor: pointer;
 }
 #more-btn:hover:before, #more-btn:focus:before, #more-btn:active:before {
   -webkit-transform: scaleY(1);
