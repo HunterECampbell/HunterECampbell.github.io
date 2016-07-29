@@ -19,12 +19,12 @@ var main = function() {
 		e.stopPropagation();
 	});
 	
-	$("#newsroom").mouseover(function() {
+	/*$("#newsroom").mouseover(function() {
 		$(this).text("Please refresh page once.");
 		$(this).mouseleave(function() {
 			$(this).text("Newsroom");
 		});
-	});
+	});*/
 	
 	$("#more-btn").click(function() {
 		$(".more-websites").slideToggle("slow");
