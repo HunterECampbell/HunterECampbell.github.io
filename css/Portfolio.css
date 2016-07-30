@@ -37,7 +37,7 @@ html, body {
 /*Menu Section*/
 /*Has a pull down about me and links to my email, facebook, and resume*/
 .menu {
-	background-color: #008000;
+	background-color: #d3d3d3;
 	color: black;
 	font-family: Times-New-Roman;
 	height: 3.5em;
@@ -181,7 +181,7 @@ img.bg {
 /*Main Section for Websites*/
 /*Has six websites and a pulldown button for more websites*/
 .mainWeb {
-	background-color: #006622;
+	background-color: #d3d3d3;
 	font-family: Times-New-Roman;
 	height: 35em;
 	margin-top: -1.39em;
@@ -232,7 +232,7 @@ img.bg {
   text-align: center;
   color: white;
   font-size: 1.5em;
-  border: #339933 solid 3px;
+  border: #003366 solid 3px;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -255,7 +255,7 @@ img.bg {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #339933;
+  background: #003366;
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition-property: transform;
@@ -302,7 +302,7 @@ img.bg {
 	cursor: pointer;
 	color: white;
 	font-size: 1.25em;
-	border: solid 2px #339933;
+	border: solid 2px #003366;
 	width: 7em;
 	padding-top: .25em;
 	padding-bottom: .25em;
@@ -330,7 +330,7 @@ img.bg {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #339933;
+  background: #003366;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
@@ -354,7 +354,7 @@ img.bg {
 /*More Websites Section*/
 .more-websites {
 	height: 35em;
-	background-color: #006622;
+	background-color: #d3d3d3;
 	font-family: Times-New-Roman;
 	border-top: solid black 1px;
 	display: none;
@@ -398,7 +398,7 @@ img.bg {
 /*Buttons with quick games*/
 .game-btns {
 	height: 25em;
-	background-color: #006622;
+	background-color: #d3d3d3;
 	font-family: Times-New-Roman;
 	border-top: solid black 1px;
 	display: block;
@@ -487,7 +487,7 @@ img.bg {
 
 #resumeButton {
   display: inline-block;
-  border: #339933 solid 3px;
+  border: #003366 solid 3px;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -510,7 +510,7 @@ img.bg {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #339933;
+  background: #003366;
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition-property: transform;
@@ -551,7 +551,7 @@ img.bg {
 /*Has links to email, facebook, and my resume*/
 .footer {
 	color: black;
-	background-color: #339933;
+	background-color: #d3d3d3;
 	font-family: Times-New-Roman;
 	height: 11em;
 	display: block;
