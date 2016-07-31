@@ -230,7 +230,7 @@ img.bg {
   margin: 0 auto;
   width: 14em;
   text-align: center;
-  color: white;
+  color: black;
   font-size: 1.5em;
   border: #336699 solid 3px;
   vertical-align: middle;
@@ -241,7 +241,7 @@ img.bg {
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background: black;
+  background: white;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
