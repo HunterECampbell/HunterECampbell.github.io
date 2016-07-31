@@ -493,6 +493,7 @@ img.bg {
   display: inline-block;
   border: #336699 solid 3px;
   vertical-align: middle;
+  white-space: nowrap;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
