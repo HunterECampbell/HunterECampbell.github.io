@@ -188,7 +188,7 @@ img.bg {
 	display: block;
 }
 
-.sq1 {
+/*.sq1 {
 	position: absolute;
 	width: 20em;
 	height: 20em;
@@ -204,7 +204,7 @@ img.bg {
 	transform: rotate(180deg);
 	margin-left: 61.5em;
 	margin-top: 2em;
-}
+}*/
 
 .web {
 	text-align: center;
@@ -225,7 +225,11 @@ img.bg {
 .web-btn {
   display: inline-block;
   border: red dotted 1px;
+  white-space: nowrap;
+  overflow: hidden;
   padding-top: .38em;
+  padding-left: .4em;
+  padding-right: .4em;
   height: 2.5em;
   margin: 0 auto;
   width: 14em;
