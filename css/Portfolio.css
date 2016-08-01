@@ -133,6 +133,15 @@ html, body {
 	margin-top: .75em;
 }
 
+@media (max-width: 60em) {
+  .menu {
+    height: 6em;
+  }
+  #aboutButton {
+	  margin-top: 1.5em;
+  }
+}
+
 /*Main Section*/
 /*Introduces the website*/
 .main {
