@@ -197,24 +197,6 @@ img.bg {
 	display: block;
 }
 
-/*.sq1 {
-	position: absolute;
-	width: 20em;
-	height: 20em;
-	margin-top: -2em;
-}
-
-.sq2 {
-	position: absolute;
-	width: 20em;
-	height: 20em;
-	-ms-transform: rotate(180deg);
-	-webkit-transform: rotate(180deg);
-	transform: rotate(180deg);
-	margin-left: 61.5em;
-	margin-top: 2em;
-}*/
-
 .web {
 	text-align: center;
 	color: black;
