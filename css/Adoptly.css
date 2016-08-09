@@ -185,4 +185,7 @@ img.bg {
   ul li {
     width: 100%;
   }
+  .supporting {
+  	height: 500px;
+  }
 }
