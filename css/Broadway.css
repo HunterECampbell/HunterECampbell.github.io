@@ -239,8 +239,19 @@ img.bg {
     font-size: 50px;
     padding: 0 40px;
   }
-
   .supporting .col {
     width: 100%;
+	margin-top: 3em;
+  }
+  #col1 {
+	  margin-top: 0;
+  }
+  .header {
+	  height: 5.5em;
+  }
+  .header p {
+	  position: absolute;
+	  margin-top: 2em;
+	  margin-left: -11.7em;
   }
 }
