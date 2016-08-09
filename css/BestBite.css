@@ -21,8 +21,8 @@ html, body {
 .nav-pills li a:hover,
 .section .btn:hover {
   background-color: #d8192f;
-  box-shadow:0 2px 4px rgba(0,0,0,.5); 
-  color:#fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .5); 
+  color: #fff;
   cursor: text;
 }
 
@@ -83,7 +83,6 @@ html, body {
 
 .banner {
   background-color:#36343f;
-  height:180px; 
   color: #fff;
   height: 200px;
 }
@@ -139,6 +138,29 @@ html, body {
 }
 
 /* Media Queries */
+@media (max-width: 1250px) {
+	.redh {
+	  margin-top: 3em;
+  }
+  #about {
+	  margin-left: -5.21em;
+  }
+  .ah {
+	  margin-top: 6.5em;
+	  margin-left: -17.8em;
+  }
+  #logIn {
+	  margin-top: 10em;
+	  margin-left: -18em;
+  }
+  #back {
+	  margin-top: 13.5em;
+	  margin-left: -18.2em;
+  }
+	.header {
+		height: 325px;
+	}
+}
 @media (max-width: 680px) {
   .header h1 {
     margin-bottom: 20px;
@@ -148,10 +170,9 @@ html, body {
     float: none;
     margin: 0 auto;
   }
-  .banner {
-    height: 220px;
+  .jumbotron h1 {
+	  margin-right: 1em;
   }
-
   .nav-pills li:first-child a  {
     margin-left: 0;
   }
