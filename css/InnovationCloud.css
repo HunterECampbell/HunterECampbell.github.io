@@ -218,17 +218,30 @@ color: white;
 }
 
 /* Media Queries */
-@media (max-width: 500px) {
+@media (max-width: 525px) {
   .header h1 {
     font-size: 50px;
     line-height: 64px;
   }
-
   .main, .jumbotron {
     padding: 0 30px;
   }
-
   .main img {
     width: 100%;
+  }
+  .nav {
+	  height: 8em;
+  }
+  #about {
+	  margin-top: .5em;
+  }
+  #contact {
+	  margin-top: .5em;
+  }
+  .media {
+	  margin-left: 5em;
+  }
+  .media-body p {
+	  width: 18em;
   }
 }
