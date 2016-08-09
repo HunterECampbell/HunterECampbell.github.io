@@ -140,24 +140,25 @@ h3, h4 {
   .header h1 {
     text-align: center;
   }
-
   .nav li {
     text-align: center;
     width: 100%;
   }
-  
   .cards {
   	background-color: #ffc200;
   }
-
   .cards h2 {
   	text-align: center;
     color: #333;
   }
-  
   .cards img {
     width: 100%;
     margin-bottom: 25px;
   }
-  
+  .header a {
+	  position: absolute;
+  }
+  .header ul {
+	  width: 10em;
+  }
 }
