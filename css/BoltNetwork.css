@@ -190,3 +190,8 @@ img.bg {
       margin-left: -512px;
     }
   }
+  @media (max-width: 500px) {
+	  .pull-right {
+		  margin-left: -3em;
+	  }
+  }
