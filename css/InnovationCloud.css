@@ -244,4 +244,7 @@ color: white;
   .media-body p {
 	  width: 18em;
   }
+  .footer p {
+	  margin-left: 25px;
+  }
 }
