@@ -19,3 +19,10 @@ body {
 	float: right;
 	margin-top: -35px;
 }
+
+@media (max-width: 650px) {
+	.header address {
+		float: left;
+		margin-top: -12px;
+	}
+}
