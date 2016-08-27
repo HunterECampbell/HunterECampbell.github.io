@@ -1,6 +1,5 @@
 var main = function() {
 	
-	$("html").hide();
 	var pass = prompt("What is Hunter's resume password?").toUpperCase();
 	
 	if(pass === "JS2X31") {
