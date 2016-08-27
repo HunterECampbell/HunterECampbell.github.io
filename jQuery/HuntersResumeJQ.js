@@ -1,6 +1,6 @@
 var main = function() {
 	
-	var pass = prompt("What is Hunter's resume password?").toUpperCase();
+	var pass = prompt("What is Hunter's resume password?");
 	
 	if(pass === "JS2X31") {
 		$("html").show();
