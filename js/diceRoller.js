@@ -63,7 +63,6 @@ var main = function() {
 		$("#unfreeze").show();
 	});
 	$("#unfreeze").click(function() {
-		roll();
 		$("#roll").on("click", roll)
 			.text("Roll")
 			.css({"background-color": "white", "cursor": "pointer"})
