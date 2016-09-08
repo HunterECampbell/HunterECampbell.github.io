@@ -54,7 +54,7 @@ var main = function() {
 	$("#roll").on("click", roll);
 	$("#stop").click(function() {
 		$("#roll").off("click")
-			.text("Frozen")
+			.text("Saved Roll")
 			.css({"background-color": "#d9d9d9", "cursor": "text"})
 			.mouseenter(function() {
 				$("#roll").css("box-shadow", "none");
@@ -63,6 +63,7 @@ var main = function() {
 		$("#unfreeze").show();
 	});
 	$("#unfreeze").click(function() {
+		roll();
 		$("#roll").on("click", roll)
 			.text("Roll")
 			.css({"background-color": "white", "cursor": "pointer"})
