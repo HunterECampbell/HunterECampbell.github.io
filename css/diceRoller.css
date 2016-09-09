@@ -100,3 +100,37 @@ html, body {
 #six {
 	display: none;
 }
+
+#preg {
+	display: none;
+	position: absolute;
+	border: red solid 3px;
+	height: 500px;
+	width: 750px;
+	margin: -425px 325px;
+	background-color: white;
+}
+
+#pregp {
+	font-size: 60px;
+	text-align: center;
+	margin-top: 150px;
+}
+
+#x {
+	font-size: 25px;
+	float: right;
+	border: solid red 4px;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	margin-top: -302px;
+	margin-right: -23px;
+	background-color: white;
+	color: black;
+}
+
+#xp {
+	margin-top: 3.5px;
+	margin-left: 8px;
+}
