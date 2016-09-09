@@ -7,6 +7,7 @@ var roll = function() {
 		$("#four").hide();
 		$("#five").hide();
 		$("#six").hide();
+		$("#rollNumber").text("1");
 	}
 	else if(D6 === 2) {
 		$("#one").hide();
@@ -15,6 +16,7 @@ var roll = function() {
 		$("#four").hide();
 		$("#five").hide();
 		$("#six").hide();
+		$("#rollNumber").text("2");
 	}
 	else if(D6 === 3) {
 		$("#one").hide();
@@ -23,6 +25,7 @@ var roll = function() {
 		$("#four").hide();
 		$("#five").hide();
 		$("#six").hide();
+		$("#rollNumber").text("3");
 	}
 	else if(D6 === 4) {
 		$("#one").hide();
@@ -31,6 +34,7 @@ var roll = function() {
 		$("#four").show(1);
 		$("#five").hide();
 		$("#six").hide();
+		$("#rollNumber").text("4");
 	}
 	else if(D6 === 5) {
 		$("#one").hide();
@@ -39,6 +43,7 @@ var roll = function() {
 		$("#four").hide();
 		$("#five").show(1);
 		$("#six").hide();
+		$("#rollNumber").text("5");
 	}
 	else if(D6 === 6) {
 		$("#one").hide();
@@ -47,11 +52,15 @@ var roll = function() {
 		$("#four").hide();
 		$("#five").hide();
 		$("#six").show(1);
+		$("#rollNumber").text("6");
 	}
 };
 
 var main = function() {
-	$("#roll").on("click", roll);
+	$("#roll").on("click", function() {
+		$("#stop").show();
+		roll();
+	});
 	$("#stop").click(function() {
 		$("#roll").off("click")
 			.text("Saved Roll")
@@ -75,6 +84,7 @@ var main = function() {
 		$("#stop").show();
 		$("#unfreeze").hide();
 	});
+	
 };
 
 $(document).ready(main);
