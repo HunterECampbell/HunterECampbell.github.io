@@ -75,20 +75,6 @@ var main = function() {
 		$("#stop").show();
 		$("#unfreeze").hide();
 	});
-	
-	var pass = prompt("What is your name?").toUpperCase();
-	if(pass === "TIFFANY" || "TIFFANY CAMPBELL" || "ERIC" || "GRANT" || "MOM" || "DAD" || "HUNTER" || "ABBY") {
-		$("#preg").show();
-	};
-	$("#x").mouseenter(function() {
-		$("#x").css({"background-color": "red", "cursor": "pointer"});
-	});
-	$("#x").mouseleave(function() {
-		$("#x").css("background-color", "white");
-	});
-	$("#x").click(function() {
-		$("#preg").hide();
-	});
 };
 
 $(document).ready(main);
