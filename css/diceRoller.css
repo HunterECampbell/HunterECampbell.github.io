@@ -8,8 +8,8 @@ html, body {
 	display: block;
 	height: 200px;
 	width: 200px;
-	background-color: white;
 	margin: 100px auto;
+	background-color: white;
 }
 
 .top {
@@ -48,6 +48,18 @@ html, body {
 	background-color: white;
 }
 
+#rollNumber {
+	position: absolute;
+	background-color: white;
+	border: solid 1px black;
+	border-radius: 5px;
+	padding: 5px 25px;
+	width: 25px;
+	text-align: center;
+	margin-left: 60%;
+	margin-top: -128px;
+}
+
 #roll {
 	margin-top: -65px;
 }
@@ -55,6 +67,10 @@ html, body {
 #roll:hover {
 	cursor: pointer;
 	box-shadow: 3px 3px 3px #333333;
+}
+
+#stop {
+	display: none;
 }
 
 #stop:hover {
@@ -79,6 +95,11 @@ html, body {
 	border: 1px solid black;
 	border-radius: 15px;
 	display: inline;
+	background-color: white;
+}
+
+#one {
+	display: none;
 }
 
 #two {
@@ -99,4 +120,8 @@ html, body {
 
 #six {
 	display: none;
+}
+
+#rollNumber {
+	color: black;
 }
