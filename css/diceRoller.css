@@ -1,24 +1,26 @@
-html, body {
-	margin: 0;
-	padding: 0;
-	background-color: #6fffff;
+#d6 {
+	margin-top: 150px;
 }
 
-#dice {
-	display: block;
-	height: 200px;
-	width: 200px;
-	margin: 100px auto;
+#diceTitle {
+	position: absolute;
+	text-align: center;
 	background-color: white;
+	border: solid 2px black;
+	border-radius: 7px;
+	padding: 5px 25px;
+	width: 275px;
+	margin-top: -75px;
+	margin-left: 16em;
 }
 
 .top {
 	position: absolute;
-	margin-top: -60px;
+	margin-top: -120px;
 	margin-left: 50px;
 	font-size: 19px;
 	background-color: white;
-	border: solid black 1px;
+	border: solid black 2px;
 	border-radius: 7px;
 	padding: 10px 35px;
 }
@@ -29,18 +31,18 @@ html, body {
 }
 
 #back:hover {
-	box-shadow: 3px 3px 3px #333333;
+	background-color: rgba(255, 255, 255, .5);
 }
 
 #scratch {
-	margin-top: -5px;
+	margin-top: -65px;
 }
 
 .btn {
 	display: block;
 	width: 60px;
 	text-align: center;
-	border: solid 1px black;
+	border: solid 2px black;
 	border-radius: 7px;
 	padding: 10px 35px;
 	font-size: 20px;
@@ -48,10 +50,33 @@ html, body {
 	background-color: white;
 }
 
+#diceChooser {
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	margin-left: 150px;
+	margin-top: 50px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, .5);
+	border: solid black 2px;
+	border-radius: 7px;
+}
+
+#diceChooser h2 {
+	padding-bottom: 18px;
+	font-size: 26px;
+	text-decoration: underline;
+}
+
+#diceChooser .btn:hover {
+	background-color: white;
+	box-shadow: 3px 3px 3px #333333;
+}
+
 #rollNumber {
 	position: absolute;
 	background-color: white;
-	border: solid 1px black;
+	border: solid 2px black;
 	border-radius: 5px;
 	padding: 5px 25px;
 	width: 25px;
@@ -61,16 +86,21 @@ html, body {
 }
 
 #roll {
-	margin-top: -65px;
+	margin-left: 31em;
+	margin-top: 225px;
+	position: absolute;
 }
 
-#roll:hover {
+#roll:hover, .btn:hover {
 	cursor: pointer;
-	box-shadow: 3px 3px 3px #333333;
+	background-color: rgba(255, 255, 255, .5);
 }
 
-#stop {
+/*#stop {
 	display: none;
+	position: absolute;
+	margin-left: 31em;
+	margin-top: 280px;
 }
 
 #stop:hover {
@@ -80,48 +110,57 @@ html, body {
 
 #unfreeze {
 	display: none;
+	position: absolute;
+	margin-left: 31em;
+	margin-top: 300px;
 }
 
 #unfreeze:hover {
 	cursor: pointer;
 	box-shadow: 3px 3px 3px #333333;
-}
+}*/
 
-.die {
+.d6 {
 	height: 200px;
 	width: 250px;
-	margin: auto;
-	margin-left: -30px;
-	border: 1px solid black;
+	margin-left: 34.8em;
+	border: 2px solid black;
 	border-radius: 15px;
-	display: inline;
 	background-color: white;
-}
-
-#one {
 	display: none;
-}
-
-#two {
-	display: none;
-}
-
-#three {
-	display: none;
-}
-
-#four {
-	display: none;
-}
-
-#five {
-	display: none;
-}
-
-#six {
-	display: none;
+	position: absolute;
 }
 
 #rollNumber {
+	margin-top: 172px;
 	color: black;
+	text-align: center;
+	font-weight: bold;
+	width: 40px;
 }
+
+body {
+	background: url("../Images/diceRoller Pics/MountainScene.jpg") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
+}
+img.bg {
+  	min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  @media screen and (max-width: 1024px) {
+    img.bg {
+    	left: 50%;
+      margin-left: -512px;
+    }
+  }
