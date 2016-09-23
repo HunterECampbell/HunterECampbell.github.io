@@ -96,30 +96,6 @@
 	background-color: rgba(255, 255, 255, .5);
 }
 
-/*#stop {
-	display: none;
-	position: absolute;
-	margin-left: 31em;
-	margin-top: 280px;
-}
-
-#stop:hover {
-	cursor: pointer;
-	box-shadow: 3px 3px 3px #333333;
-}
-
-#unfreeze {
-	display: none;
-	position: absolute;
-	margin-left: 31em;
-	margin-top: 300px;
-}
-
-#unfreeze:hover {
-	cursor: pointer;
-	box-shadow: 3px 3px 3px #333333;
-}*/
-
 .d6 {
 	height: 200px;
 	width: 250px;
@@ -140,7 +116,7 @@
 }
 
 body {
-	background: url("https://hcnureth.github.io/Images/diceRoller Pics/MountainScene.jpg") no-repeat center center fixed;
+	background: url("https://hcnureth.github.io/Images/diceRoller%20Pics/MountainScene.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
