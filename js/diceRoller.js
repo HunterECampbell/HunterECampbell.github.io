@@ -165,7 +165,7 @@ $("#coin-btn").click(function() {
 	$("#d7_6").hide();
 	$("#d7_7").hide();
 });
-var d6Click = 0;
+var d6Click = 1;
 $("#d6-btn").click(function() {
 	coinClick = 0;
 	d6Click = 1;
