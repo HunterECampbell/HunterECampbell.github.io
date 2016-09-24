@@ -141,5 +141,6 @@ img.bg {
 	  #diceChooser {
 		  margin: -200px auto;
 		  position: static;
+		  width: 275px;
 	  }
   }
