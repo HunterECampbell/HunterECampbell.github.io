@@ -86,7 +86,7 @@
 }
 
 #roll {
-	margin-left: 31em;
+	margin-left: 40%;
 	margin-top: 225px;
 	position: absolute;
 }
@@ -99,7 +99,7 @@
 .d6 {
 	height: 200px;
 	width: 250px;
-	margin-left: 34.8em;
+	margin-left: 40%;
 	border: 2px solid black;
 	border-radius: 15px;
 	background-color: white;
