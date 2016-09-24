@@ -144,6 +144,22 @@ var D7 = Math.floor(Math.random() * 7) + 1;
 	}
 };
 
+$("#coin1").hide();
+$("#coin2").hide();
+$("#d6_1").show();
+$("#d6_2").hide();
+$("#d6_3").hide();
+$("#d6_4").hide();
+$("#d6_5").hide();
+$("#d6_6").hide();
+$("#d7_1").hide();
+$("#d7_2").hide();
+$("#d7_3").hide();
+$("#d7_4").hide();
+$("#d7_5").hide();
+$("#d7_6").hide();
+$("#d7_7").hide();
+
 var coinClick = 0;
 $("#coin-btn").click(function() {
 	coinClick = 1;
@@ -151,6 +167,7 @@ $("#coin-btn").click(function() {
 	d7Click = 0;
 	$("#diceTitle").text("Coin");
 	$("#rollNumber").text("0");
+	$("#coin1").show();
 	$("#d6_1").hide();
 	$("#d6_2").hide();
 	$("#d6_3").hide();
@@ -172,6 +189,7 @@ $("#d6-btn").click(function() {
 	d7Click = 0;
 	$("#rollNumber").text("0");
 	$("#diceTitle").text("6 Sided Die");
+	$("#d6_1").show();
 	$("#coin1").hide();
 	$("#coin2").hide();
 	$("#d7_1").hide();
@@ -189,6 +207,7 @@ $("#d7-btn").click(function() {
 	d7Click = 1;
 	$("#rollNumber").text("0");
 	$("#diceTitle").text("7 Sided Die");
+	$("#d7_1").show();
 	$("#coin1").hide();
 	$("#coin2").hide();
 	$("#d6_1").hide();
