@@ -1,13 +1,13 @@
 var coinfunction = function() {
 	var coin = Math.floor(Math.random() * 2) + 1;
 	if(coin === 1) {
-		$("#coin1").show(5);
+		$("#coin1").show();
 		$("#coin2").hide();
 		$("#rollNumber").text("Heads");
 	}
 	else if(coin === 2) {
 		$("#coin1").hide();
-		$("#coin2").show(5);
+		$("#coin2").show();
 		$("#rollNumber").text("Tails");
 	}
 };
