@@ -83,6 +83,8 @@
 	text-align: center;
 	margin-left: 60%;
 	margin-top: -128px;
+	font-weight: bold;
+	width: 40px;
 }
 
 #roll {
@@ -105,15 +107,6 @@
 	background-color: white;
 	display: none;
 	position: absolute;
-}
-
-#rollNumber {
-	margin-top: 172px;
-	margin-left: 38em;
-	color: black;
-	text-align: center;
-	font-weight: bold;
-	width: 40px;
 }
 
 body {
