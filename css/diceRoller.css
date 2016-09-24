@@ -1,22 +1,23 @@
 #d6 {
-	margin-top: 150px;
+	margin: 150px auto;
+}
+
+#dice {
+	margin: 0 auto;
 }
 
 #diceTitle {
-	position: absolute;
 	text-align: center;
 	background-color: white;
 	border: solid 2px black;
 	border-radius: 7px;
 	padding: 5px 25px;
 	width: 275px;
-	margin-top: -75px;
-	margin-left: 16.8em;
+	margin: -75px auto;
 }
 
 .top {
 	position: absolute;
-	margin-top: -120px;
 	margin-left: 50px;
 	font-size: 19px;
 	background-color: white;
@@ -26,16 +27,13 @@
 }
 
 #back {
+	margin-top: -55px;
 	color: black;
 	text-decoration: none;
 }
 
 #back:hover {
 	background-color: rgba(255, 255, 255, .5);
-}
-
-#scratch {
-	margin-top: -65px;
 }
 
 .btn {
@@ -54,8 +52,8 @@
 	position: absolute;
 	width: 250px;
 	height: 300px;
+	margin-top: -440px;
 	margin-left: 150px;
-	margin-top: 50px;
 	text-align: center;
 	background-color: rgba(255, 255, 255, .5);
 	border: solid black 2px;
@@ -74,23 +72,19 @@
 }
 
 #rollNumber {
-	position: absolute;
 	background-color: white;
 	border: solid 2px black;
 	border-radius: 5px;
 	padding: 5px 25px;
-	width: 25px;
-	text-align: center;
-	margin-left: 53em;
-	margin-top: 172px;
-	font-weight: bold;
 	width: 40px;
+	text-align: center;
+	margin: -90px auto;
+	font-weight: bold;
 }
 
 #roll {
-	margin-left: 32em;
-	margin-top: 225px;
-	position: absolute;
+	margin-top: 100px;
+	position: static;
 }
 
 #roll:hover, .btn:hover {
@@ -101,23 +95,22 @@
 .d6 {
 	height: 200px;
 	width: 250px;
-	margin-left: 36.1em;
 	border: 2px solid black;
 	border-radius: 15px;
 	background-color: white;
-	display: none;
-	position: absolute;
+	display: block;
+	margin: 100px auto;
+	position: relative;
 }
 
 body {
-	background: url("https://hcnureth.github.io/Images/diceRoller Pics/BackgroundImage/MountainScene.jpg") no-repeat center center fixed;
+	background: url("../Images/diceRoller Pics/BackgroundImage/MountainScene.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
   	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-	background-attachment: scroll;
 }
 img.bg {
   	min-height: 100%;
@@ -133,4 +126,20 @@ img.bg {
     	left: 50%;
       margin-left: -512px;
     }
+  }
+  
+  @media (max-width: 1150px) {
+	  #back {
+		  margin: -130px auto;
+	  }
+	  #scratch {
+		  margin: -75px auto;
+	  }
+	  #d6 {
+		margin: 225px auto; 
+	  }
+	  #diceChooser {
+		  margin: -200px auto;
+		  position: static;
+	  }
   }
