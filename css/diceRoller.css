@@ -11,7 +11,7 @@
 	padding: 5px 25px;
 	width: 275px;
 	margin-top: -75px;
-	margin-left: 40%;
+	margin-left: 34.5em;
 }
 
 .top {
@@ -86,7 +86,7 @@
 }
 
 #roll {
-	margin-left: 45.1%;
+	margin-left: 32em;
 	margin-top: 225px;
 	position: absolute;
 }
@@ -99,7 +99,7 @@
 .d6 {
 	height: 200px;
 	width: 250px;
-	margin-left: 42%;
+	margin-left: 32em;
 	border: 2px solid black;
 	border-radius: 15px;
 	background-color: white;
