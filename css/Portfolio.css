@@ -271,30 +271,6 @@ img.bg {
 	color: white;
 }
 
-#broadway {
-	font-family: Raleway;
-}
-
-#innovationCloud {
-	font-family: Roboto;
-}
-
-#move {
-	font-family: Oswald;
-}
-
-#newsroom {
-	font-family: Arial;
-}
-
-#redEye {
-	font-family: Montserrat;
-}
-
-#junction {
-	font-family: Merriweather;
-}
-
 #more-btn {
 	background-color: black;
 	cursor: pointer;
@@ -367,30 +343,6 @@ img.bg {
 	margin-top: 4em;
 	margin-right: 4em;
 	margin-left: 4.9em;
-}
-
-#adoptly {
-	font-family: "Montserrat";
-}
-
-#excursion {
-	font-family: "Open Sans";
-}
-
-#pocketbook {
-	font-family: "Montserrat";
-}
-
-#bolt {
-	font-family: "Oxygen";
-}
-
-#headlines {
-	font-family: "Libre Baskerville";
-}
-
-#bestbite {
-	font-family: "Arvo";
 }
 
 /*Games Section*/
