@@ -15,9 +15,9 @@ var coinfunction = function() {
 		$("#coin2").show();
 		$("#rollNumber").text("Tails");
 		$("#coin-btn").click(function() {
-			$("#coin1").hide();
-			$("#coin2").show();
-			$("#rollNumber").text("Tails");
+			$("#coin1").show();
+			$("#coin2").hide();
+			$("#rollNumber").text("Heads");
 		});
 	}
 };
@@ -51,13 +51,13 @@ var D6 = Math.floor(Math.random() * 6) + 1;
 		$("#d6_6").hide();
 		$("#rollNumber").text("2");
 		$("#d6-btn").click(function() {
-			$("#d6_1").hide();
-			$("#d6_2").show();
+			$("#d6_1").show();
+			$("#d6_2").hide();
 			$("#d6_3").hide();
 			$("#d6_4").hide();
 			$("#d6_5").hide();
 			$("#d6_6").hide();
-			$("#rollNumber").text("2");
+			$("#rollNumber").text("1");
 		});
 	}
 	else if(D6 === 3) {
@@ -69,13 +69,13 @@ var D6 = Math.floor(Math.random() * 6) + 1;
 		$("#d6_6").hide();
 		$("#rollNumber").text("3");
 		$("#d6-btn").click(function() {
-			$("#d6_1").hide();
+			$("#d6_1").show();
 			$("#d6_2").hide();
-			$("#d6_3").show();
+			$("#d6_3").hide();
 			$("#d6_4").hide();
 			$("#d6_5").hide();
 			$("#d6_6").hide();
-			$("#rollNumber").text("3");
+			$("#rollNumber").text("1");
 		});
 	}
 	else if(D6 === 4) {
@@ -87,13 +87,13 @@ var D6 = Math.floor(Math.random() * 6) + 1;
 		$("#d6_6").hide();
 		$("#rollNumber").text("4");
 		$("#d6-btn").click(function() {
-			$("#d6_1").hide();
+			$("#d6_1").show();
 			$("#d6_2").hide();
 			$("#d6_3").hide();
-			$("#d6_4").show();
+			$("#d6_4").hide();
 			$("#d6_5").hide();
 			$("#d6_6").hide();
-			$("#rollNumber").text("4");
+			$("#rollNumber").text("1");
 		});
 	}
 	else if(D6 === 5) {
@@ -105,13 +105,13 @@ var D6 = Math.floor(Math.random() * 6) + 1;
 		$("#d6_6").hide();
 		$("#rollNumber").text("5");
 		$("#d6-btn").click(function() {
-			$("#d6_1").hide();
+			$("#d6_1").show();
 			$("#d6_2").hide();
 			$("#d6_3").hide();
 			$("#d6_4").hide();
-			$("#d6_5").show();
+			$("#d6_5").hide();
 			$("#d6_6").hide();
-			$("#rollNumber").text("5");
+			$("#rollNumber").text("1");
 		});
 	}
 	else if(D6 === 6) {
@@ -123,13 +123,13 @@ var D6 = Math.floor(Math.random() * 6) + 1;
 		$("#d6_6").show();
 		$("#rollNumber").text("6");
 		$("#d6-btn").click(function() {
-			$("#d6_1").hide();
+			$("#d6_1").show();
 			$("#d6_2").hide();
 			$("#d6_3").hide();
 			$("#d6_4").hide();
 			$("#d6_5").hide();
-			$("#d6_6").show();
-			$("#rollNumber").text("6");
+			$("#d6_6").hide();
+			$("#rollNumber").text("1");
 		});
 	}
 };
@@ -166,14 +166,14 @@ var D7 = Math.floor(Math.random() * 7) + 1;
 		$("#d7_7").hide();
 		$("#rollNumber").text("2");
 		$("#d7-btn").click(function() {
-			$("#d7_1").hide();
-			$("#d7_2").show();
+			$("#d7_1").show();
+			$("#d7_2").hide();
 			$("#d7_3").hide();
 			$("#d7_4").hide();
 			$("#d7_5").hide();
 			$("#d7_6").hide();
 			$("#d7_7").hide();
-			$("#rollNumber").text("2");
+			$("#rollNumber").text("1");
 		});
 	}
 	else if(D7 === 3) {
@@ -186,14 +186,14 @@ var D7 = Math.floor(Math.random() * 7) + 1;
 		$("#d7_7").hide();
 		$("#rollNumber").text("3");
 		$("#d7-btn").click(function() {
-			$("#d7_1").hide();
+			$("#d7_1").show();
 			$("#d7_2").hide();
-			$("#d7_3").show();
+			$("#d7_3").hide();
 			$("#d7_4").hide();
 			$("#d7_5").hide();
 			$("#d7_6").hide();
 			$("#d7_7").hide();
-			$("#rollNumber").text("3");
+			$("#rollNumber").text("1");
 		});
 	}
 	else if(D7 === 4) {
@@ -206,14 +206,14 @@ var D7 = Math.floor(Math.random() * 7) + 1;
 		$("#d7_7").hide();
 		$("#rollNumber").text("4");
 		$("#d7-btn").click(function() {
-			$("#d7_1").hide();
+			$("#d7_1").show();
 			$("#d7_2").hide();
 			$("#d7_3").hide();
-			$("#d7_4").show();
+			$("#d7_4").hide();
 			$("#d7_5").hide();
 			$("#d7_6").hide();
 			$("#d7_7").hide();
-			$("#rollNumber").text("4");
+			$("#rollNumber").text("1");
 		});
 	}
 	else if(D7 === 5) {
@@ -226,14 +226,14 @@ var D7 = Math.floor(Math.random() * 7) + 1;
 		$("#d7_7").hide();
 		$("#rollNumber").text("5");
 		$("#d7-btn").click(function() {
-			$("#d7_1").hide();
+			$("#d7_1").show();
 			$("#d7_2").hide();
 			$("#d7_3").hide();
 			$("#d7_4").hide();
-			$("#d7_5").show();
+			$("#d7_5").hide();
 			$("#d7_6").hide();
 			$("#d7_7").hide();
-			$("#rollNumber").text("5");
+			$("#rollNumber").text("1");
 		});
 	}
 	else if(D7 === 6) {
@@ -246,14 +246,14 @@ var D7 = Math.floor(Math.random() * 7) + 1;
 		$("#d7_7").hide();
 		$("#rollNumber").text("6");
 		$("#d7-btn").click(function() {
-			$("#d7_1").hide();
+			$("#d7_1").show();
 			$("#d7_2").hide();
 			$("#d7_3").hide();
 			$("#d7_4").hide();
 			$("#d7_5").hide();
-			$("#d7_6").show();
+			$("#d7_6").hide();
 			$("#d7_7").hide();
-			$("#rollNumber").text("6");
+			$("#rollNumber").text("1");
 		});
 	}
 	else if(D7 === 7) {
@@ -266,14 +266,14 @@ var D7 = Math.floor(Math.random() * 7) + 1;
 		$("#d7_7").show();
 		$("#rollNumber").text("7");
 		$("#d7-btn").click(function() {
-			$("#d7_1").hide();
+			$("#d7_1").show();
 			$("#d7_2").hide();
 			$("#d7_3").hide();
 			$("#d7_4").hide();
 			$("#d7_5").hide();
 			$("#d7_6").hide();
-			$("#d7_7").show();
-			$("#rollNumber").text("7");
+			$("#d7_7").hide();
+			$("#rollNumber").text("1");
 		});
 	}
 };
