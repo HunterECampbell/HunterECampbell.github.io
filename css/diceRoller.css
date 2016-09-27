@@ -51,7 +51,7 @@
 #diceChooser {
 	position: absolute;
 	width: 335px;
-	height: 495px;
+	height: 510px;
 	margin-top: -460px;
 	margin-left: 125px;
 	text-align: center;
@@ -151,6 +151,5 @@ img.bg {
 	  #diceChooser {
 		  margin: -200px auto;
 		  position: static;
-		  height: 520px;
 	  }
   }
