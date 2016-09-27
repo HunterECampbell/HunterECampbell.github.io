@@ -10404,7 +10404,7 @@ var roll = function() {
 	}
 };
 
-
+alert("Please forgive me for some of the images.  Some of the images are being improved and some are still being made.  Thank you for your patience and for rememering that the program still functions while the roller images are still under construction. I hope you enjoy!");
 $(document).ready(function() {
 	$("#roll").on("click", function() {
 		roll();
