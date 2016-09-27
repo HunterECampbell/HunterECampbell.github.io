@@ -7920,7 +7920,7 @@ $("#d4-btn").click(function() {
 	$("#rollNumber").text("1");
 	$("#d4_1").show();
 	$("#coin1").hide();
-	$("#coin1").hide();
+	$("#coin2").hide();
 	$("#d6_1").hide();
 	$("#d6_2").hide();
 	$("#d6_3").hide();
@@ -10405,7 +10405,7 @@ var roll = function() {
 };
 
 $(document).ready(function() {
-	alert("Please forgive me for some of the images.  Some of the images are being improved and some are still being made.  Thank you for your patience and for rememering that the program still functions while the roller images are still under construction. I hope you enjoy!");
+	alert("Please forgive me for some of the images.  Some of the images are being improved and some are still being made.  Thank you for your patience and for remembering that the program still functions while the roller images are still under construction. I hope you enjoy!");
 	$("#roll").on("click", function() {
 		roll();
 	});
