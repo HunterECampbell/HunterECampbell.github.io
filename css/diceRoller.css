@@ -113,15 +113,69 @@
 	position: relative;
 }
 
-body {
-	background: url("https://hcnureth.github.io/Images/diceRoller Pics/BackgroundImage/MountainScene.jpg") no-repeat center center fixed;
+#backImg {
+	height: 300px;
+	width: 550px;
+	display: block;
+	background-color: #cccccc;
+	border: solid black 2px;
+	border-radius: 7px;
+	text-align: center;
+	margin: -28em auto;
+	position: relative;
+	z-index: 100;
+}
+
+#backImg h1 {
+	text-decoration: underline;
+}
+
+#backTbl {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#backTbl div {
+	height: 185px;
+	width: 185px;
+	font-size: 30px;
+	border: solid black 2px;
+	border-radius: 7px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#backTbl div:hover {
+	cursor: pointer;
+	box-shadow: 3px 3px 3px #333333;
+}
+
+#backTbl p {
+	padding-top: 40px;
+}
+
+#spruce {
+	background: url("https:hcnureth.github.io/Images/diceRoller Pics/BackgroundImage/SpruceBerries.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
   	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
 }
+
+#mountain {
+	background: url("https:hcnureth.github.io/Images/diceRoller Pics/BackgroundImage/MountainScene.jpg") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
+}
+
 img.bg {
   	min-height: 100%;
     min-width: 1024px;
