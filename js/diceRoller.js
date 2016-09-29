@@ -1917,7 +1917,7 @@ var roll = function() {
 /*Background Image changer*/
 $("#spruce").click(function() {
 	$("#backImg").hide();
-	$("body").css({"background": "url('https://hcnureth.github.io/Images/diceRoller Pics/BackgroundImage/SpruceBerries.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'"});
+	$("body").css({"background": "url('https://hcnureth.github.io/Images/diceRoller Pics/BackgroundImage/SpruceBerries.JPG') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'"});
 });
 $("#mountain").click(function() {
 	$("#backImg").hide();
