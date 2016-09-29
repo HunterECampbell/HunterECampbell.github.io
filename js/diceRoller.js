@@ -1924,7 +1924,7 @@ $("#mountain").click(function() {
 	$("body").css({"background": "url('https://hcnureth.github.io/Images/diceRoller Pics/BackgroundImage/MountainScene.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'"});
 });
 
- 
+ alert("Please keep in mind that the current roller images are being remade and the absent ones are being made.  Thank you for your patience.");
 /*Where it all functions*/
 $(document).ready(function() {
 	$("#roll").on("click", function() {
