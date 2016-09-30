@@ -116,13 +116,11 @@
 #backImg {
 	height: 300px;
 	width: 550px;
-	display: block;
+	margin: 3em auto;
 	background-color: #cccccc;
 	border: solid black 2px;
 	border-radius: 7px;
 	text-align: center;
-	margin: -28em auto;
-	position: relative;
 	z-index: 100;
 }
 
@@ -176,6 +174,16 @@
 	background-attachment: scroll;
 }
 
+#ChangeBackImg {
+	right: 45px;
+	top: 30px;
+}
+
+#ChangeBackImg:hover {
+	background-color: rgba(255, 255, 255, .5);
+	cursor: pointer;
+}
+
 img.bg {
   	min-height: 100%;
     min-width: 1024px;
@@ -194,17 +202,25 @@ img.bg {
   
   @media (max-width: 1250px) {
 	  #back {
-		  margin: -130px auto;
+		  margin: -180px auto;
 	  }
 	  #scratch {
-		  margin: -75px auto;
+		  margin: -125px auto;
 	  }
 	  #d6 {
-		margin: 225px auto; 
+		margin-top: 275px; 
 	  }
 	  #diceChooser {
-		  margin: -200px auto;
+		  margin: -125px auto;
 		  position: static;
-		  height: 525px;
+	  }
+	  #backImg {
+		  margin-top: -4.4em;
+		  margin-left: 0;
+		  position: absolute;
+	  }
+	  #ChangeBackImg {
+		margin: 100px auto;
+		margin-right: 25px;
 	  }
   }
