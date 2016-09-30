@@ -213,6 +213,7 @@ img.bg {
 	  #diceChooser {
 		  margin: -125px auto;
 		  position: static;
+		  height: 510px;
 	  }
 	  #backImg {
 		  margin-top: -4.4em;
