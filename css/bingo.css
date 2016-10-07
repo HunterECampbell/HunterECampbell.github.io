@@ -15,6 +15,26 @@ table {
 	margin-top: 15px;
 }
 
+.top {
+	padding: 5px 45px;
+	border: solid red 3px;
+	font-size: 22px;
+	width: 250px;
+	margin-left: 25px;
+	position: absolute;
+}
+
+#back {
+	left: 8px;
+	top: 130px;
+	text-decoration: none;
+	color: black;
+}
+
+#back:hover {
+	background-color: rgba(255,0,0,.5);
+}
+
 #numDisplay {
 	margin: 30px 0;
 }
