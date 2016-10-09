@@ -1,5 +1,6 @@
 html, body {
 	text-align: center;
+	color: red;
 }
 
 /** {
@@ -15,24 +16,32 @@ table {
 	margin-top: 15px;
 }
 
+#title h1 {
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
 .top {
 	padding: 5px 45px;
-	border: solid red 3px;
+	background-color: rgba(255,255,255,.5);
+	border: solid white 3px;
 	font-size: 22px;
 	width: 250px;
 	margin-left: 25px;
 	position: absolute;
+	color: red;
 }
 
 #back {
 	left: 8px;
 	margin-top: -30px;
 	text-decoration: none;
-	color: black;
+	color: red;
 }
 
 #back:hover {
 	background-color: rgba(255,0,0,.5);
+	color: white;
 }
 
 #numDisplay {
@@ -50,15 +59,21 @@ table {
 #current p {
 	font-size: 20px;
 	margin-top: -65px;
+	color: white;
+	text-shadow: 1px 1px black;
 }
 
 #last p {
 	margin-top: -23px;
+	color: white;
+	text-shadow: 1px 1px black;
 }
 
 .numDh {
-	border: solid red 3px;
+	border: solid white 3px;
 	border-radius: 5px;
+	background-color: rgba(255,0,0,.5);
+	color: white;
 }
 
 #currenth {
@@ -81,7 +96,8 @@ table {
 }
 
 .btn {
-	border: solid red 3px;
+	border: solid white 3px;
+	background-color: rgba(255,255,255,.5);
 	margin: 0 auto;
 	width: 200px;
 	padding: 5px 0;
@@ -91,6 +107,7 @@ table {
 .btn:hover {
 	cursor: pointer;
 	background-color: rgba(255,0,0,.5);
+	color: white;
 }
 
 #resetBtn {
@@ -118,8 +135,9 @@ table {
 }
 
 #numbers p {
-	border: solid red 3px;
+	border: solid white 3px;
 	border-radius: 50%;
+	background-color: rgba(255,255,255,.5);
 	font-size: 25px;
 	padding-top: 15px;
 	height: 45px;
@@ -133,7 +151,7 @@ table {
 }
 
 html {
-	background: url("https://hcnureth.github.io/Images/Bingo/GrayWood2.jpg") no-repeat center center fixed;
+	background: url("https://hcnureth.github.io/Images/Bingo/WoodWithFlowers.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
