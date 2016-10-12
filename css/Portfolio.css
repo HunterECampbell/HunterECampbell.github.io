@@ -373,6 +373,141 @@ img.bg {
 	color: black;
 }
 
+.RPSdiv {
+	text-align: center;
+	color: white;
+	height: 20em;
+	width: 40em;
+	position: fixed;
+	border: solid 4px #336699;
+	border-radius: 25px;
+	background-color: #bfbfbf;
+	top: 10em;
+	left: 1em;
+	right: 1em;
+	margin: 0 auto;
+	z-index: 5;
+	display: none;
+}
+
+#RPS1 {
+	z-index: 6;
+}
+
+.RPSquit {
+	position: absolute;
+	right: .5em;
+	top: .4em;
+	width: 2.8em;
+	height: 2.8em;
+	border: solid 3px #bfbfbf;
+	border-radius: 50%;
+}
+
+.RPSquit:hover {
+	border: solid 3px white;
+	cursor: pointer;
+}
+
+.RPSquit p {
+	font-size: 20px;
+	vertical-align: middle;
+	margin-top: .15em;
+}
+
+#RPStop {
+	background-color: #336699;
+	height: 7em;
+	margin-top: -1.5em;
+	border-radius: 15px 15px 0 0;
+}
+
+#RPStop h2 {
+	padding-top: 1em;
+}
+
+.RPSbtn {
+	border: solid 4px #336699;
+	border-radius: 50%;
+	height: 9em;
+	width: 9em;
+	margin: 1.5em auto;
+}
+
+.RPSbtn:hover {
+	height: 10em;
+	width: 10em;
+	margin: 1.2em auto;
+	cursor: pointer;
+}
+
+#RPSrock {
+	background: url("https://hcnureth.github.io/Images/Portfolio Pics/Rocks.jpg") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
+}
+
+#RPSpaper {
+	background: url("https://hcnureth.github.io/Images/Portfolio Pics/Paper.jpg") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
+}
+
+#RPSscissors {
+	background: url("https://hcnureth.github.io/Images/Portfolio Pics/Scissors.jpg") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
+}
+
+#RPS2 h2 {
+	font-size: 45px;
+	padding-top: .48em;
+}
+
+.RPSbattleword {
+	background-color: black;
+	font-size: 30px;
+	height: 1.5em;
+	width: 5.88125em;
+	margin-top: 2.16875em;
+	margin-left: -2.7em;
+}
+
+#RPSuserword {
+	transform: rotate(-90deg);
+	border-radius: 23px 0 0 0;
+}
+
+#RPScompword {
+	transform: rotate(90deg);
+	margin-left: -2.66em;
+	border-radius: 0 23px 0 0;
+}
+
+.RPSbattleimg {
+	height: 9em;
+	width: 9em;
+	border: solid 4px #336699;
+	border-radius: 50%;
+	margin: 1.65em auto;
+	z-index: 5;
+}
+
 /*Supporting Section*/
 /*Focus area for my resume link*/
 .supporting {
