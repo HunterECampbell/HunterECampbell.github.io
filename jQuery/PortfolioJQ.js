@@ -19,6 +19,13 @@ var main = function() {
 		e.stopPropagation();
 	});
 	
+	$("#RPS").click(function() {
+		$(".RPSdiv").show();
+	});
+	$(".RPSquit").click(function() {
+		$(".RPSdiv").hide();
+	});
+	
 	/*$("#newsroom").mouseover(function() {
 		$(this).text("Please refresh page once.");
 		$(this).mouseleave(function() {
