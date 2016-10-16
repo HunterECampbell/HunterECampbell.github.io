@@ -135,7 +135,7 @@ html, body {
 
 @media (max-width: 60em) {
   .menu {
-    height: 6em;
+    height: 8.5em;
   }
   #aboutButton {
 	  margin-top: 1.5em;
