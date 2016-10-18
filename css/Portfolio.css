@@ -69,6 +69,10 @@ html, body {
 	border: solid black 1px;
 }
 
+#boot {
+	margin-left: -1em;
+}
+
 #aboutButton {
 	height: 3em;
 	width: 3em;
