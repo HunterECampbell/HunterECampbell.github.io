@@ -1,5 +1,6 @@
 
 /*Need to add cosmic currency img!!!!!*/
+/*managers btn flickers when p and autoclicker are going together*/
 
 
 var main = function() {
@@ -66,7 +67,7 @@ var main = function() {
 	$("#galaxyBtn").text("Cost: " + commaSeparateNumber(galaxyCost));
 	
 	var universe = 0;
-	var universeCost = 100000000;
+	var universeCost = 50000000;
 	$("#universeBtn").text("Cost: " + commaSeparateNumber(universeCost));
 	
 	
@@ -948,7 +949,7 @@ var main = function() {
 		btnUpdate();
 		//Calculates cost increase
 		if(galaxy > 0) {
-			galaxyCost = 10000000 + Math.pow(galaxy * 10000, 2);
+			galaxyCost = 10000000 + Math.pow(galaxy * 5000, 2);
 			$("#galaxyp").css("background-color", "rgba(102,0,102,.75)");
 			if(total < galaxyCost) {
 				$("#galaxyBtn").css("background-color", "rgba(255,255,255,.15)");
@@ -982,7 +983,7 @@ var main = function() {
 		btnUpdate();
 		//Calculates cost increase
 		if(universe > 0) {
-			universeCost = 10000000 + Math.pow(universe * 150000, 2);
+			universeCost = 50000000 + Math.pow(universe * 10000, 2);
 			$("#universep").css("background-color", "rgba(102,0,102,.75)");
 			if(total < universeCost) {
 				$("#universeBtn").css("background-color", "rgba(255,255,255,.15)");
@@ -1200,11 +1201,11 @@ var main = function() {
 	$("#solarBtnm").text("Cost: " + commaSeparateNumber(solarSystemCostm));
 	
 	var galaxym = 0;
-	var galaxyCostm = 100000000;
+	var galaxyCostm = 50000000;
 	$("#galaxyBtnm").text("Cost: " + commaSeparateNumber(galaxyCostm));
 	
 	var universem = 0;
-	var universeCostm = 500000000;
+	var universeCostm = 100000000;
 	$("#universeBtnm").text("Cost: " + commaSeparateNumber(universeCostm));
 	
 	
@@ -1644,7 +1645,7 @@ var main = function() {
 		btnUpdate();
 		//Calculates Cost Increase
 		if(solarSystemm > 0) {
-			solarSystemCostm = 10000000 + Math.pow(solarSystemm * 10000, 2);
+			solarSystemCostm = 10000000 + Math.pow(solarSystemm * 5000, 2);
 			$("#solarpm").css("background-color", "#cc00cc");
 			if(total < solarSystemCostm) {
 				$("#solarBtnm").css("background-color", "rgba(255,255,255,.15)");
@@ -1682,7 +1683,7 @@ var main = function() {
 		btnUpdate();
 		//Calculates Cost Increase
 		if(galaxym > 0) {
-			galaxyCostm = 100000000 + Math.pow(galaxym * 150000, 2);
+			galaxyCostm = 50000000 + Math.pow(galaxym * 7500, 2);
 			$("#galaxypm").css("background-color", "#cc00cc");
 			if(total < galaxyCostm) {
 				$("#galaxyBtnm").css("background-color", "rgba(255,255,255,.15)");
@@ -1720,7 +1721,7 @@ var main = function() {
 		btnUpdate();
 		//Calculates Cost Increase
 		if(universem > 0) {
-			universeCostm = 500000000 + Math.pow(universem * 1000000, 2);
+			universeCostm = 100000000 + Math.pow(universem * 10000, 2);
 			$("#universepm").css("background-color", "#cc00cc");
 			if(total < universeCostm) {
 				$("#universeBtnm").css("background-color", "rgba(255,255,255,.15)");
