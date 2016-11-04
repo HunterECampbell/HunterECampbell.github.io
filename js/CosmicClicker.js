@@ -115,7 +115,7 @@ var main = function() {
 			$("#managers").css("background-color", "rgba(255,255,255,.35)");
 		}
 		if(total >= spaceShipCost) {
-			$("#suitBtn").css("background-color", "rgba(51,51,51,.8)");
+			$("#shipBtn").css("background-color", "rgba(51,51,51,.8)");
 		}
 		if(total < spaceShipCost) {
 			$("#shipBtn").css("background-color", "rgba(255,255,255,.15)");
