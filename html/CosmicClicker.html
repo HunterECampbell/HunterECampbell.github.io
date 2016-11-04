@@ -1,0 +1,190 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<title>Cosmic Clicker</title>
+		<link rel="stylesheet" type="text/css" href="../css/CosmicClicker.css"/>
+		<link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	
+	<body>
+		<div id="background">
+			<div id="total">
+				<p id="clickNum"></p>
+				<p class="managersAvailable" id="telescopemAvailable">Telescope Managers Available!</p>
+				<p class="managersAvailable" id="rockmAvailable">Space Rock Managers Available!</p>
+				<p class="managersAvailable" id="suitmAvailable">Space Suit Managers Available!</p>
+				<p class="managersAvailable" id="shipmAvailable">Space Ship Managers Available!</p>
+				<p class="managersAvailable" id="satellitemAvailable">Satellite Managers Available!</p>
+				<p class="managersAvailable" id="meteormAvailable">Meteor Managers Available!</p>
+				<p class="managersAvailable" id="moonmAvailable">Moon Managers Available!</p>
+				<p class="managersAvailable" id="planetmAvailable">Planet Managers Available!</p>
+				<p class="managersAvailable" id="sunmAvailable">Sun Managers Available!</p>
+				<p class="managersAvailable" id="blackmAvailable">Black Hole Managers Available!</p>
+				<p class="managersAvailable" id="darkmAvailable">Dark Matter Managers Available!</p>
+				<p class="managersAvailable" id="solarmAvailable">Solar System Managers Available!</p>
+				<p class="managersAvailable" id="galaxymAvailable">Galaxy Managers Available!</p>
+				<p class="managersAvailable" id="universemAvailable">Universe Managers Available!</p>
+				<h1 id="totalNum">1</h1>
+			</div>
+			
+			<div id="items">
+				<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+					<div class="item" id="telescope">
+						<div class="btns" id="telescopeBtn"></div>
+						<p class="itemp" id="telescopep">Telescope: 0</p>
+					</div>
+					<div class="item" id="spaceRock">
+						<div class="btns" id="rockBtn"></div>
+						<p class="itemp" id="rockp">Space Rock: 0</p>
+					</div>
+					<div class="item" id="spaceSuit">
+						<div class="btns" id="suitBtn"></div>
+						<p class="itemp" id="suitp">Space Suit: 0</p>
+					</div>
+					<div class="item" id="spaceShip">
+						<div class="btns" id="shipBtn"></div>
+						<p class="itemp" id="shipp">Space Ship: 0</p>
+					</div>
+					<div class="item" id="satellite">
+						<div class="btns" id="satelliteBtn"></div>
+						<p class="itemp" id="satellitep">Satellite: 0</p>
+					</div>
+					<div class="item" id="meteor">
+						<div class="btns" id="meteorBtn"></div>
+						<p class="itemp" id="meteorp">Meteor: 0</p>
+					</div>
+					<div class="item" id="moon">
+						<div class="btns" id="moonBtn"></div>
+						<p class="itemp" id="moonp">Moon: 0</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+					<div class="item" id="planet">
+						<div class="btns" id="planetBtn"></div>
+						<p class="itemp" id="planetp">Planet: 0</p>
+					</div>
+					<div class="item" id="sun">
+						<div class="btns" id="sunBtn"></div>
+						<p class="itemp" id="sunp">Sun: 0</p>
+					</div>
+					<div class="item" id="blackHole">
+						<div class="btns" id="blackBtn"></div>
+						<p class="itemp" id="blackp">Black Hole: 0</p>
+					</div>
+					<div class="item" id="darkMatter">
+						<div class="btns" id="darkBtn"></div>
+						<p class="itemp" id="darkp">Dark Matter: 0</p>
+					</div>
+					<div class="item" id="solarSystem">
+						<div class="btns" id="solarBtn"></div>
+						<p class="itemp" id="solarp">Solar System: 0</p>
+					</div>
+					<div class="item" id="galaxy">
+						<div class="btns" id="galaxyBtn"></div>
+						<p class="itemp" id="galaxyp">Galaxy: 0</p>
+					</div>
+					<div class="item" id="universe">
+						<div class="btns" id="universeBtn"></div>
+						<p class="itemp" id="universep">Universe: 0</p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="bottom">
+				<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 bottomBtn" id="managers">Buy Managers</div>
+				<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 bottomBtn reset" id="reset2">Reset</div>
+			</div>
+		</div>
+		
+		<div id="managersdiv">
+				<h1>Managers</h1>
+				<div id="exit"><p id="x">X</p></div>
+				<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+					<div class="item" id="telescopem">
+						<div class="btns" id="telescopeBtnm"></div>
+						<div class="btns2" id="telescopeBtnm2">Maxed Out!</div>
+						<p class="itemp" id="telescopepm">Telescope: 0</p>
+					</div>
+					<div class="item" id="spaceRockm">
+						<div class="btns" id="rockBtnm"></div>
+						<div class="btns2" id="rockBtnm2">Maxed Out!</div>
+						<p class="itemp" id="rockpm">Space Rock: 0</p>
+					</div>
+					<div class="item" id="spaceSuitm">
+						<div class="btns" id="suitBtnm"></div>
+						<div class="btns2" id="suitBtnm2">Maxed Out!</div>
+						<p class="itemp" id="suitpm">Space Suit: 0</p>
+					</div>
+					<div class="item" id="spaceShipm">
+						<div class="btns" id="shipBtnm"></div>
+						<div class="btns2" id="shipBtnm2">Maxed Out!</div>
+						<p class="itemp" id="shippm">Space Ship: 0</p>
+					</div>
+					<div class="item" id="satellitem">
+						<div class="btns" id="satelliteBtnm"></div>
+						<div class="btns2" id="satelliteBtnm2">Maxed Out!</div>
+						<p class="itemp" id="satellitepm">Satellite: 0</p>
+					</div>
+					<div class="item" id="meteorm">
+						<div class="btns" id="meteorBtnm"></div>
+						<div class="btns2" id="meteorBtnm2">Maxed Out!</div>
+						<p class="itemp" id="meteorpm">Meteor: 0</p>
+					</div>
+					<div class="item" id="moonm">
+						<div class="btns" id="moonBtnm"></div>
+						<div class="btns2" id="moonBtnm2">Maxed Out!</div>
+						<p class="itemp" id="moonpm">Moon: 0</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+					<div class="item" id="planetm">
+						<div class="btns" id="planetBtnm"></div>
+						<div class="btns2" id="planetBtnm2">Maxed Out!</div>
+						<p class="itemp" id="planetpm">Planet: 0</p>
+					</div>
+					<div class="item" id="sunm">
+						<div class="btns" id="sunBtnm"></div>
+						<div class="btns2" id="sunBtnm2">Maxed Out!</div>
+						<p class="itemp" id="sunpm">Sun: 0</p>
+					</div>
+					<div class="item" id="blackHolem">
+						<div class="btns" id="blackBtnm"></div>
+						<div class="btns2" id="blackBtnm2">Maxed Out!</div>
+						<p class="itemp" id="blackpm">Black Hole: 0</p>
+					</div>
+					<div class="item" id="darkMatterm">
+						<div class="btns" id="darkBtnm"></div>
+						<div class="btns2" id="darkBtnm2">Maxed Out!</div>
+						<p class="itemp" id="darkpm">Dark Matter: 0</p>
+					</div>
+					<div class="item" id="solarSystemm">
+						<div class="btns" id="solarBtnm"></div>
+						<div class="btns2" id="solarBtnm2">Maxed Out!</div>
+						<p class="itemp" id="solarpm">Solar System: 0</p>
+					</div>
+					<div class="item" id="galaxym">
+						<div class="btns" id="galaxyBtnm"></div>
+						<div class="btns2" id="galaxyBtnm2">Maxed Out!</div>
+						<p class="itemp" id="galaxypm">Galaxy: 0</p>
+					</div>
+					<div class="item" id="universem">
+						<div class="btns" id="universeBtnm"></div>
+						<div class="btns2" id="universeBtnm2">Maxed Out!</div>
+						<p class="itemp" id="universepm">Universe: 0</p>
+					</div>
+				</div>
+			</div>
+			
+		<div id="win">
+			<h1>You Win!</h1>
+			<div id="finishBtns">
+				<div class="finishBtn" id="continue">Continue?</div>
+				<div class="finishBtn reset" id="reset">Reset?</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="../js/CosmicClicker.js"></script>
+	</body>
+</html>
