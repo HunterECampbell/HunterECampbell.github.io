@@ -1,0 +1,242 @@
+body {
+	background: url("../Images/CosmicClicker Pics/Nebula.jpg") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	text-align: center;
+}
+img.bg {
+  	min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  @media screen and (max-width: 1024px) {
+    img.bg {
+    	left: 50%;
+      margin-left: -512px;
+    }
+  }
+  
+#background {
+	margin: 2.3em auto;
+	width: 90%;
+	background-color: rgba(255,255,255,.35);
+	border-radius: 25px;
+}
+
+#totalNum {
+	color: white;
+	font-size: 100px;
+	text-shadow: 1.5px 1.5px black;
+}
+
+#clickNum {
+	color: #ffd700;
+	font-size: 35px;
+	text-shadow: 1px 1px black;
+	position: absolute;
+	width: 90%;
+	right: .75em;
+	display: none;
+}
+
+.managersAvailable {
+	color: #ffd700;
+	font-size: 30px;
+	text-shadow: 1px 1px black;
+	position: absolute;
+	margin-left: 1.5em;
+	margin-top: 1.75em;
+	display: none;
+}
+
+.item {
+	color: white;
+	text-shadow: 1px 1px black;
+	text-align: center;
+	background-color: rgba(255,255,255,.25);
+	border-radius: 7px;
+	height: 4.5em;
+	margin: 1em;
+}
+
+.btns {
+	float: left;
+	font-size: 20px;
+	padding: .855em 0;
+	height: 100%;
+	width: 40%;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	cursor: pointer;
+	background-color: rgba(255,255,255,.15);
+}
+
+.btns2 {
+	color: rgba(51,51,51,.8);
+	background-color: #ffd700;
+	text-shadow: 0px 0px;
+	float: left;
+	font-size: 20px;
+	padding: .855em 0;
+	height: 100%;
+	width: 40%;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	cursor: pointer;
+	border-right: solid black 1px;
+	display: none;
+}
+
+.btns, .itemp {
+	display: inline-block;
+}
+
+.itemp {
+	font-size: 30px;
+	text-align: left;
+	padding: .32em;
+	padding-left: .5em;
+	height: 100%;
+	width: 60%;
+	background-color: rgba(102,0,102,.25);
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	cursor: pointer;
+}
+
+#managers {
+	background-color: rgba(255,255,255,.35);
+	border-radius: 7px;
+	height: 2em;
+	width: 12em;
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 30px;
+	padding-top: .3em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	cursor: pointer;
+	left: 1em;
+}
+
+#managers:hover {
+	color: #cc00cc;
+}
+
+#reset2 {
+	background-color: rgba(255,255,255,.35);
+	border-radius: 7px;
+	height: 2em;
+	width: 12em;
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 30px;
+	padding-top: .3em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	cursor: pointer;
+	float: right;
+	right: 1em;
+	display: none;
+}
+
+#reset2:hover {
+	background-color: rgba(102,0,102,.75);
+}
+
+#managersdiv {
+	position: absolute;
+	background-color: black;
+	border: solid 4px #cc00cc;
+	border-radius: 15px;
+	width: 90%;
+	left: 5%;
+	margin-top: -.6em;
+	display: none;
+}
+
+#managersdiv h1 {
+	color: #cc00cc;
+	font-size: 50px;
+}
+
+#managersdiv .itemp {
+	background-color: rgba(204,0,204,.25) /*#cc00cc*/;
+}
+
+#managersdiv .btns {
+	border-right: solid black 1px;
+}
+
+#exit {
+	color: #cc00cc;
+	font-size: 25px;
+	position: absolute;
+	right: 1em;
+	top: .5em;
+	border: solid 3px #cc00cc;
+	border-radius: 50%;
+	width: 2em;
+	height: 2em;
+	cursor: pointer;
+}
+
+#exit:hover {
+	background-color: #cc00cc;
+	color: black;
+}
+
+#x {
+	padding-top: .216em;
+	padding-right: .025em;
+}
+
+#win {
+	position: fixed;
+	background-color: black;
+	color: #cc00cc;
+	width: 35em;
+	height: 15em;
+	border: solid #cc00cc 4px;
+	border-radius: 15px;
+	left: 50%;
+	margin-left: -17.5em;
+	display: none;
+}
+
+#win h1 {
+	font-size: 50px;
+}
+
+#finishBtns {
+	cursor: pointer;
+	margin-top: 2em;
+}
+
+.finishBtn {
+	display: inline-block;
+	border: solid #cc00cc 4px;
+	border-radius: 25px;
+	font-size: 20px;
+	width: 10em;
+	height: 2.5em;
+	padding-top: 6px;
+	margin: 0 10px;
+}
+
+.finishBtn:hover {
+	color: black;
+	background-color: #cc00cc;
+}
+
+#universem {
+	display: none;
+}
