@@ -1029,6 +1029,7 @@ var main = function() {
 	});
 	
 	//Universe
+	var universe2 = 0;
 	if(total >= universeCost) {
 		$("#universeBtn").css("background-color", "rgba(51,51,51,.8)");
 	}
@@ -1037,6 +1038,7 @@ var main = function() {
 			$("#universeBtn").fadeOut(100).fadeIn(100);
 			total = total - universeCost;
 			universe++;
+			universe2++;
 		}
 		btnUpdate();
 		managerBtnUpdate();
@@ -1064,10 +1066,11 @@ var main = function() {
 	});
 	
 	$("#universeBtn").click(function() {
-	if(universe === 1) {
+	if(universe === 1 && universe2 === 1) {
 		$("#win").show();
 	}
 	$("#continue").click(function() {
+		universe2++;
 		$("#universem").show();
 		$("#win").hide();
 		$("#reset2").show();
