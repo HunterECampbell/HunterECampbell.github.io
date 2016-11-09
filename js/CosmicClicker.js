@@ -1187,11 +1187,11 @@ var main = function() {
 		$("#galaxyBtnm").text("Cost: " + commaSeparateNumber(galaxyCostm));
 		universe = 0;
 		$("#universep").text("Universe: 0");
-		universeCost = 100000000;
+		universeCost = 50000000;
 		$("#universeBtn").text("Cost: " + commaSeparateNumber(universeCost));
 		universem = 0;
 		$("#universepm").text("Universe: 0");
-		universeCostm = 500000000;
+		universeCostm = 100000000;
 		$("#universeBtnm").text("Cost: " + commaSeparateNumber(universeCostm));
 		$(".itemp").css("background-color", "rgba(102,0,102,.25)");
 		$(".btns").css("background-color", "rgba(255,255,255,.15)");
