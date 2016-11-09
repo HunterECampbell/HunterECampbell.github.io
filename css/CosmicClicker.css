@@ -112,6 +112,10 @@ img.bg {
 	cursor: pointer;
 }
 
+#managersdiv .itemp {
+	cursor: auto;
+}
+
 #top {
 	margin-bottom: 10em;
 }
