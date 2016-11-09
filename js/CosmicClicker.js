@@ -1,6 +1,5 @@
 
 /*Need to add cosmic currency img!!!!!*/
-/*managers btn flickers when p and autoclicker are going together*/
 
 
 var main = function() {
@@ -518,6 +517,52 @@ var main = function() {
 		}
 	};
 	
+	//Update manager's btn color
+	var managerBtnUpdate = function() {
+		if(total >= telescopeCostm) {
+			$("#managers").css("background-color", "rgba(51,51,51,.8)");
+		}
+		if(total >= spaceRockCostm) {
+			$("#managers").css("background-color", "rgba(51,51,51,.8)");
+		}
+		if(total >= spaceSuitCostm) {
+			$("#managers").css("background-color", "rgba(51,51,51,.8)");
+		}
+		if(total >= spaceShipCostm) {
+			$("#managers").css("background-color", "rgba(51,51,51,.8)");
+		}
+		if(total >= satelliteCostm) {
+			$("#managers").css("background-color", "rgba(51,51,51,.8)");
+		}
+		if(total >= meteorCostm) {
+			$("#managers").css("background-color", "rgba(51,51,51,.8)");
+		}
+		if(total >= moonCostm) {
+			$("#managers").css("background-color", "rgba(51,51,51,.8)");
+		}
+		if(total >= planetCostm) {
+			$("#managers").css("background-color", "rgba(51,51,51,.8)");
+		}
+		if(total >= sunCostm) {
+			$("#managers").css("background-color", "rgba(51,51,51,.8)");
+		}
+		if(total >= blackHoleCostm) {
+			$("#managers").css("background-color", "rgba(51,51,51,.8)");
+		}
+		if(total >= darkMatterCostm) {
+			$("#managers").css("background-color", "rgba(51,51,51,.8)");
+		}
+		if(total >= solarSystemCostm) {
+			$("#managers").css("background-color", "rgba(51,51,51,.8)");
+		}
+		if(total >= galaxyCostm) {
+			$("#managers").css("background-color", "rgba(51,51,51,.8)");
+		}
+		if(total >= universeCostm) {
+			$("#managers").css("background-color", "rgba(51,51,51,.8)");
+		}
+	};
+	
 	$("body").click(function() {
 		managersAlert();
 	});
@@ -533,6 +578,7 @@ var main = function() {
 			telescope++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates cost increase
 		if(telescope > 0) {
 			telescopeCost = Math.pow(telescope, 2);
@@ -573,6 +619,7 @@ var main = function() {
 			spaceRock++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates cost increase
 		if(spaceRock > 0) {
 			spaceRockCost = 50 + Math.pow(spaceRock * 3, 2);
@@ -607,6 +654,7 @@ var main = function() {
 			spaceSuit++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates cost increase
 		if(spaceSuit > 0) {
 			spaceSuitCost = 500 + Math.pow(spaceSuit * 7, 2);
@@ -641,6 +689,7 @@ var main = function() {
 			spaceShip++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates cost increase
 		if(spaceShip > 0) {
 			spaceShipCost = 5000 + Math.pow(spaceShip * 15, 2);
@@ -675,6 +724,7 @@ var main = function() {
 			satellite++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates cost increase
 		if(satellite > 0) {
 			satelliteCost = 20000 + Math.pow(satellite * 25, 2);
@@ -709,6 +759,7 @@ var main = function() {
 			meteor++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates cost increase
 		if(meteor > 0) {
 			meteorCost = 75000 + Math.pow(meteor * 45, 2);
@@ -743,6 +794,7 @@ var main = function() {
 			moon++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates cost increase
 		if(moon > 0) {
 			moonCost = 150000 + Math.pow(moon * 85, 2);
@@ -777,6 +829,7 @@ var main = function() {
 			planet++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates cost increase
 		if(planet > 0) {
 			planetCost = 300000 + Math.pow(planet * 165, 2);
@@ -811,6 +864,7 @@ var main = function() {
 			sun++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates cost increase
 		if(sun > 0) {
 			sunCost = 600000 + Math.pow(sun * 270, 2);
@@ -845,6 +899,7 @@ var main = function() {
 			blackHole++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates cost increase
 		if(blackHole > 0) {
 			blackHoleCost = 1000000 + Math.pow(blackHole * 620, 2);
@@ -879,6 +934,7 @@ var main = function() {
 			darkMatter++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates cost increase
 		if(darkMatter > 0) {
 			darkMatterCost = 2500000 + Math.pow(darkMatter * 1180, 2);
@@ -913,6 +969,7 @@ var main = function() {
 			solarSystem++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates cost increase
 		if(solarSystem > 0) {
 			solarSystemCost = 5000000 + Math.pow(solarSystem * 2250, 2);
@@ -947,6 +1004,7 @@ var main = function() {
 			galaxy++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates cost increase
 		if(galaxy > 0) {
 			galaxyCost = 10000000 + Math.pow(galaxy * 5000, 2);
@@ -981,6 +1039,7 @@ var main = function() {
 			universe++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates cost increase
 		if(universe > 0) {
 			universeCost = 50000000 + Math.pow(universe * 10000, 2);
@@ -1217,6 +1276,7 @@ var main = function() {
 		total = total + telescope * 1;
 		$("#totalNum").text(commaSeparateNumber(total));
 		btnUpdate();
+		managerBtnUpdate();
 	};
 	$("#telescopeBtnm").click(function() {
 		if(total >= telescopeCostm) {
@@ -1225,6 +1285,7 @@ var main = function() {
 			telescopem++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates Cost Increase
 		if(telescopem > 0) {
 			telescopeCostm = 50 + Math.pow(telescopem * 3, 2);
@@ -1255,6 +1316,7 @@ var main = function() {
 		total = total + spaceRock * 3;
 		$("#totalNum").text(commaSeparateNumber(total));
 		btnUpdate();
+		managerBtnUpdate();
 	};
 	$("#rockBtnm").click(function() {
 		if(total >= spaceRockCostm) {
@@ -1263,6 +1325,7 @@ var main = function() {
 			spaceRockm++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates Cost Increase
 		if(spaceRockm > 0) {
 			spaceRockCostm = 500 + Math.pow(spaceRockm * 7, 2);
@@ -1293,6 +1356,7 @@ var main = function() {
 		total = total + spaceSuit * 7;
 		$("#totalNum").text(commaSeparateNumber(total));
 		btnUpdate();
+		managerBtnUpdate();
 	};
 	$("#suitBtnm").click(function() {
 		if(total >= spaceSuitCostm) {
@@ -1301,6 +1365,7 @@ var main = function() {
 			spaceSuitm++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates Cost Increase
 		if(spaceSuitm > 0) {
 			spaceSuitCostm = 5000 + Math.pow(spaceSuitm * 15, 2);
@@ -1331,6 +1396,7 @@ var main = function() {
 		total = total + spaceShip * 15;
 		$("#totalNum").text(commaSeparateNumber(total));
 		btnUpdate();
+		managerBtnUpdate();
 	};
 	$("#shipBtnm").click(function() {
 		if(total >= spaceShipCostm) {
@@ -1339,6 +1405,7 @@ var main = function() {
 			spaceShipm++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates Cost Increase
 		if(spaceShipm > 0) {
 			spaceShipCostm = 20000 + Math.pow(spaceShipm * 25, 2);
@@ -1369,6 +1436,7 @@ var main = function() {
 		total = total + satellite * 25;
 		$("#totalNum").text(commaSeparateNumber(total));
 		btnUpdate();
+		managerBtnUpdate();
 	};
 	$("#satelliteBtnm").click(function() {
 		if(total >= satelliteCostm) {
@@ -1377,6 +1445,7 @@ var main = function() {
 			satellitem++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates Cost Increase
 		if(satellitem > 0) {
 			satelliteCostm = 75000 + Math.pow(satellitem * 45, 2);
@@ -1407,6 +1476,7 @@ var main = function() {
 		total = total + meteor * 45;
 		$("#totalNum").text(commaSeparateNumber(total));
 		btnUpdate();
+		managerBtnUpdate();
 	};
 	$("#meteorBtnm").click(function() {
 		if(total >= meteorCostm) {
@@ -1415,6 +1485,7 @@ var main = function() {
 			meteorm++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates Cost Increase
 		if(meteorm > 0) {
 			meteorCostm = 150000 + Math.pow(meteorm * 85, 2);
@@ -1445,6 +1516,7 @@ var main = function() {
 		total = total + moon * 85;
 		$("#totalNum").text(commaSeparateNumber(total));
 		btnUpdate();
+		managerBtnUpdate();
 	};
 	$("#moonBtnm").click(function() {
 		if(total >= moonCostm) {
@@ -1453,6 +1525,7 @@ var main = function() {
 			moonm++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates Cost Increase
 		if(moonm > 0) {
 			moonCostm = 300000 + Math.pow(moonm * 165, 2);
@@ -1483,6 +1556,7 @@ var main = function() {
 		total = total + planet * 165;
 		$("#totalNum").text(commaSeparateNumber(total));
 		btnUpdate();
+		managerBtnUpdate();
 	};
 	$("#planetBtnm").click(function() {
 		if(total >= planetCostm) {
@@ -1491,6 +1565,7 @@ var main = function() {
 			planetm++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates Cost Increase
 		if(planetm > 0) {
 			planetCostm = 600000 + Math.pow(planetm * 270, 2);
@@ -1521,6 +1596,7 @@ var main = function() {
 		total = total + sun * 270;
 		$("#totalNum").text(commaSeparateNumber(total));
 		btnUpdate();
+		managerBtnUpdate();
 	};
 	$("#sunBtnm").click(function() {
 		if(total >= sunCostm) {
@@ -1529,6 +1605,7 @@ var main = function() {
 			sunm++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates Cost Increase
 		if(sunm > 0) {
 			sunCostm = 1000000 + Math.pow(sunm * 620, 2);
@@ -1559,6 +1636,7 @@ var main = function() {
 		total = total + blackHole * 620;
 		$("#totalNum").text(commaSeparateNumber(total));
 		btnUpdate();
+		managerBtnUpdate();
 	};
 	$("#blackBtnm").click(function() {
 		if(total >= blackHoleCostm) {
@@ -1567,6 +1645,7 @@ var main = function() {
 			blackHolem++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates Cost Increase
 		if(blackHolem > 0) {
 			blackHoleCostm = 2500000 + Math.pow(blackHolem * 1180, 2);
@@ -1597,6 +1676,7 @@ var main = function() {
 		total = total + darkMatter * 1180;
 		$("#totalNum").text(commaSeparateNumber(total));
 		btnUpdate();
+		managerBtnUpdate();
 	};
 	$("#darkBtnm").click(function() {
 		if(total >= darkMatterCostm) {
@@ -1605,6 +1685,7 @@ var main = function() {
 			darkMatterm++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates Cost Increase
 		if(darkMatterm > 0) {
 			darkMatterCostm = 5000000 + Math.pow(darkMatterm * 2250, 2);
@@ -1635,6 +1716,7 @@ var main = function() {
 		total = total + solarSystem * 2250;
 		$("#totalNum").text(commaSeparateNumber(total));
 		btnUpdate();
+		managerBtnUpdate();
 	};
 	$("#solarBtnm").click(function() {
 		if(total >= solarSystemCostm) {
@@ -1643,6 +1725,7 @@ var main = function() {
 			solarSystemm++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates Cost Increase
 		if(solarSystemm > 0) {
 			solarSystemCostm = 10000000 + Math.pow(solarSystemm * 5000, 2);
@@ -1673,6 +1756,7 @@ var main = function() {
 		total = total + galaxy * 10000;
 		$("#totalNum").text(commaSeparateNumber(total));
 		btnUpdate();
+		managerBtnUpdate();
 	};
 	$("#galaxyBtnm").click(function() {
 		if(total >= galaxyCostm) {
@@ -1681,6 +1765,7 @@ var main = function() {
 			galaxym++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates Cost Increase
 		if(galaxym > 0) {
 			galaxyCostm = 50000000 + Math.pow(galaxym * 7500, 2);
@@ -1711,6 +1796,7 @@ var main = function() {
 		total = total + universe * 150000;
 		$("#totalNum").text(commaSeparateNumber(total));
 		btnUpdate();
+		managerBtnUpdate();
 	};
 	$("#universeBtnm").click(function() {
 		if(total >= universeCostm) {
@@ -1719,6 +1805,7 @@ var main = function() {
 			universem++;
 		}
 		btnUpdate();
+		managerBtnUpdate();
 		//Calculates Cost Increase
 		if(universem > 0) {
 			universeCostm = 100000000 + Math.pow(universem * 10000, 2);
