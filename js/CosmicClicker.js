@@ -1079,7 +1079,7 @@ var main = function() {
 		$("#managersAvailable").css("color", "white");
 	});
 	$(".reset").click(function() {
-		total = 50000000;
+		total = 1;
 		$("#totalNum").text(commaSeparateNumber(total));
 		telescope = 0;
 		$("#telescopep").text("Telescope: 0");
