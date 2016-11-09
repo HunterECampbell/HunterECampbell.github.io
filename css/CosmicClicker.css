@@ -131,7 +131,7 @@ img.bg {
 }
 
 #managers:hover {
-	color: #cc00cc;
+	color: /*#cc00cc*/ yellow;
 }
 
 #reset2 {
