@@ -1071,6 +1071,8 @@ var main = function() {
 		$("#universem").show();
 		$("#win").hide();
 		$("#reset2").show();
+		$("#totalNum").css("color", "#ffd700");
+		$("#clickNum").css("color", "white");
 	});
 	$(".reset").click(function() {
 		total = 1;
@@ -1193,6 +1195,8 @@ var main = function() {
 		$("#win").hide();
 		$("#reset2").hide();
 		$("#universem").hide();
+		$("#totalNum").css("color", "white");
+		$("#clickNum").css("color", "#ffd700");
 	});
 	});
 	
