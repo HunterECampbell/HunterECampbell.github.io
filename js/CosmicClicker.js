@@ -1073,6 +1073,7 @@ var main = function() {
 		$("#reset2").show();
 		$("#totalNum").css("color", "#ffd700");
 		$("#clickNum").css("color", "white");
+		$("#managersAvailable").css("color", "white");
 	});
 	$(".reset").click(function() {
 		total = 1;
@@ -1197,6 +1198,7 @@ var main = function() {
 		$("#universem").hide();
 		$("#totalNum").css("color", "white");
 		$("#clickNum").css("color", "#ffd700");
+		$("#managersAvailable").css("color", "#ffd700");
 	});
 	});
 	
