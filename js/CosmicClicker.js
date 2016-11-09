@@ -251,7 +251,7 @@ var main = function() {
 			$("#galaxyBtnm").css("background-color", "#cc00cc");
 		}
 		if(total < galaxyCostm) {
-			$("#galaxyBtm").css("background-color", "rgba(255,255,255,.15)");
+			$("#galaxyBtnm").css("background-color", "rgba(255,255,255,.15)");
 			$("#managers").css("background-color", "rgba(255,255,255,.35)");
 		}
 		if(total >= universeCost) {
