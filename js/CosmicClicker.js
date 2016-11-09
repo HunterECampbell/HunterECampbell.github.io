@@ -1079,7 +1079,7 @@ var main = function() {
 		$("#managersAvailable").css("color", "white");
 	});
 	$(".reset").click(function() {
-		total = 1;
+		total = 50000000;
 		$("#totalNum").text(commaSeparateNumber(total));
 		telescope = 0;
 		$("#telescopep").text("Telescope: 0");
@@ -1183,9 +1183,10 @@ var main = function() {
 		$("#galaxyBtn").text("Cost: " + commaSeparateNumber(galaxyCost));
 		galaxym = 0;
 		$("#galaxypm").text("Galaxy: 0");
-		galaxyCostm = 100000000;
+		galaxyCostm = 50000000;
 		$("#galaxyBtnm").text("Cost: " + commaSeparateNumber(galaxyCostm));
 		universe = 0;
+		universe2 = 0;
 		$("#universep").text("Universe: 0");
 		universeCost = 50000000;
 		$("#universeBtn").text("Cost: " + commaSeparateNumber(universeCost));
@@ -1201,7 +1202,7 @@ var main = function() {
 		$("#universem").hide();
 		$("#totalNum").css("color", "white");
 		$("#clickNum").css("color", "#ffd700");
-		$("#managersAvailable").css("color", "#ffd700");
+		$(".managersAvailable").css("color", "#ffd700");
 	});
 	});
 	
