@@ -1198,14 +1198,28 @@ var main = function() {
 	
 	
 	//Managers
+	var managersBtn = 0;
 	$("#managers").click(function() {
-		$("#managersdiv").show();
+		managersBtn++;
+		if(managersBtn === 1) {
+			$("#managersdiv").show();
+		}
+		if(managersBtn === 0) {
+			$("#managersdiv").hide();
+			managersBtn = 0;
+		}
+		if(managersBtn > 1) {
+			$("#managersdiv").hide();
+			managersBtn = 0;
+		}
 	});
 	$("#exit").click(function() {
 		$("#managersdiv").hide();
+		managersBtn = 0;
 	});
 	$(document).click(function() {
 		$("#managersdiv").hide();
+		managersBtn = 0;
 	});
 	$("#managersdiv, #managers").click(function(e) {
 		e.stopPropagation();
