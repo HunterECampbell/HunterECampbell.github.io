@@ -1,3 +1,7 @@
+#Hunter Campbell
+#titanic exercise ggplot2 assignment
+#5/26/2017
+
 # titanic is avaliable in your workspace
 
 # Check out the structure of titanic
