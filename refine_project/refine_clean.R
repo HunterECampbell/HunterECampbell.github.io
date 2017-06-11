@@ -5,7 +5,7 @@ library("tidyr")
 library("dplyr")
 
 #load csv file
-refine_original <- read.csv("https://github.com/hcnureth/hcnureth.github.io/tree/master/refine_project/refine_original.csv")
+refine_original <- read.csv("https://github.com/hcnureth/hcnureth.github.io/blob/master/refine_project/refine_original.csv")
 
 #this was to alphabetize the company column
 refine_clean <- refine_original %>% arrange(company)
