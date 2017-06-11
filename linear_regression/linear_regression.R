@@ -139,7 +139,7 @@ coef(summary(sat.voting.mod))
 
 #####
 #loading in the states data
-states <- readRDS("C://Users//hcnur_000//Desktop//linear_regression//dataSets//states.rds")
+states <- readRDS("https://github.com//hcnureth//hcnureth.github.io//tree//master//linear_regression//dataSets//states.rds")
 
 #examining the data
 str(states)
