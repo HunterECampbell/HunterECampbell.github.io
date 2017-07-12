@@ -518,6 +518,13 @@ img.bg {
 	z-index: 5;
 }
 
+/*Data Science Section*/
+#dataScience {
+	border-top: black solid 1px;
+	height: 23em;
+	display: block;
+}
+
 /*Supporting Section*/
 /*Focus area for my resume link*/
 .supporting {
