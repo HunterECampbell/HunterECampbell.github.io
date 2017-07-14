@@ -19,6 +19,15 @@ body {
 	margin-top: -35px;
 }
 
+.supporting7 a {
+	color: blue;
+	text-decoration: none;
+}
+
+.supporting7 a:hover {
+	text-decoration: underline;
+}
+
 @media (max-width: 650px) {
 	.header address {
 		float: left;
