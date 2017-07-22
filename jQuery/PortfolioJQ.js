@@ -35,14 +35,45 @@ var main = function() {
 	
 	$("#more-btn").click(function() {
 		$(".more-websites").slideToggle("slow");
-		$(this).toggleClass("active");
-		if ($(this).text() == "Less...") {
-			$(this).text("More...");
-		}
-		else {
-			$(this).text("Less...");
-		};
+		$("#more-btn").hide();
+		$("#more-btn2").show();
 	});
+	$("#more-btn2").click(function() {
+		$(".more-websites").slideToggle("slow");
+		$("#more-btn").show();
+		$("#more-btn2").hide();
+	});
+	
+	/*$("#goblin").mouseenter(function() {
+		$("#goldSpan").css("color", "white");
+	});
+	$("#goblin").mouseleave(function() {
+		$("#goldSpan").css("color", "#FFD700");
+	});
+	$("#goblin").mouseenter(function() {
+		$("#goblinSpan").css("color", "white");
+	});
+	$("#goblin").mouseleave(function() {
+		$("#goblinSpan").css("color", "#41924b");
+	});
+	$("#RPS").mouseenter(function() {
+		$("#rockSpan").css("color", "white");
+	});
+	$("#RPS").mouseleave(function() {
+		$("#rockSpan").css("color", "brown");
+	});
+	$("#RPS").mouseenter(function() {
+		$("#scissorsSpan").css("color", "white");
+	});
+	$("#RPS").mouseleave(function() {
+		$("#scissorsSpan").css("color", "#7b9095");
+	});
+	$("#dragon").mouseenter(function() {
+		$("#dragonSpan").css("color", "white");
+	});
+	$("#dragon").mouseleave(function() {
+		$("#dragonSpan").css("color", "red");
+	});*/
 };
 
 $(document).ready(main);
