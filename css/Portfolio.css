@@ -134,7 +134,31 @@ html, body {
 	display: inline-block;
 	padding-right: 1em;
 	font-size: 1.2em;
-	margin-top: .75em;
+	margin-top: .8em;
+}
+
+.gmail:before {
+	content: "\f0e0";
+	font-family: FontAwesome;
+}
+#gmail1:hover, #gmail2:hover {
+	text-decoration: none;
+}
+
+.facebook:before {
+	content: "\f082";
+	font-family: FontAwesome;
+}
+#facebook1:hover, #facebook2:hover {
+	text-decoration: none;
+}
+
+.linkedin:before {
+	content: "\f08c";
+	font-family: FontAwesome;
+}
+#linkedin1:hover, #linkedin2:hover {
+	text-decoration: none;
 }
 
 @media (max-width: 60em) {
@@ -148,7 +172,7 @@ html, body {
 	  margin-top: 1.15em;
   }
   .about-menu {
-	  margin-top: 2.95em;
+	  margin-top: 2.9em;
   }
 }
 
@@ -161,7 +185,7 @@ html, body {
 	font-family: Times-New-Roman;
 	height: 20em;
 	margin-top: -1.4em;
-	background: url("https://hcnureth.github.io/Images/Portfolio Pics/greenLeaves.jpg") no-repeat center center fixed;
+	background: url("../Images/Portfolio Pics/greenLeaves.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -207,6 +231,18 @@ img.bg {
 	display: block;
 }
 
+#alert-box {
+	position: fixed;
+	display: none;
+	height: 35em;
+	width: 40em;
+	background-color: red;
+	color: white;
+	z-index: 1;
+	margin-left: 26.5em;
+	margin-top: -25em;
+}
+
 .web {
 	text-align: center;
 	color: black;
@@ -225,14 +261,14 @@ img.bg {
 
 .web-btn {
   display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
+	white-space: nowrap;
+	overflow: hidden;
   padding-top: .38em;
   padding-left: .4em;
   padding-right: .4em;
   height: 2.5em;
   margin: 0 auto;
-  width: 100%;
+  width: 100%; /*14em*/
   text-align: center;
   color: white;
   font-size: 1.5em;
@@ -240,14 +276,7 @@ img.bg {
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
   background: black;
-  -webkit-transition-property: color;
-  transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
@@ -262,18 +291,14 @@ img.bg {
   background: #336699;
   -webkit-transform: scale(0);
   transform: scale(0);
-  -webkit-transition-property: transform;
-  transition-property: transform;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
 }
-.web-btn:hover, .web-btn:focus, .web-btn:active {
+.web-btn:hover {
   color: white;
   text-decoration: none;
 }
-.web-btn:hover:before, .web-btn:focus:before, .web-btn:active:before {
+.web-btn:hover:before {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
@@ -293,16 +318,8 @@ img.bg {
 	padding-bottom: .25em;
 	text-align: center;
 	margin: 3.5em auto;
-  vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
@@ -320,25 +337,65 @@ img.bg {
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
   transform-origin: 50% 0;
-  -webkit-transition-property: transform;
-  transition-property: transform;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
 }
-#more-btn:hover, #more-btn:focus, #more-btn:active {
+#more-btn:hover {
   color: white;
   cursor: pointer;
 }
-#more-btn:hover:before, #more-btn:focus:before, #more-btn:active:before {
+#more-btn:hover:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+#more-btn2 {
+	display: none;
+	background-color: black;
+	cursor: pointer;
+	white-space: nowrap;
+	color: white;
+	font-size: 1.25em;
+	border: solid 2px #336699;
+	width: 7em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	text-align: center;
+	margin: 3.5em auto;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#more-btn2:before {
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #336699;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+#more-btn2:hover {
+  color: white;
+  cursor: pointer;
+}
+#more-btn2:hover:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
 
 /*More Websites Section*/
 .more-websites {
-	height: 35em;
+	height: 20em;
 	background-color: #bfbfbf;
 	font-family: Times-New-Roman;
 	border-top: solid black 1px;
@@ -373,6 +430,10 @@ img.bg {
 	margin-top: 4em;
 	margin-right: 4em;
 	margin-left: 4.9em;
+}
+
+.game-btn {
+	white-space: nowrap;
 }
 
 .game-btn:hover {
@@ -452,7 +513,7 @@ img.bg {
 }
 
 #RPSrock {
-	background: url("https://hcnureth.github.io/Images/Portfolio Pics/Rocks.jpg") no-repeat center center fixed;
+	background: url("../Images/Portfolio Pics/Rocks.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -463,7 +524,7 @@ img.bg {
 }
 
 #RPSpaper {
-	background: url("https://hcnureth.github.io/Images/Portfolio Pics/Paper.jpg") no-repeat center center fixed;
+	background: url("../Images/Portfolio Pics/Paper.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -474,7 +535,7 @@ img.bg {
 }
 
 #RPSscissors {
-	background: url("https://hcnureth.github.io/Images/Portfolio Pics/Scissors.jpg") no-repeat center center fixed;
+	background: url("../Images/Portfolio Pics/Scissors.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -533,7 +594,7 @@ img.bg {
 	text-align: center;
 	font-family: Times-New-Roman;
 	height: 15em;
-	background: url("https://hcnureth.github.io/Images/Portfolio Pics/swamp.jpg") no-repeat center center fixed;
+	background: url("../Images/Portfolio Pics/swamp.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -591,18 +652,13 @@ img.bg {
 #resumeButton {
   display: inline-block;
   border: #336699 solid 3px;
-  vertical-align: middle;
   white-space: nowrap;
+  overflow: hidden;
+  padding-left: .4em;
+  padding-right: .4em;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
   background: black;
-  -webkit-transition-property: color;
-  transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
@@ -617,17 +673,13 @@ img.bg {
   background: #336699;
   -webkit-transform: scale(0);
   transform: scale(0);
-  -webkit-transition-property: transform;
-  transition-property: transform;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
 }
-#resumeButton:hover, #resumeButton:focus, #resumeButton:active {
+#resumeButton:hover {
   color: white;
 }
-#resumeButton:hover:before, #resumeButton:focus:before, #resumeButton:active:before {
+#resumeButton:hover:before {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
@@ -657,7 +709,7 @@ img.bg {
 	color: black;
 	background-color: #bfbfbf;
 	font-family: Times-New-Roman;
-	height: 14.7em;
+	height: 12em;
 	display: block;
 }
 
@@ -668,4 +720,14 @@ img.bg {
 
 .footer li {
 	padding-top: .5em;
+}
+
+.icons {
+	display: inline-block;
+	margin-right: 1em;
+	font-size: 1.2em;
+}
+
+#bottomul {
+	margin-top: -1.9em;
 }
