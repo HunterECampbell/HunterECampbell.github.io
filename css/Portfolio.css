@@ -161,6 +161,16 @@ html, body {
 	text-decoration: none;
 }
 
+.github:before {
+	content: "\f09b";
+	font-family: FontAwesome;
+	height: 12px;
+	width: 12px;
+}
+#github1:hover, #github1:focus, #github1:active, #github2:hover, #github2:focus, #github2:active {
+	text-decoration: none;
+}
+
 @media (max-width: 60em) {
   .menu {
     height: 8.5em;
