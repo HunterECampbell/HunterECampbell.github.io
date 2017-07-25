@@ -80,7 +80,7 @@ html, body {
 	list-style-type: none;
 }
 
-#aboutButton:hover {
+#aboutButton:hover, #aboutButton:focus, #aboutButton:active {
 	background-color: #336699;
 	border-radius: 100%;
 	cursor: pointer;
@@ -107,7 +107,7 @@ html, body {
 	margin-right: .35em;
 }
 
-.ld:hover {
+.ld:hover, .ld:focus, .ld:active {
 	cursor: pointer;
 	background-color: #bfbfbf;
 }
@@ -141,7 +141,7 @@ html, body {
 	content: "\f0e0";
 	font-family: FontAwesome;
 }
-#gmail1:hover, #gmail2:hover {
+#gmail1:hover, #gmail1:focus, #gmail1:active, #gmail2:hover, #gmail2:focus, #gmail2:active {
 	text-decoration: none;
 }
 
@@ -149,7 +149,7 @@ html, body {
 	content: "\f082";
 	font-family: FontAwesome;
 }
-#facebook1:hover, #facebook2:hover {
+#facebook1:hover, #facebook1:focus, #facebook1:active, #facebook2:hover, #facebook2:focus, #facebook2:active {
 	text-decoration: none;
 }
 
@@ -157,7 +157,7 @@ html, body {
 	content: "\f08c";
 	font-family: FontAwesome;
 }
-#linkedin1:hover, #linkedin2:hover {
+#linkedin1:hover, #linkedin1:focus, #linkedin1:active, #linkedin2:hover, #linkedin2:focus, #linkedin2:active {
 	text-decoration: none;
 }
 
@@ -294,15 +294,15 @@ img.bg {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-.web-btn:hover {
+.web-btn:hover, .web-btn:focus, .web-btn:active {
   color: white;
   text-decoration: none;
 }
-.web-btn:hover:before {
+.web-btn:hover:before, .web-btn:focus:before, .web-btn:active:before {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-.web-btn a:hover {
+.web-btn a:hover, .web-btn a:focus, .web-btn a:active {
 	color: white;
 }
 
@@ -340,11 +340,11 @@ img.bg {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-#more-btn:hover {
+#more-btn:hover, #more-btn:focus, #more-btn:active {
   color: white;
   cursor: pointer;
 }
-#more-btn:hover:before {
+#more-btn:hover:before, #more-btn:focus:before, #more-btn:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
@@ -384,11 +384,11 @@ img.bg {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-#more-btn2:hover {
+#more-btn2:hover, #more-btn2:focus, #more-btn2:active {
   color: white;
   cursor: pointer;
 }
-#more-btn2:hover:before {
+#more-btn2:hover:before, #more-btn2:focus:before, #more-btn2:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
@@ -436,11 +436,11 @@ img.bg {
 	white-space: nowrap;
 }
 
-.game-btn:hover {
+.game-btn:hover, .game-btn:focus, .game-btn:active {
 	cursor: pointer;
 }
 
-.game-btn:hover span {
+.game-btn:hover span, .game-btn:focus span, .game-btn:active span {
 	color: black;
 }
 
@@ -475,7 +475,7 @@ img.bg {
 	border-radius: 50%;
 }
 
-.RPSquit:hover {
+.RPSquit:hover, .RPSquit:focus, .RPSquit:active {
 	border: solid 3px white;
 	cursor: pointer;
 }
@@ -505,7 +505,7 @@ img.bg {
 	margin: 1.5em auto;
 }
 
-.RPSbtn:hover {
+.RPSbtn:hover, .RPSbtn:focus, .RPSbtn:active {
 	height: 10em;
 	width: 10em;
 	margin: 1.2em auto;
@@ -644,7 +644,7 @@ img.bg {
 	padding-left: 2.9em;
 }
 
-.supporting a:hover {
+.supporting a:hover, .supporting a:focus, .supporting a:active {
 	color: white;
 	text-decoration: none;
 }
@@ -676,14 +676,14 @@ img.bg {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-#resumeButton:hover {
+#resumeButton:hover, #resumeButton:focus, #resumeButton:active {
   color: white;
 }
-#resumeButton:hover:before {
+#resumeButton:hover:before, #resumeButton:focus:before, #resumeButton:active:before {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-#resumeButton a:hover {
+#resumeButton a:hover, #resumeButton a:focus, #resumeButton a:active {
 	color: white;
 }
 
@@ -691,15 +691,15 @@ img.bg {
 	color: black;
 }
 
-.resume:hover {
+.resume:hover, .resume:focus, .resume:active {
 	text-decoration: underline;
 }
 
-.resume1:hover {
+.resume1:hover, .resume1:focus, .resume1:active {
 	color: #336699;
 }
 
-.resume2:hover {
+.resume2:hover, .resume2:focus, .resume2:active {
 	color: #336699;
 }
 
