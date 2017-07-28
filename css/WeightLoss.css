@@ -3,7 +3,7 @@
 }*/
 
 /*MOBILE PHONES START*/
-@media only screen and (max-width: 479) {
+@media only screen and (min-width: 0) {
 /*SECTION 1*/
 #section1 {
 	background: rgba(0, 0, 0, .8);
