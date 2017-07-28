@@ -3,7 +3,7 @@
 }*/
 
 /*MOBILE PHONES START*/
-@media only screen and (min-width: 0) {
+@media only screen and (max-width: 479) {
 /*SECTION 1*/
 #section1 {
 	background: rgba(0, 0, 0, .8);
@@ -153,7 +153,6 @@ form {
 	height: 30em;
 	color: white;
 	font-family: Roboto;
-	margin-top: -16em;
 	background: url("https://hcnureth.github.io/Images/iFit/header.png") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
