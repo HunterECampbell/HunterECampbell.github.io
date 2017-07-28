@@ -1213,6 +1213,8 @@ form {
 	position: absolute;
 	margin-top: -1px;
 	font-family: FontAwesome;
+	font-size: 18px;
+	margin-top: -4px;
 }
 #search:hover {
 	cursor: pointer;
