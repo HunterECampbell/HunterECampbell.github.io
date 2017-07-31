@@ -185,7 +185,7 @@ body {
 #row4 {
 	font-family: Roboto;
 	color: #595959;
-	height: 260em;
+	height: 261em;
 }
 #row4p1 {
 	font-size: 26px;
@@ -272,7 +272,6 @@ body {
 	font-family: Roboto;
 	color: white;
 	padding-top: 2em;
-	padding-bottom: 2em;
 }
 .row5spans {
 	color: #008ae6;
