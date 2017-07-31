@@ -57,7 +57,7 @@ var main = function() {
 				$("#row3row4").hide("slow");
 				$("#viewmore").hide("slow");
 			}
-			if($(this).scrollTop() > 1400) {
+			if($(this).scrollTop() > 1250) {
 				$("#row6h1").css({"animation": "2s slide-right", "-webkit-animation": "2s slide-right"}).show();
 				$("#join").show();
 			}
@@ -88,7 +88,7 @@ var main = function() {
 				$("#row3row4").hide("slow");
 				$("#viewmore").hide("slow");
 			}
-			if($(this).scrollTop() > 2300) {
+			if($(this).scrollTop() > 2200) {
 				$("#row6h1").css({"animation": "2s slide-right", "-webkit-animation": "2s slide-right"}).show();
 				$("#join").show();
 			}
@@ -118,7 +118,7 @@ var main = function() {
 				$("#row3row4").hide("slow");
 				$("#viewmore").hide("slow");
 			}
-			if($(this).scrollTop() > 4200) {
+			if($(this).scrollTop() > 4100) {
 				$("#row6h1").css({"animation": "2s slide-right", "-webkit-animation": "2s slide-right"}).show();
 				$("#join").show();
 			}
