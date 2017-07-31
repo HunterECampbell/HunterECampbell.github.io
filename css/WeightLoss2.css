@@ -22,15 +22,15 @@ body {
 #background {
 	padding: 0;
 	max-width: 100%;
-	height: auto;
+	height: 40em;
 	background: url("https://hcnureth.github.io/Images/iFit/header.png") no-repeat center center fixed;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+  	-webkit-background-size: content;
+  	-moz-background-size: content;
+  	-o-background-size: content;
+  	background-size: content;
   	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-	background-position: 0 -6em;
+	background-position: -12em -11.5em;
 }
 
 
@@ -170,6 +170,7 @@ body {
 #row3div1 {
 	position: relative;
 	color: white;
+	margin-top: 50%;
 }
 #row3div1 h1 {
 	font-size: 20px;
@@ -271,6 +272,7 @@ body {
 	font-family: Roboto;
 	color: white;
 	padding-top: 2em;
+	padding-bottom: 2em;
 }
 .row5spans {
 	color: #008ae6;
@@ -281,7 +283,7 @@ body {
 #quotemarks {
 	font-size: 100px;
 	font-family: none;
-	letter-spacing: -7px;
+	letter-spacing: -14px;
 	position: absolute;
 	margin-left: -25px;
 	margin-top: -55px;
@@ -503,7 +505,7 @@ body {
 .col-m-12 {width: 100%;}
 
 #background {
-	background-position: 0 -6em;
+	background-position: -3em -11.5em;
 }
 
 .imgp1 {
@@ -512,6 +514,9 @@ body {
 
 #row3 {
 	height: 17.5em;
+}
+#row3div1 {
+	margin-top: 35%;
 }
 #row3div1 h1 {
 	font-size: 24px;
@@ -542,14 +547,14 @@ body {
 .col-12 {width: 100%;}
 
 #background {
-	background-position: 0 -11em;
+	background-position: 0 -11.5em;
 }
 
 #row3 {
 	height: 30em;
 }
 #row3div1 {
-	padding-top: 17%;
+	margin-top: 20%;
 	padding-left: 9%;
 }
 #row3div1 h1 {
@@ -571,7 +576,7 @@ body {
 }
 #quotemarks {
 	font-size: 150px;
-	letter-spacing: -11px;
+	letter-spacing: -22px;
 	margin-left: -80px;
 	margin-top: -50px;
 }
