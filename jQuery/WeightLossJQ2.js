@@ -43,7 +43,7 @@ var main = function() {
 			else {
 				$("#row1row4").hide("slow");
 			}
-			if($(this).scrollTop() > 350) {
+			if($(this).scrollTop() > 400) {
 				$("#row2row4").show("slow");
 			}
 			else {
