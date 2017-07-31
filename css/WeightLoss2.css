@@ -547,10 +547,6 @@ body {
 
 #background {
 	background-position: 0 -11.5em;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
 }
 
 #row3 {
@@ -591,5 +587,14 @@ body {
 #row3div1 {
 	padding-top: 3%;
 	padding-left: 9%;
+}
+}
+@media only screen and (min-width: 1600px) {
+#background {
+	background-position: 0 -11.5em;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 }
