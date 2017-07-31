@@ -283,7 +283,7 @@ body {
 #quotemarks {
 	font-size: 100px;
 	font-family: none;
-	letter-spacing: -14px;
+	letter-spacing: -7px;
 	position: absolute;
 	margin-left: -25px;
 	margin-top: -55px;
@@ -576,7 +576,7 @@ body {
 }
 #quotemarks {
 	font-size: 150px;
-	letter-spacing: -22px;
+	letter-spacing: -11px;
 	margin-left: -80px;
 	margin-top: -50px;
 }
