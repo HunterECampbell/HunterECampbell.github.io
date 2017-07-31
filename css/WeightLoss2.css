@@ -547,6 +547,10 @@ body {
 
 #background {
 	background-position: 0 -11.5em;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 
 #row3 {
