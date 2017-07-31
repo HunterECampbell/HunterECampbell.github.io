@@ -71,7 +71,7 @@ body {
 	left: 0;
 	right: 100%;
 	bottom: 0;
-	background: rgb(255, 255, 255);
+	background: #008ae6;
 	height: 2px;
 	-webkit-transition-duration: .2s;
 	-moz-transition-duration: .2s;
