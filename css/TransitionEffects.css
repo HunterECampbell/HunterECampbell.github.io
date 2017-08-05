@@ -19,11 +19,11 @@
 
 /*MAIN CONTENT STRUCTURE APPEARANCE*/
 body {
-	padding: 2em 4em 4em 4em;
+	padding: 1em;
 }
 
 .row {
-	padding-left: .75em;
+	padding-right: 1.25em;
 }
 
 h1 {
@@ -3901,10 +3901,6 @@ h1 {
 .col-m-10 {width: 83.33%;}
 .col-m-11 {width: 91.66%;}
 .col-m-12 {width: 100%;}
-
-.toprows {
-	padding-left: 5em;
-}
 }
 
 
@@ -3923,11 +3919,15 @@ h1 {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+body {
+	padding: 2em 4em 4em 4em;
+}
+
 .row {
 	padding-left: 10em;
 }
 
 #iconbuzzout, #boxshadowinset, #underlinefromright, #backward {
-	margin-left: 12.5em;
+	margin-left: 11.5em;
 }
 }
