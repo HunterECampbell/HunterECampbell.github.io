@@ -2822,7 +2822,7 @@ h1 {
   font-family: FontAwesome;
 }
 #iconfloataway:after {
-	margin-left: .425em;
+	margin-left: 1em;
   opacity: 0;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
@@ -2869,7 +2869,7 @@ h1 {
 }
 #iconsinkaway:after {
   opacity: 0;
-	margin-left: .94em;
+	margin-left: .85em;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
@@ -3932,10 +3932,18 @@ body {
 }
 	
 #iconfloataway:after {
-	margin-left: .38em;
+	margin-left: .5em;
 }
 	
 #iconsinkaway:after {
-	margin-left: .4em;
+	margin-left: .5em;
+}
+
+#iconwobblevertical:before {
+	margin-left: 10.5em;
+}
+
+#iconwobblehorizontal:before {
+	margin-left: 11.75em;
 }
 }
