@@ -19,6 +19,7 @@
 /*MAIN CONTENT STRUCTURE APPEARANCE*/
 body {
 	padding: 2em 4em 4em 4em;
+	background: blue;
 }
 
 .row {
