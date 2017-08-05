@@ -2822,7 +2822,6 @@ h1 {
   font-family: FontAwesome;
 }
 #iconfloataway:after {
-	margin-left: .375em;
   opacity: 0;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
@@ -2869,7 +2868,6 @@ h1 {
 }
 #iconsinkaway:after {
   opacity: 0;
-	margin-left: .44em;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
@@ -3441,7 +3439,7 @@ h1 {
 #iconwobblevertical:before {
 	content: "\f062";
 	position: absolute;
-	margin-left: 10.5em;
+	margin-left: 10em;
 	padding: 0 1px;
 	font-family: FontAwesome;
 	-webkit-transform: translateZ(0);
@@ -3520,7 +3518,7 @@ h1 {
 #iconwobblehorizontal:before {
 	content: "\f061";
 	position: absolute;
-	margin-left: 11.75em;
+	margin-left: 11.25em;
 	padding: 0 1px;
 	font-family: FontAwesome;
 	-webkit-transform: translateZ(0);
