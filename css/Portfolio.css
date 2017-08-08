@@ -22,7 +22,7 @@ body {
 	padding: 0 1em;
 }
 #background {
-	background: url("../Images/Portfolio Pics/StreamOverStone.jpg") no-repeat center center fixed;
+	background: url("https://hcnureth.github.io/Images/Portfolio Pics/StreamOverStone.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	background-size: cover;
@@ -328,7 +328,7 @@ body {
 #row8background {
 	padding: 0;
 	margin: 0;
-	background: url("../Images/Portfolio Pics/StreamWithBoat.jpg") no-repeat center center fixed;
+	background: url("https://hcnureth.github.io/Images/Portfolio Pics/StreamWithBoat.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	background-size: cover;
