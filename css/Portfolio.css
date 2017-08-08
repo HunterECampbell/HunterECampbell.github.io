@@ -1,337 +1,250 @@
-html, body {
+* {
+	box-sizing: border-box;
+}
+
+body {
 	margin: 0;
+}
+
+/*Phones*/
+[class*="col-"] {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.row {
+	padding: 0 1em;
+}
+#background {
+	background: url("../Images/Portfolio Pics/StreamOverStone.jpg") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+
+
+/*Row 1*/
+#row1 {
+	background: rgba(51, 153, 255, .7);
+}
+#row1 p {
+	display: inline-block;
+	color: white;
+}
+#portfoliotitle {
+	font-size: 30px;
+}
+#quote {
+	text-align: right;
+	float: right;
+	font-size: 20px;
+}
+
+
+/*Row 2*/
+#row2 {
+	background: rgba(255, 255, 255, .7);
+}
+#row2 * {
+	display: inline-block;
+	text-decoration: none;
+}
+#aboutme {
+	font-size: 18px;
+}
+#aboutme:before {
+	content: "\f0c9";
+	font-family: FontAwesome;
+	font-size: 18px;
+	-webkit-transition-duration: .25s;
+	-moz-transition-duration: .25s;
+	transition-duration: .25s;
+	margin-right: 10px;
+}
+#aboutme:hover {
+	cursor: pointer;
+}
+#aboutme:hover:before, #aboutme:hover:active, #aboutme:hover:focus {
+	color: #3366ff;
+}
+#aboutmenu {
+	background: rgba(51, 153, 255, .7);
+	border: solid 2px rgba(51, 153, 255, .1);
+	position: absolute;
+	display: none;
+}
+#aboutmenu * {
+	display: block;
+}
+#row2ul1 {
 	padding: 0;
 }
-
-/** {
-	border: dotted blue 1px;
-}*/
-
-/*Header Section*/
-.header {
-	background-color: black;
-	color: white;
-	font-family: Times-New-Roman;
-	display: block;
+#languages {
+	margin-top: -10px;
 }
-
-.header ul {
-	list-style-type: none;
+#enjoy {
+	margin-bottom: -10px;
 }
-
-#hpHeader {
-	padding-left: 2em;
-	padding-bottom: .45em;
+#row2ul22 {
+	padding-top: 10px;
 }
-
-#quote {
-	float: right;
-	margin-right: 3.55em;
-	margin-top: 1.4em;
+.row2li1 {
+	padding: 5px 10px;
 }
-
-#quotePerson {
-	float: right;
-}
-
-/*Menu Section*/
-/*Has a pull down about me and links to my email, facebook, and resume*/
-.menu {
-	background-color: #bfbfbf;
-	color: black;
-	font-family: Times-New-Roman;
-	height: 3.5em;
-	display: block;
-}
-
-.menu img {
-	height: 2.5em;
-	width: 2.5em;
-	margin-top: .27em;
-	margin-left: .25em;
-}
-
-.about {
-	height: 2.5em;
-	margin-left: -.8em;
-}
-
-.about-menu {
-	display: none;
-	color: black;
-	width: 10em;
-	background-color: #336699;
-	z-index: 1;
-	position: absolute;
-	margin-top: .25em;
-	margin-left: -.3em;
-	padding-bottom: .5em;
-	border: solid black 1px;
-}
-
-#boot {
-	margin-left: -1em;
-}
-
-#aboutButton {
-	height: 3em;
-	width: 3em;
-	margin-top: .28em;
-	list-style-type: none;
-}
-
-#aboutButton:hover, #aboutButton:focus, #aboutButton:active {
-	background-color: #336699;
-	border-radius: 100%;
+.row2li1:hover, .row2li1:focus, .row2li1:active {
 	cursor: pointer;
+	background: white;
 }
-
-#pl-menu, #TIE-menu, #pl, #TIE, #unknown {
-	list-style-type: none;
+.row2ul2 {
+	padding-left: 20px;
 }
-
-#pl {
-	margin-top: .4em;
+.row2ul2 li {
+	padding: 1.5px;
 }
-
-.ld-menu {
-	display: none;
-	margin-left: -3em;
+#row2ul21 {
+	padding-bottom: 3px;
 }
-
-.ld {
-	margin-left: -2.5em;
-	padding-top: .25em;
-	padding-bottom: .25em;
-	padding-left: .3em;
-	margin-right: .35em;
-}
-
-.ld:hover, .ld:focus, .ld:active {
-	cursor: pointer;
-	background-color: #bfbfbf;
-}
-
-#about1 {
-	width: 3.75em;
-}
-
-#about2 {
-	font-size: 22.25px;
-	list-style-type: none;
-}
-
-#about2 p {
-	margin-top: .4em;
-}
-
-#links {
+.row2right {
 	float: right;
-	padding-right: 2em;
+	margin-left: 15px;
+	color: black;
+	-webkit-transition-duration: .25s;
+	-moz-transition-duration: .25s;
+	transition-duration: .25s;
+	font-size: 18px;
+	margin-top: 18px;
 }
-
-.links {
-	display: inline-block;
-	padding-right: 1em;
-	font-size: 1.2em;
-	margin-top: .8em;
+.row2right:hover, .row2right:active, .row2right:focus {
+	cursor: pointer;
+	color: #3366ff;
 }
-
-.gmail:before {
-	content: "\f0e0";
-	font-family: FontAwesome;
+.icons {
+	font-size: 18px;
 }
-#gmail1:hover, #gmail1:focus, #gmail1:active, #gmail2:hover, #gmail2:focus, #gmail2:active {
-	text-decoration: none;
-}
-
-.facebook:before {
-	content: "\f082";
-	font-family: FontAwesome;
-}
-#facebook1:hover, #facebook1:focus, #facebook1:active, #facebook2:hover, #facebook2:focus, #facebook2:active {
-	text-decoration: none;
-}
-
-.linkedin:before {
-	content: "\f08c";
-	font-family: FontAwesome;
-}
-#linkedin1:hover, #linkedin1:focus, #linkedin1:active, #linkedin2:hover, #linkedin2:focus, #linkedin2:active {
-	text-decoration: none;
-}
-
 .github:before {
 	content: "\f09b";
 	font-family: FontAwesome;
 }
-#github1:hover, #github1:focus, #github1:active, #github2:hover, #github2:focus, #github2:active {
+.linkedin:before {
+	content: "\f0e1";
+	font-family: FontAwesome;
+}
+.facebook:before {
+	content: "\f09a";
+	font-family: FontAwesome;
+}
+.gmail:before {
+	content: "\f0e0";
+	font-family: FontAwesome;
+}
+
+
+/*Row 3*/
+#row3 {
+	text-align: center;
+	padding-top: 8em;
+	padding-bottom: 8em;
+	color: white;
+	background: rgba(0, 0, 0, .2);
+}
+#row3title {
+	font-size: 40px;
+	margin-top: 0;
+}
+#row3subtitle {
+	font-size: 20px;
+	margin-top: -1.5em;
+}
+
+
+/*Row 4*/
+#row4 {
+	padding: 3em 0;
+	border-bottom: solid 2px #3366ff;
+}
+.titles {
+	font-size: 32px;
+	text-align: center;
+}
+.buttons {
 	text-decoration: none;
-}
-
-@media (max-width: 60em) {
-  .menu {
-    height: 8.5em;
-  }
-  #aboutButton {
-	  margin-top: 2.6em;
-  }
-  #about2 {
-	  margin-top: 1.15em;
-  }
-  .about-menu {
-	  margin-top: 2.9em;
-  }
-}
-
-/*Main Section*/
-/*Introduces the website*/
-.main {
-	color: white;
-	margin: auto;
-	text-align: center;
-	font-family: Times-New-Roman;
-	height: 20em;
-	margin-top: -1.4em;
-	background: url("https://hcnureth.github.io/Images/Portfolio Pics/greenLeaves.jpg") no-repeat center center fixed;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-	background-attachment: scroll;
-	display: block;
-}
-img.bg {
-  	min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  @media screen and (max-width: 1024px) {
-    img.bg {
-    	left: 50%;
-      margin-left: -512px;
-    }
-  }
-
-.main h1 {
-	font-size: 3.5em;
-	padding-top: 1.6em;
-}
-
-.main p {
-	font-size: 1.65em;
-	margin-top: .5em;
-}
-
-/*Main Section for Websites*/
-/*Has six websites and a pulldown button for more websites*/
-.mainWeb {
-	background-color: #bfbfbf;
-	font-family: Times-New-Roman;
-	height: 35em;
-	margin-top: -1.39em;
-	display: block;
-}
-
-#alert-box {
-	position: fixed;
-	display: none;
-	height: 35em;
-	width: 40em;
-	background-color: red;
-	color: white;
-	z-index: 1;
-	margin-left: 26.5em;
-	margin-top: -25em;
-}
-
-.web {
-	text-align: center;
+	font-size: 20px;
 	color: black;
-	padding-top: 1.5em;
-}
-
-.mainWeb .row {
-	margin-top: 4em;
-	margin-right: 4em;
-	margin-left: 4.9em;
-}
-
-.mainWeb .container {
-	margin: auto;
-}
-
-.web-btn {
-  display: inline-block;
-	white-space: nowrap;
-	overflow: hidden;
-  padding-top: .38em;
-  padding-left: .4em;
-  padding-right: .4em;
-  height: 2.5em;
-  margin: 0 auto;
-  width: 100%; /*14em*/
-  text-align: center;
-  color: white;
-  font-size: 1.5em;
-  border: #336699 solid 3px;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  background: black;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.web-btn:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #336699;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-}
-.web-btn:hover, .web-btn:focus, .web-btn:active {
-  color: white;
-  text-decoration: none;
-}
-.web-btn:hover:before, .web-btn:focus:before, .web-btn:active:before {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-.web-btn a:hover, .web-btn a:focus, .web-btn a:active {
-	color: white;
-}
-
-#more-btn {
-	background-color: black;
-	cursor: pointer;
-	white-space: nowrap;
-	color: white;
-	font-size: 1.25em;
-	border: solid 2px #336699;
-	width: 7em;
-	padding-top: .25em;
-	padding-bottom: .25em;
+	border: solid 3px #3366ff;
+	padding: 1em;
+	margin: 1em;
 	text-align: center;
-	margin: 3.5em auto;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	overflow: hidden;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
+}
+.buttons:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	background: #3366ff;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
+}
+.buttons:hover, .buttons:focus, .buttons:active {
+	cursor: pointer;
+	color: white;
+}
+.buttons:hover:before, .buttons:focus:before, .buttons:active:before {
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	-o-transform: scale(2);
+	transform: scale(2);
+}
+#row4buttons {
+	margin-bottom: 1.5em;
+}
+.rowbuttons {
+	display: flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+	margin-right: 2.5em;
+}
+.extendbuttons {
+	margin: 0 auto;
+	padding: .5em 0;
+	width: 7em;
+}
+#more {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-#more-btn:before {
+#more:before {
   content: "";
   cursor: pointer;
   position: absolute;
@@ -340,7 +253,7 @@ img.bg {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #336699;
+  background: #3366ff;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
@@ -348,34 +261,22 @@ img.bg {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-#more-btn:hover, #more-btn:focus, #more-btn:active {
+#more:hover, #more:focus, #more:active {
   color: white;
   cursor: pointer;
 }
-#more-btn:hover:before, #more-btn:focus:before, #more-btn:active:before {
+#more:hover:before, #more:focus:before, #more:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
-
-#more-btn2 {
+#less {
 	display: none;
-	background-color: black;
-	cursor: pointer;
-	white-space: nowrap;
-	color: white;
-	font-size: 1.25em;
-	border: solid 2px #336699;
-	width: 7em;
-	padding-top: .25em;
-	padding-bottom: .25em;
-	text-align: center;
-	margin: 3.5em auto;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-#more-btn2:before {
+#less:before {
   content: "";
   cursor: pointer;
   position: absolute;
@@ -384,7 +285,7 @@ img.bg {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #336699;
+  background: #3366ff;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
@@ -392,350 +293,128 @@ img.bg {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-#more-btn2:hover, #more-btn2:focus, #more-btn2:active {
+#less:hover, #less:focus, #less:active {
   color: white;
   cursor: pointer;
 }
-#more-btn2:hover:before, #more-btn2:focus:before, #more-btn2:active:before {
+#less:hover:before, #less:focus:before, #less:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
 
-/*More Websites Section*/
-.more-websites {
-	height: 20em;
-	background-color: #bfbfbf;
-	font-family: Times-New-Roman;
-	border-top: solid black 1px;
+
+/*Row 5*/
+#row5 {
+	padding: 2em 0;
+	border-bottom: solid 2px #3366ff;
 	display: none;
 }
 
-.more-websites .container {
-	margin: auto;
+
+/*Row 6*/
+#row6 {
+	padding: 3em 0;
+	border-bottom: solid 2px #3366ff;
 }
 
-.more-websites .row {
-	margin-top: 4em;
-	margin-right: 4em;
-	margin-left: 4.9em;
+
+/*Row 7*/
+#row7 {
+	padding: 3em 0;
 }
 
-/*Games Section*/
-/*Buttons with quick games*/
-.game-btns {
-	height: 32.5em;
-	background-color: #bfbfbf;
-	font-family: Times-New-Roman;
-	border-top: solid black 1px;
-	display: block;
-}
 
-.game-btns .container {
-	margin: auto;
+/*Row 8*/
+#row8background {
+	padding: 0;
+	margin: 0;
+	background: url("../Images/Portfolio Pics/StreamWithBoat.jpg") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
-
-.game-btns .row {
-	margin-top: 4em;
-	margin-right: 4em;
-	margin-left: 4.9em;
+#row8 {
+	padding: 1em;
+	background: rgba(0, 0, 0, .3);
 }
-
-.game-btn {
-	white-space: nowrap;
-}
-
-.game-btn:hover, .game-btn:focus, .game-btn:active {
-	cursor: pointer;
-}
-
-.game-btn:hover span, .game-btn:focus span, .game-btn:active span {
-	color: black;
-}
-
-.RPSdiv {
+#blogtitle {
+	color: white;
+	font-size: 32px;
 	text-align: center;
+}
+#blog {
+	background: white;
+}
+
+
+/*Row 9*/
+#row9 {
+	padding: 1em;
+	background: #3366ff;
+}
+.row9links {
 	color: white;
-	height: 20em;
-	width: 40em;
-	position: fixed;
-	border: solid 4px #336699;
-	border-radius: 25px;
-	background-color: #bfbfbf;
-	top: 10em;
-	left: 1em;
-	right: 1em;
-	margin: 0 auto;
-	z-index: 5;
-	display: none;
-}
-
-#RPS1 {
-	z-index: 6;
-}
-
-.RPSquit {
-	position: absolute;
-	right: .5em;
-	top: .4em;
-	width: 2.8em;
-	height: 2.8em;
-	border: solid 3px #bfbfbf;
-	border-radius: 50%;
-}
-
-.RPSquit:hover, .RPSquit:focus, .RPSquit:active {
-	border: solid 3px white;
-	cursor: pointer;
-}
-
-.RPSquit p {
-	font-size: 20px;
-	vertical-align: middle;
-	margin-top: .15em;
-}
-
-#RPStop {
-	background-color: #336699;
-	height: 7em;
-	margin-top: -1.5em;
-	border-radius: 15px 15px 0 0;
-}
-
-#RPStop h2 {
-	padding-top: 1em;
-}
-
-.RPSbtn {
-	border: solid 4px #336699;
-	border-radius: 50%;
-	height: 9em;
-	width: 9em;
-	margin: 1.5em auto;
-}
-
-.RPSbtn:hover, .RPSbtn:focus, .RPSbtn:active {
-	height: 10em;
-	width: 10em;
-	margin: 1.2em auto;
-	cursor: pointer;
-}
-
-#RPSrock {
-	background: url("https://hcnureth.github.io/Images/Portfolio Pics/Rocks.jpg") no-repeat center center fixed;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-	background-attachment: scroll;
-}
-
-#RPSpaper {
-	background: url("https://hcnureth.github.io/Images/Portfolio Pics/Paper.jpg") no-repeat center center fixed;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-	background-attachment: scroll;
-}
-
-#RPSscissors {
-	background: url("https://hcnureth.github.io/Images/Portfolio Pics/Scissors.jpg") no-repeat center center fixed;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-	background-attachment: scroll;
-}
-
-#RPS2 h2 {
-	font-size: 45px;
-	padding-top: .48em;
-}
-
-.RPSbattleword {
-	background-color: black;
-	font-size: 30px;
-	height: 1.5em;
-	width: 5.88125em;
-	margin-top: 2.16875em;
-	margin-left: -2.7em;
-}
-
-#RPSuserword {
-	transform: rotate(-90deg);
-	border-radius: 23px 0 0 0;
-}
-
-#RPScompword {
-	transform: rotate(90deg);
-	margin-left: -2.63em;
-	border-radius: 0 23px 0 0;
-}
-
-.RPSbattleimg {
-	height: 9em;
-	width: 9em;
-	border: solid 4px #336699;
-	border-radius: 50%;
-	margin: 1.65em auto;
-	z-index: 5;
-}
-
-/*Data Science Section*/
-#dataScience {
-	border-top: black solid 1px;
-	height: 23em;
-	display: block;
-}
-
-/*Supporting Section*/
-/*Focus area for my resume link*/
-.supporting {
-	color: white;
-	margin: auto;
-	text-align: center;
-	font-family: Times-New-Roman;
-	height: 15em;
-	background: url("https://hcnureth.github.io/Images/Portfolio Pics/swamp.jpg") no-repeat center center fixed;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-	background-attachment: scroll;
-	display: block;
-}
-img.bg {
-  	min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  @media screen and (max-width: 1024px) {
-    img.bg {
-    	left: 50%;
-      margin-left: -512px;
-    }
-  }
-
-.supporting p {
-	font-size: 2em;
-	padding-top: 1.5em;
-}
-
-.supporting div {
-	font-size: 1.5em;
-	border: red solid 3px;
-	padding-top: .3em;
-	padding-bottom: .3em;
-	width: 13em;
-	margin: auto;
-	margin-top: 1em;
-}
-
-.supporting a {
-	color: white;
+	font-size: 18px;
+	margin-right: 15px;
 	text-decoration: none;
-	padding-top: .4em;
-	padding-bottom: .5em;
-	padding-right: 2.9em;
-	padding-left: 2.9em;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
 }
-
-.supporting a:hover, .supporting a:focus, .supporting a:active {
-	color: white;
-	text-decoration: none;
-}
-
-#resumeButton {
-  display: inline-block;
-  border: #336699 solid 3px;
-  white-space: nowrap;
-  overflow: hidden;
-  padding-left: .4em;
-  padding-right: .4em;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  background: black;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-#resumeButton:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #336699;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-}
-#resumeButton:hover, #resumeButton:focus, #resumeButton:active {
-  color: white;
-}
-#resumeButton:hover:before, #resumeButton:focus:before, #resumeButton:active:before {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-#resumeButton a:hover, #resumeButton a:focus, #resumeButton a:active {
-	color: white;
-}
-
-.resume {
+.row9links:hover, .row9links:active, .row9links:focus {
+	cursor: pointer;
 	color: black;
 }
 
-.resume:hover, .resume:focus, .resume:active {
-	text-decoration: underline;
+
+/*For Tablets*/
+@media only screen and (min-width: 600px) {
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+
+.rowbuttons {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: 0;
+}
+#row3title {
+	font-size: 50px;
+}
+#row3subtitle {
+	font-size: 24px;
+}
+.titles {
+	font-size: 40px;
+}
 }
 
-.resume1:hover, .resume1:focus, .resume1:active {
-	color: #336699;
-}
 
-.resume2:hover, .resume2:focus, .resume2:active {
-	color: #336699;
-}
-
-/*Footer Section*/
-/*Has links to email, facebook, and my resume*/
-.footer {
-	color: black;
-	background-color: #bfbfbf;
-	font-family: Times-New-Roman;
-	height: 9.5em;
-	display: block;
-}
-
-.footer ul {
-	padding-top: 1.4em;
-	list-style-type: none;
-}
-
-.footer li {
-	padding-top: .5em;
-}
-
-.icons {
-	display: inline-block;
-	margin-right: 1em;
-	font-size: 1.2em;
-}
-
-#bottomul {
-	margin-top: -1.9em;
+/*For Desktops/Laptops*/
+@media only screen and (min-width: 768px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 28%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 }
