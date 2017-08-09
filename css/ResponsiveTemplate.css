@@ -6,10 +6,9 @@
 [class*="col-"] {
 	width: 100%;
 	height: auto;
-	padding: 15px;
+	padding: 15px; /*Can be anything or absent*/
 	float: left;
 }
-
 .row::after {
 	content: "";
 	clear: both;
