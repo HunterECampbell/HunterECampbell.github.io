@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rock, Paper, Scissors</title>
+		<link rel="stylesheet" type="text/css" href="../css/RPS.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.css" />
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body>
+		<div class="col-12 row" id="row1">
+			<p class="row1p" id="row1p1">Do you choose Rock, Paper, or Scissors?</p>
+			<p class="row1p" id="row1p2">Click the picture you choose.</p>
+			<div class="col-2" onclick="" id="replay">Replay</div>
+		</div>
+		
+		<div class="col-12 row" id="row2">
+			<div class="col-3 col-m-3 images1" onclick="" id="rock"></div>
+			<div class="col-3 col-m-3 images1" onclick="" id="paper"></div>
+			<div class="col-3 col-m-3 images1" onclick="" id="scissors"></div>
+		</div>
+		
+		<div class="col-12 row" id="row3">
+			<div class="images2" id="userchoice"><p class="choicep">Your Choice</p></div>
+			<div class="images2" id="compchoice"><p class="choicep">Computer's Choice</p></div>
+		</div>
+	
+		<script type="text/javascript" src="../js/RPS.js"></script>
+	</body>
+</html>
