@@ -60,8 +60,6 @@ var main = function() {
 			$("#blogtitle").hide("slow");
 		}
 	});
-	
-	$("#RPS").click(function() {alert("Under Construction")});
 };
 
 $(document).ready(main);
