@@ -3,7 +3,7 @@ var main = function() {
 		$("#replay").one("click", function() {
 			$("#row2").show();
 			$("#row3").hide();
-			$("#row1p1").text("Do you choose Rock, Paper, or Scissors?");
+			$("#row1p1").text("Do you choose Rock, Paper, or Scissors?").css("color", "black");
 			$("#row1p2").text("Click the picture you choose.");
 		});
 	};
@@ -11,7 +11,7 @@ var main = function() {
 		$("#replay").one("click", function() {
 			$("#row2").show();
 			$("#row3").hide();
-			$("#row1p1").text("Do you choose Rock, Paper, or Scissors?");
+			$("#row1p1").text("Do you choose Rock, Paper, or Scissors?").css("color", "black");
 			$("#row1p2").text("Click the picture you choose.");
 		});
 	};
@@ -62,13 +62,13 @@ var main = function() {
 		}
 		else if (choice1 === "rock") {
 			if (choice2 === "scissors") {
-				$("#row1p1").text("You Win!");
+				$("#row1p1").text("You Win!").css("color", "limegreen");
 				$("#row1p2").text("Rock beats scissors.");
 				$(".images1userchoice").text("Rock");
 				$(".images1userchoice").text("Scissors");
 			}
 			else {
-				$("#row1p1").text("Computer Wins!");
+				$("#row1p1").text("You Lose.").css("color", "red");
 				$("#row1p2").text("paper beats rock.");
 				$(".images1userchoice").text("Scissors");
 				$(".images1userchoice").text("Rock");
@@ -77,13 +77,13 @@ var main = function() {
 		}
 		else if (choice1 === "paper") {
 			if (choice2 === "rock") {
-				$("#row1p1").text("You Win!"); 
+				$("#row1p1").text("You Win!").css("color", "limegreen"); 
 				$("#row1p2").text("Paper beats rock.");
 				$(".images1userchoice").text("Paper");
 				$(".images1userchoice").text("Rock");
 			}
 			else { 
-				$("#row1p1").text("Computer Wins!");
+				$("#row1p1").text("You Lose.").css("color", "red");
 				$("#row1p2").text("Scissors beats paper.");
 				$(".images1userchoice").text("Rock");
 				$(".images1userchoice").text("Paper");
@@ -92,14 +92,14 @@ var main = function() {
 		}
 		else if (choice1 === "scissors") {
 			if (choice2 === "paper") {
-				$("#row1p1").text("You Win!");
+				$("#row1p1").text("You Win!").css("color", "limegreen");
 				$("#row1p2").text("Scissors beats paper.");
 				$(".images1userchoice").text("Scissors");
 				$(".images1userchoice").text("Paper");
 			}
 			else {
-				$("#row1p1").text("Computer Wins!");
-				$("#row1p2").text("Rock beats scissors.");
+				$("#row1p1").text("You Lose.");
+				$("#row1p2").text("Rock beats scissors.").css("color", "red");
 				$(".images1userchoice").text("Paper");
 				$(".images1userchoice").text("Scissors");
 			};
