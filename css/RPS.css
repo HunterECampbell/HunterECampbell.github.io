@@ -1,0 +1,185 @@
+* {
+	box-sizing: border-box;
+}
+
+/*For Phones*/
+[class*="col-"] {
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	float: left;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+/*Row 1*/
+#row1 {
+	margin-top: -2.5em;
+}
+.row1p {
+	text-align: center;
+	font-family: Arial;
+}
+#row1p1 {
+	font-size: 40px;
+}
+#row1p2 {
+	font-size: 24px;
+	margin-top: -1.2em;
+}
+#replay {
+	border: solid black 2px;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 20px;
+	font-family: Arial;
+	float: right;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
+}
+#replay:hover, #replay:active, #replay:focus {
+	cursor: pointer;
+	background: black;
+	color: white;
+}
+
+
+/*Row 2*/
+#row2 {
+	margin-left: -1em;
+	margin-top: -1em;
+	display: flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.images1 {
+	height: 25em;
+	border-radius: 20px;
+	border: solid black 2px;
+	margin: 1em;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
+}
+.images1:hover, .images1:active, .images1:focus {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+}
+#rock {
+	background: url("../Images/RPS Pics/rock.jpg") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
+}
+#paper {
+	background: url("../Images/RPS Pics/paper.jpg") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
+}
+#scissors {
+	background: url("../Images/RPS Pics/scissors.jpg") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
+}
+
+
+/*Row 3*/
+#row3 {
+	white-space: nowrap;
+	display: flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	margin-right: -2em;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+	margin-top: 1em;
+}
+.images2 {
+	margin: 1em;
+	height: 20em;
+	border-radius: 20px;
+	border: solid black 2px;
+	width: 30%;
+	display: inline-block;
+}
+.choicep {
+	text-align: center;
+	font-family: Arial;
+	font-size: 18px;
+	margin-top: -1.75em;
+}
+
+
+/*For Tablets*/
+@media only screen and (min-width: 600px) {
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 30%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+
+.choicep {
+	font-size: 24px;
+	margin-top: -1.75em;
+}
+#row2 {
+	margin-left: 0;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.images2 {
+	margin: 1em 2em;
+	height: 25em;
+}
+}
+
+
+/*For Desktops/Laptops*/
+@media only screen and (min-width: 768px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 30%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.choicep {
+	font-size: 26px;
+	margin-top: -1.75em;
+}
+}
