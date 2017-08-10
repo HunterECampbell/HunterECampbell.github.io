@@ -151,6 +151,11 @@
 	font-size: 24px;
 	margin-top: -1.75em;
 }
+#replay {
+	right: 1em;
+	top: 2em;
+	position: absolute;
+}
 #row2 {
 	margin-left: 0;
     -webkit-flex-direction: row;
@@ -181,10 +186,5 @@
 .choicep {
 	font-size: 26px;
 	margin-top: -1.75em;
-}
-#replay {
-	right: 1em;
-	top: 4em;
-	position: absolute;
 }
 }
