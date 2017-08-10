@@ -98,8 +98,8 @@ var main = function() {
 				$(".images1userchoice").text("Paper");
 			}
 			else {
-				$("#row1p1").text("You Lose.");
-				$("#row1p2").text("Rock beats scissors.").css("color", "red");
+				$("#row1p1").text("You Lose.").css("color", "red");
+				$("#row1p2").text("Rock beats scissors.");
 				$(".images1userchoice").text("Paper");
 				$(".images1userchoice").text("Scissors");
 			};
