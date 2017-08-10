@@ -56,8 +56,8 @@
 	display: flex;
 	justify-content: center;
 	-webkit-justify-content: center;
-    -webkit-flex-direction: column;
-    flex-direction: column;
+    -webkit-flex-direction: row;
+    flex-direction: row;
 }
 .images1 {
 	height: 25em;
@@ -158,8 +158,6 @@
 }
 #row2 {
 	margin-left: 0;
-    -webkit-flex-direction: row;
-    flex-direction: row;
 }
 .images2 {
 	margin: 1em 2em;
