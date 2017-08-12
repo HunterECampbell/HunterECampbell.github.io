@@ -101,7 +101,7 @@ body {
 }
 .row2li1:hover, .row2li1:focus, .row2li1:active {
 	cursor: pointer;
-	background: white;
+	background: rgba(255, 255, 255, .7);
 }
 .row2ul2 {
 	padding-left: 20px;
