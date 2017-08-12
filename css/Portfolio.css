@@ -158,7 +158,7 @@ body {
 	display: none;
 }
 #row3title {
-	padding-top: 2.25em;
+	padding-top: 1.25em;
 	font-size: 40px;
 	margin-top: 0;
 }
@@ -404,6 +404,7 @@ body {
 }
 #row3title {
 	font-size: 50px;
+	padding-top: 2.25em;
 }
 #row3subtitle {
 	font-size: 24px;
