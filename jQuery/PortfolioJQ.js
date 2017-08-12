@@ -35,30 +35,12 @@ var main = function() {
 	
 	
 	/*Scroll Effects*/
-	$("#row3 p").hide();
-	function ScrolledIntoView(elem) {
-		var docViewTop = $(window).scrollTop();
-		var docViewBottom = docViewTop + $(window).height();
-		var elemTop = $(elem).offset().top;
-		var elemBottom = elemTop + $(elem).height();
-		return((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemTop >= docViewTop));
-	}
 	$("#row3 p").show("slow");
-	$(window).scroll(function() {
-		if(ScrolledIntoView($("#row3"))) {
-			$("#row3 p").show("slow");
-		}
-		else {
-			$("#row3 p").hide("slow");
-		}
+	$("#row3").waypoint(function() {
+		$("#row3 p").show("slow");
 	});
-	$(window).scroll(function() {
-		if(ScrolledIntoView($("#row8"))) {
-			$("#blogtitle").show("slow");
-		}
-		else {
-			$("#blogtitle").hide("slow");
-		}
+	$("#row4").waypoint(function() {
+		$("#row3 p").hide();
 	});
 };
 
