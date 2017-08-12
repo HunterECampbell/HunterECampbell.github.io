@@ -150,12 +150,15 @@ body {
 /*Row 3*/
 #row3 {
 	text-align: center;
-	padding-top: 8em;
-	padding-bottom: 8em;
+	height: 22em;
 	color: white;
 	background: rgba(0, 0, 0, .2);
 }
+#row3 p {
+	display: none;
+}
 #row3title {
+	padding-top: 2.25em;
 	font-size: 40px;
 	margin-top: 0;
 }
