@@ -37,7 +37,7 @@ body {
   	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
 #row1 h1 {
-	font-size: 80px;
+	font-size: 50px;
 	line-height: 65px;
 	letter-spacing: -3px;
 	margin-top: 2.5em;
