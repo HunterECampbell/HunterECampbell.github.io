@@ -1,250 +1,214 @@
-html, body {
-	margin: 0;
-	padding: 0;
+* {
+	box-sizing: border-box;
 }
 
+/*For Phones*/
+[class*="col-"] {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 }
 
-.container {
-	margin: 0 auto;
-	max-width: 940px; 
-	padding: 0 10px; 
-}
-
-/* Top */
-.top {
-	background-color: black;
+/*Row 1*/
+#row1 {
+	text-align: center;
 	color: white;
-	height: 5em;
-	margin-top: -1em;
-	padding-top: .5em;
-	padding-left: .5em;
-}
-
-#topa {
-	text-decoration: none;
-	color: white;
-}
-
-#topa:hover {
-	text-decoration: underline;
-}
-
-
-/* Header */
-.header {
-  height: 800px;
-  text-align: center;
-  background: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg) no-repeat center center fixed;
+	height: 800px;
+	background: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg) no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
   	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-	background-attachment: scroll;
 }
-img.bg {
-  	min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  @media screen and (max-width: 1024px) {
-    img.bg {
-    	left: 50%;
-      margin-left: -512px;
-  }
-}
-
-.header .container {
-	position: relative;
-	top: 200px;
-}
-
-.header p {
-	color: white;
-}
-
-.header h1 {
+#row1 h1 {
 	font-size: 80px;
-	line-height: 100px; 
-	margin-top: 0;
-	margin-bottom: 80px;
-  color: white;
+	line-height: 65px;
+	letter-spacing: -3px;
+	margin-top: 2.5em;
 }
-
-.header a {
-	text-decoration: none;
-  background-color: black;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 35px;
-  padding-left: 35px;
+#row1 p {
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 7px;
 }
-
-@media (min-width:850px) {
-	.header h1 {
-		font-size: 120px;
-	}
+#row1 p {
+	margin-bottom: 3em;
 }
-
-.header p {
-	font-weight: 500;
-	letter-spacing: 8px;
-	margin-bottom: 40px;
-	margin-top: 0;
+.otherbuttons {
+	padding: .6em 2.25em;
 }
-
-.btn:hover {
+.buttons {
+	background: black;
+	color: white;
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	transition-duration: .5s;
+}
+.buttons:hover, .buttons:active, .buttons:focus {
 	background: #117bff;
-	cursor: text; 
-	transition: background .5s;
+	cursor: pointer;
 }
 
 
-/* Nav */
-.nav {
-	background-color: black;
+/*Row 2*/
+#row2 {
+	height: 3em;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	text-align: center;
+	background: black;
+}
+.rowbuttons {
+	padding: 1em;
 }
 
-.nav ul {
-	list-style: none;
-	margin: 0 auto;
-	padding: 30px 0;
+
+/*Row 3*/
+#row3 {
+	padding: 3.5em;
+}
+#row3col4 {
+	text-align: center;
+	margin-top: 11em;
+}
+#row3 img {
+	height: 200px;
+	width: 200px;
+}
+#row3 p, #row3 h2 {
 	text-align: center;
 }
+#row3 h2 {
+	font-weight: bold;
+}
 
-.nav ul li {
+
+/*Row 4*/
+#row4 {
+	height: 800px;
 	color: white;
-  display: inline-block;
-  float: left;
-  margin-top: -30px;
-  padding: 20.5px;
-}
-
-/* Middle */
-.media {
-	margin-left: 200px;
-}
-
-.middle .media-object {
-	float: left;
-  width: 200px;
-  height: 200px;
-  margin-right: 50px;
-}
-
-.middle .media-body {
-	text-align: left;
-	margin-top: 75px;
-	margin-bottom: 50px;
-	padding-right: 250px;
-}
-
-/* Main */
-.main {
-	height: 600px; 
 	text-align: right;
-  background: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg) no-repeat center center fixed;
+	padding-right: 20%;
+	padding-top: 40%;
+	background: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg) no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
   	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-	background-attachment: scroll;
+}
+#row4 h3 {
+	font-weight: bold;
+}
+#row4 p {
+	margin-bottom: 2em;
 }
 
-.main .container {
-	margin: 80px auto;
-}
 
-
-/* Jumbotron */
-.jumbotron a {
-	background-color: black;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 35px;
-  padding-left: 35px;
-  text-decoration: none;
-}
-
-.jumbotron h3 {
-color: white;
-}
-
-.jumbotron p {
+/*Row 5*/
+#row5 {
+	background: black;
 	color: white;
-	margin-bottom: 32px;
+	padding: 2.5em 5em;
 }
-
-.jumbotron .container {
-	position: relative;
-	top: 220px;
-}
-
-
-/* Footer */
-.footer { 
-	font-size: 14px;
-  background-color: black;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-top: 0px;
-}
-
-.footer p {
+#row5 a {
 	color: white;
-  margin-left: 200px;
+}
+#row5 a:hover, #row5 a:active, #row5 a:focus {
+	color: #117bff;
 }
 
-#ap {
-	color: white;
-	text-decoration: none;
+
+/*For Tablets*/
+@media only screen and (min-width: 600px) {
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+
+#row1 h1 {
+	font-size: 100px;
+	line-height: 80px;
+	letter-spacing: -7px;
+	margin-top: 2em;
+}
+#row1 p {
+	font-size: 18px;
+}
+#row2 {
+	padding-left: 10em;
+	-webkit-flex-direction: row;
+	flex-direction: row;
 }
 
-#ap:hover {
-	text-decoration: underline;
+#row3col4 {
+	text-align: right;
+	margin-right: 3em;
+	margin-top: 0;
+}
+#row3 p, #row3 h2 {
+	text-align: left;
+	margin-left: 3em;
+}
 }
 
-/* Media Queries */
-@media (max-width: 525px) {
-  .header h1 {
-    font-size: 50px;
-    line-height: 64px;
-  }
-  .main, .jumbotron {
-    padding: 0 30px;
-  }
-  .main img {
-    width: 100%;
-  }
-  .nav {
-	  height: 8em;
-  }
-  #about {
-	  margin-top: .5em;
-  }
-  #contact {
-	  margin-top: .5em;
-  }
-  .media {
-	  margin-left: 5em;
-  }
-  .media-body p {
-	  width: 18em;
-  }
-  .footer p {
-	  margin-left: 25px;
-  }
+
+/*For Desktops/Laptops*/
+@media only screen and (min-width: 768px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+#row1 h1 {
+	font-size: 130px;
+	line-height: 100px;
+	letter-spacing: -7px;
+	margin-top: 1.5em;
+}
+
+#row3 p, #row3 h2 {
+	margin-left: 0;
+}
+#row3 p {
+	width: 80%;
+}
+
+#row4 {
+	padding-top: 20%;
+}
 }
