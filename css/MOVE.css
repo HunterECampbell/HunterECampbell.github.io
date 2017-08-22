@@ -1,4 +1,4 @@
-html, body {
+/*html, body {
   margin: 0;
 }
 
@@ -19,7 +19,7 @@ p {
   margin: 0 auto;
 }
 
-/* Header */
+/* Header *//*
 .header {
 	background-color: #1c1c1c;
 	color: white;
@@ -46,7 +46,7 @@ p {
 	cursor: pointer;
 }
 
-/* Main */
+/* Main *//*
 .main {
   height: 600px;
 	background: url(https://s3.amazonaws.com/codecademy-content/projects/move/bg.jpg) no-repeat center center fixed;
@@ -102,14 +102,14 @@ img.bg {
   font-size: 18px;
 }
 
-/* Supporting */
+/* Supporting *//*
 .supporting {
   text-align: center;
   padding: 50px 0 80px;
   background-color: #1c1c1c;
 }
 
-/*margin-left: 19em;*/
+/*margin-left: 19em;*//*
 .supporting .col {
 	margin: 0 auto;
   width: 28%;
@@ -142,7 +142,7 @@ img.bg {
   display: inline-block;
 }
 
-/* Feature */
+/* Feature *//*
 .feature {
   height: 600px;
   background: url(https://s3.amazonaws.com/codecademy-content/projects/move/feature.jpg) no-repeat center center fixed;
@@ -182,7 +182,7 @@ img.bg {
 	margin-top: -.5em;
 }
 
-/* Footer */
+/* Footer *//*
 .footer {
   height: 600px;
   background: url(https://s3.amazonaws.com/codecademy-content/projects/move/footer.jpg) no-repeat center center fixed;
@@ -226,7 +226,7 @@ img.bg {
 	margin-right: 5em;
 }
 
-/* Button */
+/* Button *//*
 .btn:hover {
 	background-color: #e6ac00;
 	cursor: text;
@@ -253,4 +253,225 @@ img.bg {
   .feature h2 {
     font-size: 60px;
   }
+}*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+/*For Phones*/
+[class*="col-"] {
+	width: 100%;
+	height: auto;
+	padding: 15px; /*Can be anything or absent*/
+	float: left;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+h1, h2, a {
+  font-family: 'Oswald', sans-serif;
+}
+p {
+  font-family: Helvetica, Arial, sans-serif; 
+}
+a {
+	padding: .5em 2em;
+	margin: 0 auto;
+	font-size: 18px;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
+}
+a:not(#back):hover, a:not(#back):focus, a:not(#back):active {
+	cursor: pointer;
+	background: #e6ac00;
+}
+.dark {
+	background: #1c1c1c;
+	color: white;
+}
+
+
+/*Row 1*/
+#row1 {
+	height: 600px;
+	color: white;
+	background: url(https://s3.amazonaws.com/codecademy-content/projects/move/bg.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	text-align: center;
+	padding: 0 5em;
+}
+#row1 h1 {
+	font-weight: bold;
+	font-size: 105px;
+	margin-bottom: -10px;
+	margin-top: 55%;
+}
+#row1 p {
+	font-size: 18px;
+	padding-bottom: 1em;
+}
+
+
+/*Row 2*/
+#row2 {
+	padding: 5em 0;
+	text-align: center;
+}
+#row2 h2 {
+	color: #e6ac00;
+	font-weight: bold;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+#row2 p {
+	font-size: 14px;
+	width: 19em;
+	margin: 0 auto;
+}
+#row2 p:last-child {
+	margin-bottom: 2.5em;
+}
+
+
+/*Row 3*/
+#row3 {
+	height: 300px;
+	background: url(https://s3.amazonaws.com/codecademy-content/projects/move/feature.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+#row3 h1 {
+	font-weight: bold;
+	font-size: 55px;
+	color: white;
+	margin-top: 6%;
+}
+
+
+/*Row 4*/
+#row4 {
+	padding: 3.5em 0 5em 0;
+}
+#row4 h1 {
+	font-weight: bold;
+	font-size: 50px;
+	color: #e6ac00;
+	margin-top: 0;
+}
+#row4 p {
+	font-size: 14px;
+	margin-top: -1.5em;
+	padding-bottom: 1em;
+}
+#row4 a {
+	background: white;
+	color: #1c1c1c;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
+}
+#row4 a:hover, #row4 a:focus, #row4 a:active {
+	cursor: pointer;
+	background: #e6ac00;
+}
+
+
+/*Row 5*/
+#row5 {
+	height: 600px;
+	background: url(https://s3.amazonaws.com/codecademy-content/projects/move/footer.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+#row5 h2 {
+	font-size: 38px;
+	margin-top: 16%;
+}
+
+
+/*Row 6*/
+#row6 {
+	text-align: left;
+}
+#row6 a {
+	color: white;
+}
+#row6 a:hover, #row6 a:focus, #row6 a:active {
+	color: #e6ac00;
+	cursor: pointer;
+}
+
+
+/*For Tablets*/
+@media only screen and (min-width: 600px) {
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+
+#row1 h1 {
+	font-size: 200px;
+	margin-top: 5%;
+}
+#row2 p {
+	width: 20em;
+}
+#row3 h1 {
+	font-size: 60px;
+}
+#row4 h1 {
+	font-size: 60px;
+}
+#row5 h2 {
+	font-size: 40px;
+}
+}
+
+
+/*For Desktops/Laptops*/
+@media only screen and (min-width: 768px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 }
