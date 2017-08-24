@@ -1,57 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<title>Excursion in Hunter Campbell's Portfolio</title>
+	<title>Excursion</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' href='https://hcnureth.github.io/css/Excursion.css'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
   
-    <!-- Main section -->
-    <div class="main">      
-			<video loop autoplay muted>
-        	<source src="https://s3.amazonaws.com/codecademy-content/projects/excursion/bg.mp4" type="video/mp4">
-        </video>
-      <div class="content container">
-        <h1>Discover hidden places in the world around you</h1>
-        <p class="btn" class="p2">Download Excursion</p>
-		<p class="btn return-btn" id="return-btn-top"><a href="https://hcnureth.github.io/html/Portfolio.html">Back to Hunter's Portfolio</a></p>
-      </div>            
-    </div>
-
-
-    <!-- First supporting section -->
-    <div class="supporting">
-      <div class="container">
-        <h2>Your personal travel guide</h2>
-        <p>Excursion remembers places you like, and recommends new points of interest around you.</p>
-      </div>
-    </div>
-
-
-    <!-- Feature section -->
-    <div class="feature">
-      <img src="https://s3.amazonaws.com/codecademy-content/projects/excursion/camp.png"/>
-    </div>
-    
-    <!-- Second supporting section -->
-    <div class="supporting">
-      <div class="container">
-        <img src="https://s3.amazonaws.com/codecademy-content/projects/excursion/binoculars.png" />
-        <h2>Available for iPhone and Android</h2>
-        <p class="btn">Download Excursion</p>
-		<p class="btn return-btn"><a href="https://hcnureth.github.io/html/Portfolio.html">Back to Hunter's Portfolio</a></p>
-      </div>
-    </div>
-
-    
-    <!-- Footer -->
-    <div class="footer">
-      <div class="container">
-        <p>&copy Excursion</p>
-		<p>I remade this website.</p>
-      </div>
-    </div>
+  <body>
+	<div class="col-12" id="row1">
+		<video loop autoplay muted>
+			<source src="https://s3.amazonaws.com/codecademy-content/projects/excursion/bg.mp4" type="video/mp4">
+        	</video>
+		<div id="videotext">
+			<h1>Discover hidden places in the world around you</h1>
+			<a class="buttons" onclick="">Download Excursion</a>
+		</div>
+	</div>
+	
+	<div class="col-12" id="row2">
+		<h1>Your personal travel guide</h1>
+		<p>Excursion rememebers places you like, and recommends new points of interest around you.</p>
+	</div>
+	
+	<div class="col-12" id="row3"></div>
+	
+	<div class="col-12" id="row4">
+		<img src="https://s3.amazonaws.com/codecademy-content/projects/excursion/binoculars.png" />
+		<h1>Available for iPhone and Android</h1>
+		<a class="buttons" onclick="">Download Excursion</a>
+	</div>
+	
+	<div class="col-12" id="row5">
+		<p>&copy; Excursion</p>
+		<a id="back" onclick="" href="https://hcnureth.github.io/html/Portfolio.html">Back to Hunter's Website</a>
+	</div>
     
   </body>
 </html>
