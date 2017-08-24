@@ -1,126 +1,156 @@
+* {
+	box-sizing: border-box;
+}
 html, body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
-.container {
-  max-width: 940px;
-  margin: 0 auto;
+/*For Phones*/
+[class*="col-"] {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
 }
 
-.main {
-  position: relative;
-}
-
-.main video {
-  width: 100%;
-}
-
-.main .content {
-  position: absolute;
-  top: 200px;
-  width: 100%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-.main h1 {
-  font-size: 50px;
-  text-shadow: 0 2px 3px rgba(0,0,0,.4);
-  color: white;
-  text-align: center;
-}
-
-.main p {
+.buttons {
+	padding: 1em;
 	color: white;
-  text-align: center;
+	background: #3399ff;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
 }
-
-.btn {
-  cursor: text;
-	background-color: #3399ff;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  width: 195px;
-  margin: 15px auto;
-}
-
-#return-btn-top a {
-	color: white;
-}
-
-#return-btn-top a:hover {
+.buttons:hover, .buttons:active, .buttons:focus {
 	color: black;
-	text-decoration: underline;
-}
-
-.return-btn a {
-	color: black;
-	text-decoration: none;
-	padding-top: 17px;
-	padding-bottom: 17px;
-}
-
-.return-btn a:hover {
-	color: white;
-}
-
-.return-btn:hover {
 	cursor: pointer;
-	text-decoration: underline;
+}
+#row1, #row2, #row4 {
+	text-align: center;
+}
+
+/*Row 1*/
+#row1 {
+	position: relative;
+}
+video {
+	width: 100%;
+	height: 30em;
+}
+#videotext {
+	position: absolute;
+	top: 30%;
+}
+#row1 h1 {
 	color: white;
+	font-size: 28px;
+	text-shadow: 0 2px 3px rgba(0,0,0,.4);
+	width: 70%;
+	margin: 0 auto .75em auto;
 }
 
-.supporting {
-  margin-top: 100px;
-  margin-bottom: 130px;
+/*Row 2*/
+#row2 {
+	padding: 5em 0 8em 0;
+}
+#row2 h1 {
+	font-weight: 300;
 }
 
-.supporting h2 {
-  font-size: 48px;
-  font-weight: 300;
-  text-align: center;
+/*Row 3*/
+#row3 {
+	height: 30em;
+	background: url("https://s3.amazonaws.com/codecademy-content/projects/excursion/camp.png") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
 
-.supporting p {
-  color: black;
-  text-align: center;
+/*Row 4*/
+#row4 {
+	padding: 6em 0 8em 0;
+}
+#row4 img {
+	margin-bottom: 1em;
+}
+#row4 h1 {
+	margin-bottom: 1em;
+	font-size: 50px;
+	font-weight: 300;
 }
 
-.supporting img {
-  display: block;
-  margin: 0 auto;
+/*Row 5*/
+#row5 {
+	background: #eeeeee;
+	padding: 1em 3em;
+}
+#back {
+	color: black;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
+}
+#back:hover, #back:focus, #back:active {
+	color: #3399ff;
 }
 
-.feature {
-  height: 500px;
-}
 
-.feature img {
+/*For Tablets*/
+@media only screen and (min-width: 600px) {
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+
+video {
+	height: auto;
+}
+#videotext {
+	top: 10%;
 	height: 100%;
-  width: 100%;
+	width: 100%;
+}
+#row1 h1 {
+	font-size: 50px;
+}
+#row2 h1 {
+	font-size: 50px;
+}
 }
 
-.footer {
-  padding: 30px;
-  background-color: #eeeeee;
-}
 
-.footer p {
-  font-size: 11px;
-}
+/*For Desktops/Laptops*/
+@media only screen and (min-width: 768px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
-@media (max-width: 960px) {
-  .main {
-    height: 540px; 
-  }
-  .main video {
-    height: 540px; 
-    width: 960px;
-  }
-  .main h1 {
-    font-size: 32px;
-  }
+#videotext {
+	top: 32%;
+}
 }
