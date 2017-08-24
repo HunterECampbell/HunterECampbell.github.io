@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 html, body {
   font-family: "Oxygen", sans-serif; 
   font-weight: 300; 
@@ -5,124 +9,119 @@ html, body {
   padding: 0;
 }
 
-.container {
-  max-width: 970px;
+/*For Phones*/
+[class*="col-"] {
+	width: 100%;
+	height: auto;
+	float: left;
 }
-
-.jumbotron {
-	background-color: black;
-  margin: 0;
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
 }
-
-.header img {
-	height: 32px;
-  width: 180px;
+.blue {
+	color: #0393ff;
 }
-
-.header li {
+.buttons {
+	color: #0393ff;
+	border: solid 1px #0393ff;
+	padding: .5em 1em;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
+}
+.buttons:hover, .buttons:active, .buttons:focus {
+	color: white;
+	background: #0393ff;
+}
+a {
 	text-decoration: none;
-  display: inline-block;
-  margin-left: 2em;
 }
-
-.header li {
-	color: white;
-}
-
-.header li:nth-child(3) {
-  color: #0393ff;
-  border: solid #0393ff 1px;
-}
-
-.header li:nth-child(4) {
-  color: #0393ff;
-  border: solid #0393ff 1px;
-}
-
-.main h1 {
-	color: white;
-  text-align: center;
-  margin-top: 2em;
-}
-
-.main p {
-	text-align: center;
-  margin-top: 2em;
-}
-
-.main a {
-	color: #0390ff;
-  border: solid #0393ff 1px;
-  border-radius: 0px;
-}
-
-.main .form-inline {
-  margin-top: 5em;
-  float: middle;
-}
-
-.main .form-control {
-	background-color: black;
-  border: black;
-  width: 25em;
-}
-
-.main .form-group {
-  border-bottom: white solid 1px;
-}
-
-.main .form-group:hover {
-	border-bottom: #0393ff solid 1px;
-}
-
-.main button {
-	background-color: black;
-  border-radius: 0px;
-  color: #0393ff;
-  border: solid 1px #0393ff;
-  margin-left: 1.25em;
-}
-
-.btn:hover {
-	color: white;
-  background-color: #0393ff;
-  cursor: text;
-  border-radius: 0px;
-}
-
-.return-btn:hover {
+a:hover, a:active, a:focus {
 	cursor: pointer;
+	text-decoration: none;
 }
 
-.supporting {
-  background: url(http://iphonewalls.net/wp-content/uploads/2013/09/Black%20Diamond%20Design%20with%20Lights%20iPhone%205%20Wallpaper.jpg) no-repeat center center fixed;
+/*Row 1*/
+#row1 {
+	background: black;
+	padding: 3em;
+	text-align: center;
+	color: white;
+}
+#row1row1 a {
+	float: right;
+	margin-left: 2em;
+}
+#row1row1 img {
+	height: 2.5em;
+	float: left;
+}
+#login {
+	color: white;
+	padding: .5em;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
+}
+#login:hover, #login:active, #login:focus {
+	color: #0393ff;
+}
+#row1row2 h1 {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+#searchbar {
+	margin-top: 7em;
+}
+#searchbar input {
+	margin-bottom: 2em;
+	background: black;
+	border: solid 1px black;
+	border-bottom: solid 1px white;
+	width: 90%;
+	padding: .5em .75em;
+}
+#searchbar input:hover, #searchbar input:active, #searchbar input:focus {
+	border-bottom: solid 1px #0393ff;
+}
+
+/*Row 2*/
+#row2 {
+	text-align: center;
+	padding: 1em;
+	background: url(http://iphonewalls.net/wp-content/uploads/2013/09/Black%20Diamond%20Design%20with%20Lights%20iPhone%205%20Wallpaper.jpg) no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
   	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-  background-attachment: scroll;
+	background-attachment: scroll;
 }
-
-.supporting h3 {
-	color: #0393ff;
-  text-align: center;
-  padding-top: 2em;
+#row2 h3 {
+	margin-top: 2em;
 }
-
-.supporting p {
+#row2 p {
 	color: white;
-  text-align: center;
-  padding-bottom: 3em;
+	margin-bottom: 4em;
+}
+.imgrows {
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+.imgrows img {
+	padding: .5em;
 }
 
-.supporting .thumbnail {
-	border: none;
-  padding: 0;
-}
-
-.feature {
+/*Row 3*/
+#row3 {
+	padding: 10em 0;
+	text-align: center;
 	background: url(https://s3.amazonaws.com/codecademy-content/projects/bolt-network/feature.jpg) no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -130,68 +129,92 @@ html, body {
   	background-size: cover;
   	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-  background-attachment: scroll;
 }
-
-.feature {
-	height: 25em;
-}
-
-.feature .container {
-	text-align: center;
-	padding-top: 9em;
-}
-
-.feature h3 {
-	color: #0393ff;
-  text-align: center;
-}
-
-.feature p {
+#row3 p {
 	color: white;
 }
 
-.footer {
-	background-color: black;
+/*Row 4*/
+#row4 {
+	background: black;
+	padding-bottom: 1em;
+	padding-left: 3em;
 }
-
-.footer h2 {
+#row4 h2 {
+	color: white;
+	display: inline-block;
+	padding-left: 0;
+}
+.bottombuttons {
+	display: block;
+	margin-bottom: .5em;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
+}
+.bottombuttons:hover, .bottombuttons:focus, .bottomsbuttons:active {
 	color: white;
 }
-
-.footer p {
-	margin-top: 0px;
-  padding-top: 0px;
-  color: #0393ff;
-}
-
-.footer a {
-	color: #0393ff;
+#back {
 	text-decoration: underline;
 }
 
-.footer a:hover {
-	color: white;
+
+
+/*For Tablets*/
+@media only screen and (min-width: 600px) {
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+
+#row1row2 h1 {
+	font-size: 65px;
+	margin-top: 2em;
+	margin-bottom: .75em;
+}
+.imgrows img {
+	height: 23em;
+}
 }
 
 
-img.bg {
-  	min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  @media screen and (max-width: 1024px) {
-    img.bg {
-    	left: 50%;
-      margin-left: -512px;
-    }
-  }
-  @media (max-width: 500px) {
-	  .pull-right {
-		  margin-left: -3.5em;
-	  }
-  }
+/*For Desktops/Laptops*/
+@media only screen and (min-width: 768px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+#searchbar input {
+	margin-right: 1em;
+	background: black;
+	border: solid 1px black;
+	border-bottom: solid 1px white;
+	width: 40%;
+	padding: .5em .75em;
+}
+.imgrows {
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+.imgrows img {
+	height: auto;
+}
+}
