@@ -28,6 +28,7 @@ body {
   	background-size: cover;
   	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
 }
 
 
@@ -338,6 +339,7 @@ body {
   	background-size: cover;
   	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
 }
 #row8 {
 	padding: 1em;
@@ -429,4 +431,11 @@ body {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+#background {
+	background-attachment: fixed;
+}
+#row8background {
+	background-attachment: fixed;
+}
 }
