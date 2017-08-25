@@ -131,6 +131,7 @@ a:hover, a:active, a:focus {
   	background-size: cover;
   	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
 }
 #row3 p {
 	color: white;
@@ -226,5 +227,8 @@ a:hover, a:active, a:focus {
 }
 .imgrows img {
 	height: auto;
+}
+#row3 {
+	background-attachment: fixed;
 }
 }
