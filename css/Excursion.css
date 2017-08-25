@@ -71,6 +71,7 @@ video {
   	background-size: cover;
   	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	background-attachment: scroll;
 }
 
 /*Row 4*/
@@ -149,6 +150,9 @@ video {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+#row3 {
+	background-attachment: fixed;
+}
 #videotext {
 	top: 32%;
 }
