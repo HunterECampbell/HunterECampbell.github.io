@@ -33,7 +33,7 @@ html, body {
 	float: left;
 }
 #row1right {
-	float: right;
+	float: left;
 	margin-top: .4em;
 	padding: 1em;
 }
@@ -167,6 +167,9 @@ html, body {
 .col-m-11 {width: 91.66%;}
 .col-m-12 {width: 100%;}
 
+#row1right {
+	float: right;
+}
 .topbuttons {
 	font-size: 22px;
 }
