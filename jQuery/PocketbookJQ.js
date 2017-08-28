@@ -5,19 +5,28 @@ var main = function() {
     if(firstName === "") {
       $(".first-name-error").append("Please enter your first name.");
     }
+	else {
+		$(".first-name-success").append("Success!");
+	}
     
     var lastName = $("#last").val();
     if(lastName === "") {
       $(".last-name-error").append("Please enter your last name.");
     }
+	else {
+		$(".last-name-success").append("Success!");
+	}
     
     var email = $("#email").val();
     if(email === "") {
       $(".email-error").append("Please enter your email.");
     }
-    if(email === "hcnureth@gmail.com") {
+    else if(email === "hcnureth@gmail.com") {
       $(".email-error").append("This email is already taken.");
     }
+	else {
+		$(".email-success").append("Success!");
+	}
     
     var password = $("#password").val();
     if(password === "") {
@@ -26,6 +35,9 @@ var main = function() {
     else if(password.length < 8) {
       $(".password-error").append("Short passwords are easy to guess. Try one with at least 8 characters.");
     }
+	else {
+		$(".password-success").append("Success!");
+	}
 
     return false;
   })
