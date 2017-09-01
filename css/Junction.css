@@ -1,3 +1,18 @@
+* {
+	box-sizing: border-box;
+}
+
+/*For Phones*/
+[class*="col-"] {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -11,93 +26,118 @@ html, body {
   	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
 
-/*Header*/
-.header {
-	background-color: rgba(0, 0, 0, .5);
+/*Row 1*/
+#row1 {
+	background: rgba(0, 0, 0, .5);
+	padding: 1em 2em;
 }
-
-.header img {
-	height: 32px;
-	width: 32px;
-	margin-top: 10px;
+#row1 img {
+	width: 2em;
 }
-
-#remade {
-	margin-left: 15px;
-	color: rgba(0, 255, 188, 1);
-	padding-right: 25px;
+#row1 p {
+	color: #00ffbc;
+	position: absolute;
+	margin-top: -1.75em;
+	margin-left: 3.5em;
 }
-
-.header ul {
-	margin-top: -30px;
+#topright {
+	text-align: left;
+	padding-top: 5px;
+	margin-left: -1.5em;
+	margin-top: 1em;
 }
-
-.header li {
-	display: inline-block;
+#row1 a {
 	color: white;
-	text-decoration: none;
+	margin-left: 1.5em;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
+}
+#row1 a:hover, #row1 a:focus, #row1 a:active {
+	cursor: pointer;
+	color: #00ffbc;
 }
 
-.btn:hover {
-	cursor: text;
-	color: rgba(0, 255, 188, 1);
-	text-decoration: underline;
-}
-
-#back {
-	color: white;
-	text-decoration: none;
-}
-
-#back:hover {
-	color: rgba(0, 255, 188, 1);
-	text-decoration: underline;
-}
-
-/*Jumbotron*/
-.jumbotron {
-	background: none;
+/*Row 2*/
+#row2 {
+	padding: 5em 0;
 	text-align: center;
 	color: white;
 	text-shadow: 0 2px 3px rgba(0, 0, 0, .4);
 }
-
-.jumbotron h1 {
+#row2 h1 {
 	font-size: 60px;
+	font-weight: 300;
+	padding-bottom: 15px;
+	margin-top: -15px;
 }
-
-.jumbotron img {
-	height: 125px;
-	width: 125px;
-	margin-top: 50px;
+#row2 img {
+	width: 8em;
 }
-
-.jumbotron p {
+#row2 p {
 	font-size: 15px;
+	width: 80%;
+	margin: 0 auto 4em auto;
 }
-
-.btn2 {
-	display: inline;
-	background-color: rgba(0, 255, 188, .5);
+#row2 a {
+	background: rgba(0, 255, 188, .5);
+	padding: 1em 5em;
 	border-radius: 7px;
-	padding: 15px 70px;
-	font-size: 15px;
+	-webkit-transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	transition-duration: .3s;
 }
-
-.btn2:hover {
-	background-color: rgba(42, 28, 28, .5);
-}
-
-#join {
-	display: inline-block;
-	margin-bottom: 25px;
-}
-
-#back2 {
-	color: white;
-}
-
-#back2:hover {
-	text-decoration: underline;
+#row2 a:hover, #row2 a:focus, #row2 a:active {
 	cursor: pointer;
+	background: rgba(0, 0, 0, .5);
+}
+#back {
+	color: white;
+	text-decoration: none;
+	display: block;
+	margin: 2em auto 0 auto;
+	width: 25em;
+}
+
+
+/*For Tablets*/
+@media only screen and (min-width: 600px) {
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+
+#row1 {
+	padding: 1em 5em;
+}
+#topright {
+	text-align: right;
+	padding-top: 5px;
+	margin: 0;
+}
+}
+
+
+/*For Desktops/Laptops*/
+@media only screen and (min-width: 768px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 }
