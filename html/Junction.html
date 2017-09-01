@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Junction in Hunter Campbell's Portfolio</title>
-		<link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+		<title>Junction</title>
+		<!--<link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">-->
 		<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="https://hcnureth.github.io/css/Junction.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	
 	<body>
-    <div class="header">
-		<div class="container">
-			<img src="https://s3.amazonaws.com/codecademy-content/projects/junction/logo.svg" />
-			<ul>
-				<li id="remade">I remade this website</li>
-				<li class="btn">About</li>
-				<li class="btn">Blog</li>
-				<li class="btn">Help</li>
-				<li class="btn">Contact</li>
-				<li class="btn" id="last-btn"><a id="back" href="https://hcnureth.github.io/html/Portfolio.html">Back to Hunter's Website</a></li>
-			</ul>
+		<div class="col-12" id="row1">
+			<div class="col-6" id="topleft">
+				<img src="https://s3.amazonaws.com/codecademy-content/projects/junction/logo.svg" />
+				<p>Junction</p>
+			</div>
+			<div class="col-6" id="topright">
+				<a onclick="">About</a>
+				<a onclick="">Blog</a>
+				<a onclick="">Help</a>
+				<a onclick="">Contact</a>
+			</div>
 		</div>
-    </div>
-	
-		<div class="jumbotron">
+		
+		<div class="col-12" id="row2">
 			<h1>Meet Junction</h1>
-			<div class="row">
-				<div class="col-md-4 col-lg-4 col-sm-4 col-sx-4">
+			<div>
+				<div class="col-4">
 					<img src="https://s3.amazonaws.com/codecademy-content/projects/junction/read.svg" />
-					<h3>Read</h3>
+					<h2>Read</h2>
 					<p>Discover new stories and follow your favorite writers.</p>
 				</div>
-				<div class="col-md-4 col-lg-4 col-sm-4 col-sx-4">
+				<div class="col-4">
 					<img src="https://s3.amazonaws.com/codecademy-content/projects/junction/write.svg" />
-					<h3>Write</h3>
+					<h2>Write</h2>
 					<p>Create stories about our world, or entirely new worlds.</p>
 				</div>
-				<div class="col-md-4 col-lg-4 col-sm-4 col-sx-4">
+				<div class="col-4">
 					<img src="https://s3.amazonaws.com/codecademy-content/projects/junction/talk.svg" />
-					<h3>Talk</h3>
+					<h2>Talk</h2>
 					<p>Join the conversation by talking with your favorite readers and your fans.</p>
 				</div>
-				<div class="btn2 row" id="join">Join</div>
-				<div class="row">
-					<a class="btn2" id="back2" href="https://hcnureth.github.io/html/Portfolio.html">Back to Hunter's Website</a>
-				</div>
 			</div>
+			<a onclick="">Join</a>
+			<a id="back" href="https://hcnureth.github.io/html/Portfolio.html" onclick="">Back to Hunter's Website</a>
 		</div>
 	</body>
 </html>
