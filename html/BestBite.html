@@ -1,99 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-	<title>BestBite in Hunter Campbell's Portfolio</title>
-    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../css/BestBite.css">
+	<title>BestBite</title>
+    	<!--<link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">-->
+    	<link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+    	<link rel="stylesheet" href="https://hcnureth.github.io/css/BestBite.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+  
   <body>
-
-    <div class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-            <h1>BestBite</h1>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
-            <ul class="nav nav-pills">
-              <li role="presentation" class="active">
-                <a href="" class="redh" id="about">About</a>
-              </li>
-			  <li role="presentation" class="active">
-                <a href="" class="redh" id="remade">I remade this website</a>
-              </li>
-              <li role="presentation">
-                <a href="" id="sign" class="ah">Sign Up</a>
-              </li>
-              <li role="presentation">
-                <a href="" id="logIn" class="ah">Log In</a>
-              </li>
-			  <li role="presentation">
-                <a href="../html/Portfolio.html" class="ah" id="back">Back to Hunter's Website</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>            
-      
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Browse.</h1>
-        <h1>Create.</h1>
-        <h1>Share.</h1>
-      </div>
-    </div>
-
-    <div class="section banner">
-      <div class="container">
-        <h3>Always have the answer to "What's for dinner?"</h3>
-        <a href=""><button type="button" class="btn btn-default navbar-btn">Learn More</button></a>
-      </div>
-    </div>
-    	
-    <div class="section">
-      <div class="container">
-      	<div class="page-header">
-      	  <h3 id="newest">Newest Contributions</h3>
-          <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-              <h3>Breakfast</h3>
-              <p>Maple French Toast
-Rolled Oats with Berries</p>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-            	<h3>Dinner</h3>
-              <p>Black Bean Stuffed Peppers
-Pesto Pasta with Spinach</p>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-            	<h3>Dessert</h3>
-              <p>German Chocolate Cake
-Hazelnut Tiramisu</p>
-            </div>
-          </div>
-      	</div>
-        
-      </div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-            <p>2014 BestBite</p>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 midcol">
-            <a href="" id="a1">BestBite.com</a>
-			<a href="../html/Portfolio.html" id="a2">Back to Hunter's Website</a>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-            <p>12 Greentree Lane, Orlando, FL</p>
-          </div>
-        </div>
-      </div>
-    </div>
+	<div class="col-12" id="row1">
+		<div class="col-6">
+			<h1>BestBite</h1>
+		</div>
+		<div class="col-6" id="topright">
+			<a id="about" onclick="">About</a>
+			<a class="topbuttons" onclick="">Sign Up</a>
+			<a class="topbuttons" onclick="">Login</a>
+		</div>
+	</div>
+	
+	<div class="col-12" id="row2">
+		<h1>
+			Browse.<br>
+			Create.<br>
+			Share.
+		</h1>
+	</div>
+	
+	<div class="col-12" id="row3">
+		<h1>Always have the answer to "What's for dinner?"</h1>
+		<a id="learn" onclick="">Learn More</a>
+	</div>
+	
+	<div class="col-12" id="row4">
+		<h1>Newest Contributions</h1>
+		<div class="col-12" id="row4centering"><div class="col-3">
+			<h2>Breakfast</h2>
+			<p>Maple French Toast</p>
+			<p>Rolled Oats with Berries</p>
+		</div>
+		<div class="col-3">
+			<h2>Dinner</h2>
+			<p>Black Bean Stuffed Peppers</p>
+			<p>Pesto Pasta with Spinach</p>
+		</div>
+		<div class="col-3">
+			<h2>Dessert</h2>
+			<p>German Chocolate Cake</p>
+			<p>Hazelnut Tiramisu</p>
+		</div></div>
+	</div>
+	
+	<div class="col-12" id="row5">
+		<div class="col-12" id="row5centering"><div class="col-3">
+			<p>&copy; 2014 BestBite</p>
+		</div>
+		<div class="col-3">
+			<a onclick="">BestBite.com</a>
+			<a id="back" href="https://hcnureth.github.io/html/Portfolio.html" onclick="">Back to Hunter's Website</a>
+		</div>
+		<div class="col-3">
+			<p>12 Greentree Lane, Orlando, FL</p>
+		</div></div>
+	</div>
     
   </body>
 </html>
