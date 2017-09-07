@@ -21,7 +21,7 @@ html, body {
 	display: table;
 }
 body {
-	background: url("../Images/Bingo/WoodWithFlowers.jpg") no-repeat center center fixed;
+	background: url("https://hcnureth.github.io/Images/Bingo/WoodWithFlowers.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -59,7 +59,7 @@ body {
 #last h3 {
 	height: 2.75em;
 	width: 3em;
-	padding-top: .74em;
+	padding-top: .59em;
 	font-size: 36px;
 }
 #last p {
@@ -70,7 +70,7 @@ body {
 #current h3 {
 	height: 2.75em;
 	width: 3em;
-	padding-top: .74em;
+	padding-top: .59em;
 	font-size: 70px;
 }
 #current p {
@@ -111,7 +111,7 @@ body {
 	padding: 0;
 	height: 2.75em;
 	width: 2.75em;
-	padding: .7em;
+	padding: .55em;
 	border: solid white 3px;
 	border-radius: 50%;
 	background: rgba(255, 255, 255, .5);
@@ -150,6 +150,13 @@ body {
 }
 .all {
 	font-size: 24px;
+	padding: .7em;
+}
+#last h3 {
+	padding-top: .74em;
+}
+#current h3 {
+	padding-top: .74em;
 }
 }
 
