@@ -4,128 +4,121 @@
 		<title>BINGO Caller!</title>
 		<link rel="stylesheet" type="text/css" href="https://hcnureth.github.io/css/bingo.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
 	</head>
 
 	<body>
-		<div id="title">
+		<div class="col-12" id="row1">
 			<h1>Welcome to BINGO Caller!</h1>
-			<a class="top" id="back" href="https://hcnureth.github.io/html/Portfolio.html">Back to Hunter's Website</a>
-			<p class="top" id="made">I made this from scratch.</p>
 		</div>
 		
-		<div id="numDisplay">
-			<table>
-				<tr>
-					<td id="last">
-						<h3 id="lasth" class="numDh"></h3>
-						<p>Last Number</p>
-					</td>
-					<td id="current">
-						<h3 id="currenth" class="numDh"></h3>
-						<p>Current Number</p>
-					</td>
-				</tr>
-			</table>
+		<div class="col-12" id="row2">
+			<div id="last">
+				<h3 id="lasth" class="numDh"></h3>
+				<p>Last Number</p>
+			</div>
+			<div id="current">
+				<h3 id="currenth" class="numDh"></h3>
+				<p>Current Number</p>
+			</div>
 		</div>
 		
-		<div id="roller">
-			<div><p class="btn" id="nextBtn">Start</p></div>
-			<div><p class="btn" id="resetBtn">Reset</p></div>
+		<div class="col-12" id="row3">
+			<div class="btn" id="nextBtn" onclick="">Start</div>
+			<div class="btn" id="resetBtn" onclick="">Reset</div>
 		</div>
 		
-		<div id="numbers">
-			<table>
-				<tr>
-					<td><p id="bh" class="bingoTitle all">B</p></td>
-					<td><p id="b1" class="bs all">1</p></td>
-					<td><p id="b2" class="bs all">2</p></td>
-					<td><p id="b3" class="bs all">3</p></td>
-					<td><p id="b4" class="bs all">4</p></td>
-					<td><p id="b5" class="bs all">5</p></td>
-					<td><p id="b6" class="bs all">6</p></td>
-					<td><p id="b7" class="bs all">7</p></td>
-					<td><p id="b8" class="bs all">8</p></td>
-					<td><p id="b9" class="bs all">9</p></td>
-					<td><p id="b10" class="bs all">10</p></td>
-					<td><p id="b11" class="bs all">11</p></td>
-					<td><p id="b12" class="bs all">12</p></td>
-					<td><p id="b13" class="bs all">13</p></td>
-					<td><p id="b14" class="bs all">14</p></td>
-					<td><p id="b15" class="bs all">15</p></td>
-				</tr>
-				<tr>
-					<td><p id="ih" class="bingoTitle all">I</p></td>
-					<td><p id="i16" class="is all">16</p></td>
-					<td><p id="i17" class="is all">17</p></td>
-					<td><p id="i18" class="is all">18</p></td>
-					<td><p id="i19" class="is all">19</p></td>
-					<td><p id="i20" class="is all">20</p></td>
-					<td><p id="i21" class="is all">21</p></td>
-					<td><p id="i22" class="is all">22</p></td>
-					<td><p id="i23" class="is all">23</p></td>
-					<td><p id="i24" class="is all">24</p></td>
-					<td><p id="i25" class="is all">25</p></td>
-					<td><p id="i26" class="is all">26</p></td>
-					<td><p id="i27" class="is all">27</p></td>
-					<td><p id="i28" class="is all">28</p></td>
-					<td><p id="i29" class="is all">29</p></td>
-					<td><p id="i30" class="is all">30</p></td>
-				</tr>
-				<tr>
-					<td><p id="nh" class="bingoTitle all">N</p></td>
-					<td><p id="n31" class="ns all">31</p></td>
-					<td><p id="n32" class="ns all">32</p></td>
-					<td><p id="n33" class="ns all">33</p></td>
-					<td><p id="n34" class="ns all">34</p></td>
-					<td><p id="n35" class="ns all">35</p></td>
-					<td><p id="n36" class="ns all">36</p></td>
-					<td><p id="n37" class="ns all">37</p></td>
-					<td><p id="n38" class="ns all">38</p></td>
-					<td><p id="n39" class="ns all">39</p></td>
-					<td><p id="n40" class="ns all">40</p></td>
-					<td><p id="n41" class="ns all">41</p></td>
-					<td><p id="n42" class="ns all">42</p></td>
-					<td><p id="n43" class="ns all">43</p></td>
-					<td><p id="n44" class="ns all">44</p></td>
-					<td><p id="n45" class="ns all">45</p></td>
-				</tr>
-				<tr>
-					<td><p id="gh" class="bingoTitle all">G</p></td>
-					<td><p id="g46" class="gs all">46</p></td>
-					<td><p id="g47" class="gs all">47</p></td>
-					<td><p id="g48" class="gs all">48</p></td>
-					<td><p id="g49" class="gs all">49</p></td>
-					<td><p id="g50" class="gs all">50</p></td>
-					<td><p id="g51" class="gs all">51</p></td>
-					<td><p id="g52" class="gs all">52</p></td>
-					<td><p id="g53" class="gs all">53</p></td>
-					<td><p id="g54" class="gs all">54</p></td>
-					<td><p id="g55" class="gs all">55</p></td>
-					<td><p id="g56" class="gs all">56</p></td>
-					<td><p id="g57" class="gs all">57</p></td>
-					<td><p id="g58" class="gs all">58</p></td>
-					<td><p id="g59" class="gs all">59</p></td>
-					<td><p id="g60" class="gs all">60</p></td>
-				</tr>
-				<tr>
-					<td><p id="oh" class="bingoTitle all">O</p></td>
-					<td><p id="o61" class="os all">61</p></td>
-					<td><p id="o62" class="os all">62</p></td>
-					<td><p id="o63" class="os all">63</p></td>
-					<td><p id="o64" class="os all">64</p></td>
-					<td><p id="o65" class="os all">65</p></td>
-					<td><p id="o66" class="os all">66</p></td>
-					<td><p id="o67" class="os all">67</p></td>
-					<td><p id="o68" class="os all">68</p></td>
-					<td><p id="o69" class="os all">69</p></td>
-					<td><p id="o70" class="os all">70</p></td>
-					<td><p id="o71" class="os all">71</p></td>
-					<td><p id="o72" class="os all">72</p></td>
-					<td><p id="o73" class="os all">73</p></td>
-					<td><p id="o74" class="os all">74</p></td>
-					<td><p id="o75" class="os all">75</p></td>
-				</tr>
-			</table>
+		<div class="col-12" id="row4">
+			<div>
+				<p id="bh" class="bingoTitle all">B</p>
+				<p id="b1" class="all">1</p>
+				<p id="b2" class="all">2</p>
+				<p id="b3" class="all">3</p>
+				<p id="b4" class="all">4</p>
+				<p id="b5" class="all">5</p>
+				<p id="b6" class="all">6</p>
+				<p id="b7" class="all">7</p>
+				<p id="b8" class="all">8</p>
+				<p id="b9" class="all">9</p>
+				<p id="b10" class="all">10</p>
+				<p id="b11" class="all">11</p>
+				<p id="b12" class="all">12</p>
+				<p id="b13" class="all">13</p>
+				<p id="b14" class="all">14</p>
+				<p id="b15" class="all">15</p>
+			</div>
+			<div>
+				<p id="ih" class="bingoTitle all">I</p>
+				<p id="i16" class="all">16</p>
+				<p id="i17" class="all">17</p>
+				<p id="i18" class="all">18</p>
+				<p id="i19" class="all">19</p>
+				<p id="i20" class="all">20</p>
+				<p id="i21" class="all">21</p>
+				<p id="i22" class="all">22</p>
+				<p id="i23" class="all">23</p>
+				<p id="i24" class="all">24</p>
+				<p id="i25" class="all">25</p>
+				<p id="i26" class="all">26</p>
+				<p id="i27" class="all">27</p>
+				<p id="i28" class="all">28</p>
+				<p id="i29" class="all">29</p>
+				<p id="i30" class="all">30</p>
+			</div>
+			<div>
+				<p id="nh" class="bingoTitle all">N</p>
+				<p id="n31" class="all">31</p>
+				<p id="n32" class="all">32</p>
+				<p id="n33" class="all">33</p>
+				<p id="n34" class="all">34</p>
+				<p id="n35" class="all">35</p>
+				<p id="n36" class="all">36</p>
+				<p id="n37" class="all">37</p>
+				<p id="n38" class="all">38</p>
+				<p id="n39" class="all">39</p>
+				<p id="n40" class="all">40</p>
+				<p id="n41" class="all">41</p>
+				<p id="n42" class="all">42</p>
+				<p id="n43" class="all">43</p>
+				<p id="n44" class="all">44</p>
+				<p id="n45" class="all">45</p>
+			</div>
+			<div>
+				<p id="gh" class="bingoTitle all">G</p>
+				<p id="g46" class="all">46</p>
+				<p id="g47" class="all">47</p>
+				<p id="g48" class="all">48</p>
+				<p id="g49" class="all">49</p>
+				<p id="g50" class="all">50</p>
+				<p id="g51" class="all">51</p>
+				<p id="g52" class="all">52</p>
+				<p id="g53" class="all">53</p>
+				<p id="g54" class="all">54</p>
+				<p id="g55" class="all">55</p>
+				<p id="g56" class="all">56</p>
+				<p id="g57" class="all">57</p>
+				<p id="g58" class="all">58</p>
+				<p id="g59" class="all">59</p>
+				<p id="g60" class="all">60</p>
+			</div>
+			<div>
+				<p id="oh" class="bingoTitle all">O</p>
+				<p id="o61" class="all">61</p>
+				<p id="o62" class="all">62</p>
+				<p id="o63" class="all">63</p>
+				<p id="o64" class="all">64</p>
+				<p id="o65" class="all">65</p>
+				<p id="o66" class="all">66</p>
+				<p id="o67" class="all">67</p>
+				<p id="o68" class="all">68</p>
+				<p id="o69" class="all">69</p>
+				<p id="o70" class="all">70</p>
+				<p id="o71" class="all">71</p>
+				<p id="o72" class="all">72</p>
+				<p id="o73" class="all">73</p>
+				<p id="o74" class="all">74</p>
+				<p id="o75" class="all">75</p>
+			</div>
 		</div>
 	
 		<script type="text/javascript" src="https://hcnureth.github.io/js/bingo.js"></script>
