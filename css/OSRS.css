@@ -1,0 +1,276 @@
+* {
+	box-sizing: border-box;
+	font-family: /*OSRS Font*/Verdana, sans-serif;
+}
+
+body {
+	margin: 0;
+	background: #d3d4d5;
+}
+
+/*For Phones*/
+[class*="col-"] {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+/*For Tablets*/
+@media only screen and (min-width: 600px) {
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+
+
+}
+
+
+/*For Desktops/Laptops*/
+@media only screen and (min-width: 768px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+#header {
+	border-bottom: solid black 2px;
+	background: #b87333;
+	color: white;
+}
+
+#name {
+	padding-left: 15px;
+	padding-top: 37px;
+	font-size: 20px;
+}
+
+#title {
+	text-align: center;
+	font-size: 30px;
+	padding-top: 31px;
+}
+
+#creation {
+	text-align: right;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-top: 10px;
+}
+
+#middle {
+	border-right: solid black 2px;
+	border-left: solid black 2px;
+}
+
+.title {
+	text-align: center;
+	padding: 15px 0;
+	border-bottom: solid black 2px;
+	font-size: 18px;
+	background: #b87333;
+	color: white;
+}
+
+.filler {
+	background: #d2b48c;
+	color: white;
+	padding: 15px;
+	text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+}
+
+.tooltip:hover {
+	cursor: pointer;
+}
+
+#items {
+	border-bottom: solid black 2px;
+}
+
+#favItems {
+	font-size: 18px;
+}
+
+#itemsValue {
+	text-align: right;
+	font-size: 18px;
+}
+
+#questList {
+	border-bottom: solid black 2px;
+}
+
+#skillsList {
+	border-bottom: solid black 2px;
+	text-align: center;
+	cursor: auto;
+}
+
+#skillsList .filler {
+	cursor: auto;
+}
+
+.skills {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: solid black 2px;
+	margin-bottom: 15px;
+}
+.skillsBottom {
+	margin-bottom: 0;
+}
+
+.plus, .minus {
+	border: solid black 1px;
+	color: white;
+	border-radius: 50%;
+	padding: 5px;
+	margin-left: 5px;
+	text-shadow: none;
+	background: #b87333;
+	transition-duration: .25s;
+	-webkit-transition-duration: .25s;
+	-moz-transition-duration: .25s;
+	-o-transition-duration: .25s;
+	font-weight: bold;
+}
+.plus:hover, .minus:hover {
+	background: #d3d4d5;
+	cursor: pointer;
+	color: black;
+}
+
+.skillsImg {
+	border: solid black 1px;
+	height: 30px;
+}
+
+#totalLvl {
+	padding: 21.225px 0;
+}
+
+#friendList {
+	border-bottom: solid black 2px;
+}
+
+.interactiveBox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	height: 25%;
+	background: #d3d4d5;
+	border: solid black 2px;
+	border-radius: 5px;
+	padding: 15px;
+}
+.boxTitle {
+	border-bottom: solid black 2px;
+	text-align: center;
+	padding-bottom: 15px;
+	font-size: 20px;
+}
+
+#addImage {
+	border: solid black 2px;
+	padding: 25px 5px;
+	text-align: center;
+	margin-top: 25px;
+	background: white;
+}
+
+#itemForm {
+	margin-top: 22px;
+	padding-left: 45px;
+}
+
+#itemForm input[type=text] {
+	padding: 3px;
+	margin: 5px 0;
+	border: solid grey 2px;
+	outline: none;
+	transition-duration: .5s;
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	cursor: pointer;
+}
+#itemForm input[type=text]:focus {
+	border: solid black 2px;
+}
+
+.boxButtons {
+	background: #b87333;
+	color: white;
+	padding: 5px 0;
+	margin-top: 25px;
+	margin-right: 5px;
+	border: solid black 2px;
+	transition-duration: .25s;
+	-webkit-transition-duration: .25s;
+	-moz-transition-duration: .25s;
+	-o-transition-duration: .25s;
+}
+.boxButtons:hover {
+	cursor: pointer;
+	background: #d3d4d5;
+	color: black;
+}
+
+textarea {
+	resize: none;
+	margin-top: 15px;
+	text-align: bottom;
+}
+
+#questsBox {
+	height: 32%;
+}
+
+#questForm, #friendForm {
+	padding: 25px 0;
+}
+
+#questSubmit, #friendSubmit {
+	margin-left: 32.5px;
+}
+
+#friendsBox {
+	height: 36%;
+}
+
+#bestFriend {
+	margin-top: 20px;
+}
+
