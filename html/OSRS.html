@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Instructor Availability</title>
+		<link rel="stylesheet" type="text/css" href="../Instructor Website/OSRS.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.css" />
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	
+	<body>
+		<div class="col-12" id="header">
+			<div class="col-4" id="name">Hcnureth2</div>
+			<div class="col-4" id="title">OSRS</div>
+			<div class="col-4" id="creation"></div>
+		</div>
+		
+		<div class="col-4" id="left">
+			<div class="col-12" id="items">
+				<div class="col-12 title tooltip" id="bank" title="Change Amount">Coins:</div>
+				<div class="col-12 filler tooltip" id="favItems" title="Update Items">Favorite Items:
+					<!--Where favorite items are appended-->
+				</div>
+				<div class="col-12 filler tooltip" id="itemsValue" title="Update Items"></div>
+			</div>
+			<div class="col-12" id="quests">
+				<div class="col-12 title tooltip" id="questTitle" title="Update Quests">Quests</div>
+				<div class="col-12 questList tooltip filler" id="questList" title="Update Quests">
+					<!--Where quests are appended-->
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-4" id="middle">
+			<div class="col-12 title" id="skillsTitle">Skills</div>
+			<div class="col-12 skillsList filler" id="skillsList">
+				<!--Left Skills-->
+				<div class="col-4 filler" id="leftSkills">
+					<div class="col-12 filler skills" id="attack2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="attack"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="strength2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="strength"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="defense2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="defense"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="ranged2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="ranged"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="prayer2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="prayer"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="magic2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="magic"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="runecrafting2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="runecrafting"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills skillsBottom" id="construction2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="construction"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+				</div>
+				<!--Middle Skills-->
+				<div class="col-4 filler" id="middleSkills">
+					<div class="col-12 filler skills" id="hitpoints2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="hitpoints"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="agility2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="agility"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="herblore2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="herblore"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="thieving2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="thieving"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="crafting2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="crafting"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="fletching2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="fletching"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="slayer2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="slayer"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills skillsBottom" id="hunter2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="hunter"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+				</div>
+				<!--Right Skills-->
+				<div class="col-4 filler" id="rightSkills">
+					<div class="col-12 filler skills" id="mining2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="mining"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="smithing2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="smithing"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="fishing2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="fishing"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="cooking2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="cooking"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="firemaking2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="firemaking"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="woodcutting2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="woodcutting"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills" id="farming2">
+						<img class="col-3 skillsImg" src=""></img>
+						<div class="col-3" id="farming"></div>
+						<div class="col-3 plus">+</div>
+						<div class="col-3 minus">-</div>
+					</div>
+					<div class="col-12 filler skills skillsBottom" id="totalLvl"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-4" id="right">
+			<div class="col-12 title tooltip" id="friendsTitle" title="Add Friend">Friends</div>
+			<div class="col-12 friendsList filler tooltip" title="Add Friend" id="friendList">
+				<!--Where friends are appended-->
+			</div>
+		</div>
+		
+		<!--Where items are added-->
+		<div class="col-3 interactiveBox" id="itemsBox">
+			<div class="col-12 boxTitle" id="itemsBoxTitle">Add New Item</div>
+			<div class="col-12 boxBody">
+				<div class="col-3" id="addImage">Image Uploader</div>
+				<form class="col-9" id="itemForm" name="itemForm">
+					Name: <input type="text" id="itemName" name="itemName"><br>
+					Value: <input type="text" id="itemValue" name="itemValue"><br>
+					<button class="col-5 boxButtons" id="itemSubmit" type="button">Submit</button>
+					<button class="col-5 boxButtons" id="itemCancel" type="button">Cancel</button>
+				</form>
+			</div>
+		</div>
+		
+		<!--Where quests are added-->
+		<div class="col-3 interactiveBox" id="questsBox">
+			<div class="col-12 boxTitle" id="questsBoxTitle">Add New Quest</div>
+			<div class="col-12 boxBody">
+				<form class="col-12" id="questForm" name="questForm">
+					Name: <input type="text" id="questName" name="questName"><br><br>Notes:<br>
+					<textarea rows="4" cols="40" id="questNotes" name="questNotes" form="questForm"></textarea><br>
+					<div class="col-12" id="questButton">
+						<button class="col-5 boxButtons" id="questSubmit" type="button">Submit</button>
+						<button class="col-5 boxButtons" id="questCancel" type="button">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<!--Where friends are added-->
+		<div class="col-3 interactiveBox" id="friendsBox">
+			<div class="col-12 boxTitle" id="friendsBoxTitle">Add New Friend</div>
+			<div class="col-12 boxBody">
+				<form class="col-12" id="friendForm" name="friendForm">
+					Name: <input type="text" id="friendName" name="friendName"><br><br>Notes:<br>
+					<textarea rows="4" cols="40" id="friendNotes" name="friendNotes" form="friendForm"></textarea><br>
+					Best Friend <input type="checkbox" id="bestFriend" name="bestFriend"><br>
+					<button class="col-5 boxButtons" id="friendSubmit" type="button">Submit</button>
+					<button class="col-5 boxButtons" id="friendCancel" type="button">Cancel</button>
+				</form>
+			</div>
+		</div>
+	
+	<script type="text/javascript" src="../Instructor Website/OSRS.js"></script>
+	</body>
+</html>
