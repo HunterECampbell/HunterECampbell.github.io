@@ -36,7 +36,51 @@ body {
 .col-m-11 {width: 91.66%;}
 .col-m-12 {width: 100%;}
 
+#header {
+	display: flex;
+}
 
+#title, #name {
+	margin-top: 19.5px;
+}
+
+#skillsList img {
+	height: 50px;
+}
+
+#skillsList .col-m-5 {
+	margin: 5px;
+}
+
+#skillsList {
+	font-size: 20px;
+}
+
+.plus, .minus {
+	height: 57.5px;
+}
+
+.plusP, .minusP {
+	margin-top: 11px;
+}
+
+#totalLvl {
+	height: 91px;
+}
+
+#itemsBox {
+	position: fixed;
+	height: 45%;
+}
+
+#itemSubmit {
+	margin-bottom: -10px;
+}
+
+#questsBox {
+	position: fixed;
+	height: 45%;/*NOT WORKING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+}
 }
 
 
