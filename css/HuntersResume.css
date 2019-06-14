@@ -19,8 +19,8 @@ body {
 }
 
 .header address {
-	float: right;
-	margin-top: -35px;
+	float: left;
+	margin-top: -45px;
 }
 
 a {
