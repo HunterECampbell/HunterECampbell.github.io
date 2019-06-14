@@ -15,12 +15,11 @@ body {
 }
 
 .header {
-	padding-bottom: 35px;
+	padding-bottom: 25px;
 }
 
 .header h2 {
 	display: block;
-	padding-bottom: 15px;
 }
 
 a {
