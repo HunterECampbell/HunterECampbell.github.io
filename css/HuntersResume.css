@@ -14,10 +14,13 @@ body {
 	border-top: solid black 2px;
 }
 
+.header {
+	padding-bottom: 35px;
+}
+
 .header address {
 	float: right;
 	margin-top: -35px;
-	padding-bottom: 35px;
 }
 
 a {
