@@ -18,6 +18,10 @@ body {
 	padding-bottom: 35px;
 }
 
+.header address {
+	margin-top: 45px;
+}
+
 a {
 	color: blue;
 	text-decoration: none;
