@@ -18,9 +18,9 @@ body {
 	padding-bottom: 35px;
 }
 
-.header address {
-	position: relative;
-	margin-top: 45px;
+.header h2 {
+	display: block;
+	padding-bottom: 15px;
 }
 
 a {
