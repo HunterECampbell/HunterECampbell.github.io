@@ -1,9 +1,6 @@
 body {
 	padding: 25px;
-}
-
-.container {
-	border-top: solid black 1px;
+	font-family: Arial;
 }
 
 #container {
@@ -14,12 +11,37 @@ body {
 	border-top: solid black 2px;
 }
 
+#container2 p {
+	line-height: normal;
+}
+
+#container2 li {
+	padding: 5px 0;
+}
+
+.container {
+	padding: 0 0 1px 0;
+}
+
+.container p {
+	line-height: 7px;
+}
+
 .header {
 	padding-bottom: 25px;
 }
 
 .header h2 {
-	display: block;
+	display: inline;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+address {
+	font-style: normal;
+	float: right;
 }
 
 a {
@@ -27,13 +49,17 @@ a {
 	text-decoration: none;
 }
 
-.supporting7 a:hover {
-	text-decoration: underline;
+#footer p {
+	line-height: normal;
 }
 
 @media (max-width: 650px) {
-	.header address {
+	.header {
+		padding-bottom: 75px;
+	}
+	
+	address {
 		float: left;
-		margin-top: -12px;
+		margin-top: 15px;
 	}
 }
