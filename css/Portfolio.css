@@ -138,10 +138,6 @@ body {
 	content: "\f0e1";
 	font-family: FontAwesome;
 }
-.facebook:before {
-	content: "\f09a";
-	font-family: FontAwesome;
-}
 .gmail:before {
 	content: "\f0e0";
 	font-family: FontAwesome;
