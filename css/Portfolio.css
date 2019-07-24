@@ -322,34 +322,17 @@ body {
 /*Row 7*/
 #row7 {
 	padding: 3em 0;
+	border-bottom: solid 2px #3366ff;
 }
 
 
 /*Row 8*/
-#row8background {
-	padding: 0;
-	margin: 0;
-	background: url("https://hcnureth.github.io/Images/Portfolio Pics/StreamWithBoat.jpg") no-repeat center center fixed;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	background-size: cover;
-  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-	background-attachment: scroll;
-}
 #row8 {
 	padding: 1em;
-	background: rgba(0, 0, 0, .3);
 }
-#blogtitle {
-	color: white;
-	font-size: 32px;
-	text-align: center;
-	margin-top: .25em;
-}
-#blog {
-	background: white;
-	margin-top: -.5em;
+.graphics {
+	padding: 30px;
+	display: inline-block;
 }
 
 
