@@ -35,18 +35,15 @@ body {
 /*Row 1*/
 #row1 {
 	background: rgba(51, 153, 255, .7);
-}
-#row1 p {
-	display: inline-block;
 	color: white;
 }
-#portfoliotitle {
-	font-size: 30px;
-}
-#quote {
-	text-align: right;
-	float: right;
-	font-size: 20px;
+#logo {
+	border-radius: 50%;
+	height: 90px;
+	width: 90px;
+	background: #cccccc;
+	margin: 25px auto;
+	display: block;
 }
 
 
@@ -88,15 +85,6 @@ body {
 #row2ul1 {
 	padding: 0;
 }
-#languages {
-	margin-top: -10px;
-}
-#enjoy {
-	margin-bottom: -10px;
-}
-#row2ul22 {
-	padding-top: 10px;
-}
 .row2li1 {
 	padding: 5px 10px;
 }
@@ -107,11 +95,14 @@ body {
 .row2ul2 {
 	padding-left: 20px;
 }
-.row2ul2 li {
-	padding: 1.5px;
+#LanguagesUL ul {
+	padding-left: 0;
 }
-#row2ul21 {
-	padding-bottom: 3px;
+#LanguagesUL li {
+	padding-left: 20px;
+}
+.row2ul2 li {
+	padding: 1.5px 5px 1.5px 0;
 }
 .row2right {
 	float: right;
@@ -142,7 +133,6 @@ body {
 	content: "\f0e0";
 	font-family: FontAwesome;
 }
-
 
 /*Row 3*/
 #row3 {
