@@ -2,21 +2,51 @@ var main = function() {
 	/*About Menu Effects*/
 	$("#aboutme").click(function() {
 		$("#aboutmenu").toggle();
-		$("#row2ul21").toggle(false);
-		$("#row2ul22").toggle(false);
+		$("#MotoUL").toggle(false);
+		$("#ExperienceUL").toggle(false);
+		$("#LanguagesUL").toggle(false);
+		$("#EnjoyUL").toggle(false);
+		$("#GamesUL").toggle(false);
+	});
+	$("#moto").click(function() {
+		$("#MotoUL").toggle();
+		$("#ExperienceUL").toggle(false);
+		$("#LanguagesUL").toggle(false);
+		$("#EnjoyUL").toggle(false);
+		$("#GamesUL").toggle(false);
+	});
+	$("#experience").click(function() {
+		$("#MotoUL").toggle(false);
+		$("#ExperienceUL").toggle();
+		$("#LanguagesUL").toggle(false);
+		$("#EnjoyUL").toggle(false);
+		$("#GamesUL").toggle(false);
 	});
 	$("#languages").click(function() {
-		$("#row2ul21").toggle();
-		$("#row2ul22").toggle(false);
+		$("#MotoUL").toggle(false);
+		$("#ExperienceUL").toggle(false);
+		$("#LanguagesUL").toggle();
+		$("#EnjoyUL").toggle(false);
+		$("#GamesUL").toggle(false);
 	});
 	$("#enjoy").click(function() {
-		$("#row2ul21").toggle(false);
-		$("#row2ul22").toggle();
+		$("#MotoUL").toggle(false);
+		$("#ExperienceUL").toggle(false);
+		$("#LanguagesUL").toggle(false);
+		$("#EnjoyUL").toggle();
+		$("#GamesUL").toggle(false);
+	});
+	$("#games").click(function() {
+		$("#MotoUL").toggle(false);
+		$("#ExperienceUL").toggle(false);
+		$("#LanguagesUL").toggle(false);
+		$("#EnjoyUL").toggle(false);
+		$("#GamesUL").toggle();
 	});
 	$(document).click(function() {
 		$("#aboutmenu").hide();
 	});
-	$("#aboutme, #aboutmenu, #aboutmenu, #row2ul21, #enjoy, #row2ul22").click(function(e) {
+	$("#aboutme, #aboutmenu, #moto, #experience, #languages, #enjoy, #games").click(function(e) {
 		e.stopPropagation();
 	});
 	
