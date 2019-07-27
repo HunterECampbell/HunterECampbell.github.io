@@ -74,7 +74,7 @@ body {
 	color: #3366ff;
 }
 #aboutmenu {
-	background: rgba(51, 153, 255, .7);
+	background: rgb(51, 153, 255);
 	border: solid 2px rgba(51, 153, 255, .1);
 	position: absolute;
 	display: none;
@@ -403,6 +403,9 @@ body {
 
 #background {
 	background-attachment: fixed;
+}
+#aboutmenu {
+	background: rgba(51, 153, 255, .7);
 }
 #row8background {
 	background-attachment: fixed;
