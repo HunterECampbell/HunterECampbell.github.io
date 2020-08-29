@@ -1,5 +1,5 @@
 # HunterECampbell.github.io
-All directories except "www" were personal projects that I made based off of the things I learned in Codecademy.
+All directories except "www" were projects that I made based off of the things I learned in Codecademy.
 
 Directory "www" is a Dungeons & Dragons Character tracking app, made in Vue.js, called "Character Bag".
 
