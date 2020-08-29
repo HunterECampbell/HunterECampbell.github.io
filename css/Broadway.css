@@ -185,7 +185,7 @@ html, body {
 	font-size: 70px;
 }
 #iconsrow {
-	webkit-flex-direction: row;
+	-webkit-flex-direction: row;
 	flex-direction: row;
 }
 .icons:not(:first-child) {

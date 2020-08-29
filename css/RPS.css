@@ -77,7 +77,7 @@
 	cursor: pointer;
 }
 #rock {
-	background: url("https://hcnureth.github.io/Images/RPS Pics/rock.jpg") no-repeat center center fixed;
+	background: url("https://HunterECampbell.github.io/Images/RPS Pics/rock.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	background-size: cover;
@@ -86,7 +86,7 @@
 	background-attachment: scroll;
 }
 #paper {
-	background: url("https://hcnureth.github.io/Images/RPS Pics/paper.jpg") no-repeat center center fixed;
+	background: url("https://HunterECampbell.github.io/Images/RPS Pics/paper.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	background-size: cover;
@@ -95,7 +95,7 @@
 	background-attachment: scroll;
 }
 #scissors {
-	background: url("https://hcnureth.github.io/Images/RPS Pics/scissors.jpg") no-repeat center center fixed;
+	background: url("https://HunterECampbell.github.io/Images/RPS Pics/scissors.jpg") no-repeat center center fixed;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	background-size: cover;
