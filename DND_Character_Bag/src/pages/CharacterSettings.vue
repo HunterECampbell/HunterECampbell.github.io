@@ -18,7 +18,7 @@
     <f7-block>
       <f7-list class="selection-list" inline-labels>
         <f7-list-item popup-open="#CharacterColors" title="Character Colors" link="#"></f7-list-item>
-        <f7-list-item popup-open="#QuickViewMenu" title="Quick View Menu" link="#"></f7-list-item>
+        <!-- <f7-list-item popup-open="#QuickViewMenu" title="Quick View Menu" link="#"></f7-list-item> -->
       </f7-list>
     </f7-block>
 
@@ -203,6 +203,7 @@ export default {
 
 h2 {
   padding-top: 15px;
+  padding-left: 25px;
 }
 
 .higher-h2 {
