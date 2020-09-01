@@ -12,7 +12,7 @@
       </f7-nav-title>
     </f7-navbar>
 
-    <QuickViewFAB />
+    <!-- <QuickViewFAB /> -->
 
     <!-- Scrollable page content-->
     <f7-block inner>
