@@ -164,6 +164,14 @@ export default {
       employeeList: [],
       employeeListOriginal: [
         {
+          name: 'Hunter Campbell',
+          department: 'Engineering',
+          manager: 'Elisa Snow',
+          jobTitle: 'QA Engineer',
+          workAnniversary: 'Sep. 2, 2019',
+          birthday: 'Dec. 14, 1994',
+        },
+        {
           name: 'Billy Joel',
           department: 'Entertainment',
           manager: 'Self',
