@@ -1919,12 +1919,12 @@ $("#ChangeBackImg").hide();
 $("#spruce").click(function() {
 	$("#backImg").hide();
 	$("#ChangeBackImg").show();
-	$("body").css({"background": "url('https://hcnureth.github.io/Images/diceRoller Pics/BackgroundImage/SpruceBerries.JPG') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'"});
+	$("body").css({"background": "url('https://HunterECampbell.github.io/Images/diceRoller Pics/BackgroundImage/SpruceBerries.JPG') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'"});
 });
 $("#mountain").click(function() {
 	$("#backImg").hide();
 	$("#ChangeBackImg").show();
-	$("body").css({"background": "url('https://hcnureth.github.io/Images/diceRoller Pics/BackgroundImage/MountainScene.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'"});
+	$("body").css({"background": "url('https://HunterECampbell.github.io/Images/diceRoller Pics/BackgroundImage/MountainScene.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'"});
 });
  $("#ChangeBackImg").click(function() {
 	$("#backImg").show();

@@ -21,19 +21,19 @@ var main = function() {
 		var userChoice = "";
 		$("#rock").click(function() {
 			userChoice = "rock";
-			$("#userchoice").css({"background": "url('https://hcnureth.github.io/Images/RPS Pics/rock.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'", "background-attachment": "scroll"});
+			$("#userchoice").css({"background": "url('https://HunterECampbell.github.io/Images/RPS Pics/rock.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'", "background-attachment": "scroll"});
 			$("#row2").hide();
 			$("#row3").show();
 		});
 		$("#paper").click(function() {
 			userChoice = "paper";
-			$("#userchoice").css({"background": "url('https://hcnureth.github.io/Images/RPS Pics/paper.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'", "background-attachment": "scroll"});
+			$("#userchoice").css({"background": "url('https://HunterECampbell.github.io/Images/RPS Pics/paper.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'", "background-attachment": "scroll"});
 			$("#row2").hide();
 			$("#row3").show();
 		});
 		$("#scissors").click(function() {
 			userChoice = "scissors";
-			$("#userchoice").css({"background": "url('https://hcnureth.github.io/Images/RPS Pics/scissors.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'", "background-attachment": "scroll"});
+			$("#userchoice").css({"background": "url('https://HunterECampbell.github.io/Images/RPS Pics/scissors.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'", "background-attachment": "scroll"});
 			$("#row2").hide();
 			$("#row3").show();
 		});
@@ -43,15 +43,15 @@ var main = function() {
 
 		if (computerChoice <= 0.33) {
 			computerChoice = "rock";
-			$("#compchoice").css({"background": "url('https://hcnureth.github.io/Images/RPS Pics/rock.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'", "background-attachment": "scroll"});
+			$("#compchoice").css({"background": "url('https://HunterECampbell.github.io/Images/RPS Pics/rock.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'", "background-attachment": "scroll"});
 		}
 		else if (computerChoice <= 0.66) {
 			computerChoice = "paper";
-			$("#compchoice").css({"background": "url('https://hcnureth.github.io/Images/RPS Pics/paper.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'", "background-attachment": "scroll"});
+			$("#compchoice").css({"background": "url('https://HunterECampbell.github.io/Images/RPS Pics/paper.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'", "background-attachment": "scroll"});
 		}
 		else {
 			computerChoice = "scissors";
-			$("#compchoice").css({"background": "url('https://hcnureth.github.io/Images/RPS Pics/scissors.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'", "background-attachment": "scroll"});
+			$("#compchoice").css({"background": "url('https://HunterECampbell.github.io/Images/RPS Pics/scissors.jpg') no-repeat center center fixed", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover", "filter": "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale')", "-ms-filter": "'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')'", "background-attachment": "scroll"});
 		}
 
 		var compare = function(choice1, choice2) {
