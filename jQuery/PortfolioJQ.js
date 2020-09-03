@@ -66,12 +66,6 @@ var main = function() {
 	
 	/*Scroll Effects*/
 	$("#row3 p").show("slow");
-	$("#row3").waypoint(function() {
-		$("#row3 p").show("slow");
-	});
-	$("#row4").waypoint(function() {
-		$("#row3 p").hide();
-	});
 };
 
 $(document).ready(main);
