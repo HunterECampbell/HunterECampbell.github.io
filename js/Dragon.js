@@ -1,6 +1,5 @@
 var main = function() {
 	$("#dragon").click(function() {
-    console.log('hi')
 		var slaying = true;
 		var youHit = Math.floor(Math.random() * 2);
 		var damageThisRound = Math.floor(Math.random() * 5 + 1);
